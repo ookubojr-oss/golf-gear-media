@@ -2,6 +2,7 @@
 title: "実際いま1番ドライバーが飛んでるのは誰？PGA TOUR飛距離1位をチェック"
 date: 2026-08-23T15:22:00+09:00
 draft: false
+layout: "jiro-pick"
 category: "pga-data"
 categories: ["pga-data"]
 label: "JIRO'S PICK / PGA DATA"
