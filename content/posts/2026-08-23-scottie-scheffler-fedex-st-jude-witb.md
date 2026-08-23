@@ -5,6 +5,7 @@ draft: false
 category: "witb"
 categories: ["witb"]
 label: "PGA WINNER WITB"
+image: "https://cdn11.bigcommerce.com/s-p4e2op94ll/images/stencil/1280x1280/products/4228/29110/Qi4D-Core-Driver-3Q-v1__47536.1767906126.jpg?c=2%3Fimbypass%3Don"
 description: "2026 FedEx St. Jude Championshipを8打差で制したスコッティ・シェフラーの優勝クラブセッティング。"
 verdict: "JIRO CHECK"
 verdict_note: "最新ドライバーと使い慣れた旧型ウェッジを混ぜるところが面白い。新しい＝全部入れ替え、ではない。"
