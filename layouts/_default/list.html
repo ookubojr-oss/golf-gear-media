@@ -12,10 +12,11 @@
       <p>過去の記事もここから。気になる記事をタップして読む。</p>
       <div class="archive-count"><b>{{ len .Pages }}</b><small>ARTICLES</small></div>
     </header>
+    {{ $term := .Data.Term }}
     <div class="archive-tabs">
-      <a href="/categories/latest-gear/">クラブ</a>
-      <a href="/categories/jiros-pick/">JIRO'S PICK</a>
-      <a href="/categories/witb/">プロのクラブ</a>
+      <a href="/categories/latest-gear/"{{ if eq $term "latest-gear" }} class="active" aria-current="page"{{ end }}>クラブ</a>
+      <a href="/categories/jiros-pick/"{{ if eq $term "jiros-pick" }} class="active" aria-current="page"{{ end }}>JIRO'S PICK</a>
+      <a href="/categories/witb/"{{ if eq $term "witb" }} class="active" aria-current="page"{{ end }}>プロのクラブ</a>
     </div>
     <div class="archive-grid">{{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}</div>
     <a class="archive-home" href="/">ホームへ戻る</a>
