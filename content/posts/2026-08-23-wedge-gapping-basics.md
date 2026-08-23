@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["ウェッジ", "ロフト", "セッティング"]
 label: "JIRO'S PICK / ウェッジ"
-image: "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1400&q=85"
+image: "https://stix.golf/cdn/shop/files/stix-golf-co-clubs-22-60-wedge-silver-30925146783810_2000x2000_crop_center.progressive.jpg?v=1742389346"
 description: "50・52・54・56・58・60度。数字に迷う前に知っておきたいウェッジ構成の基本。"
 verdict: "JIRO CHECK"
 verdict_note: "人気のロフトを真似するより、PWから距離が自然につながる構成が先。"

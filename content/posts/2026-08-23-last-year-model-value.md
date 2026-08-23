@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["型落ち", "中古", "クラブ選び"]
 label: "JIRO'S PICK / 買い方"
-image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1400&q=85"
+image: "https://static.wixstatic.com/media/822ed3_10d8618ed0604a7a9fd95d06c27cdbf5~mv2.jpg/v1/fill/w_980%2Ch_1307%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto/IMG_4387.jpg"
 description: "最新モデルだけが正解ではない。型落ち・中古まで含めて予算を有効に使う方法。"
 verdict: "JIRO CHECK"
 verdict_note: "予算が同じなら、無理に最新で揃えるより自分に合う実績あるモデルを探す手もある。"

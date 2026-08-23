@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["ドライバー", "選び方", "寛容性"]
 label: "JIRO'S PICK / ドライバー"
-image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1400&q=85"
+image: "https://www.nationalclubgolfer.com/wp-content/uploads/2025/05/LA-Golf-driver-face.jpg"
 description: "飛距離、曲がりにくさ、打点のズレへの強さ。自分に合うドライバーを選ぶ基準を整理。"
 verdict: "JIRO CHECK"
 verdict_note: "一発の最大飛距離より、平均してフェアウェイ付近に残せる一本を選びたい。"

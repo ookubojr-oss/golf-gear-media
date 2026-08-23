@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["パター", "選び方", "初心者"]
 label: "JIRO'S PICK / パター"
-image: "https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1400&q=85"
+image: "https://media.invisioncic.com/c335425/monthly_2024_07/IMG_9485.jpeg.f2ef9e78f8d27134f907b9b14890fd9d.jpeg"
 description: "高級パター＝入る、ではない。形状、構えやすさ、距離感から自分に合う一本を考えます。"
 verdict: "JIRO CHECK"
 verdict_note: "値段より、狙った方向へ構えやすく同じ距離感を出せること。"

@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["ユーティリティ", "ロングアイアン", "セッティング"]
 label: "JIRO'S PICK / UT"
-image: "https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1400&q=85"
+image: "https://img.danuri.io/catalog-image/471/776/018/838cdc22eb3946ed83afacd0185d1241.jpg?_v=20260415163709&shrink=360%3A360"
 description: "UTとロングアイアンの役割を比較。距離ではなく弾道とミスへの強さで考えます。"
 verdict: "JIRO CHECK"
 verdict_note: "何番を入れるかではなく、長い距離から一番安心して打てるクラブを入れたい。"

@@ -7,7 +7,7 @@ category: "beginner"
 categories: ["beginner"]
 tags: ["初心者", "中古クラブ", "クラブセット"]
 label: "JIRO'S PICK / 初心者"
-image: "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1400&q=85"
+image: "https://webuyclubz.co.za/cdn/shop/files/adamsgolf-idea-a70s-golf-set-4382426.jpg?v=1774027990&width=533"
 description: "中古で最初のセットを作るならどこにお金を使う？優先順位から考える入門ガイド。"
 verdict: "JIRO CHECK"
 verdict_note: "全部を同じブランドで揃える必要はない。打ちやすさと状態を優先しよう。"

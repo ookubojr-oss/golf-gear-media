@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["クラブ選び", "飛距離", "スコア"]
 label: "JIRO'S PICK / 選び方"
-image: "https://images.unsplash.com/photo-1557053964-937650b63311?auto=format&fit=crop&w=1400&q=85"
+image: "https://golf-pass.brightspotcdn.com/dims4/default/479cc3b/2147483647/strip/true/crop/8192x4892%2B0%2B0/resize/1440x860%21/format/webp/quality/90/?url=https%3A%2F%2Fgolf-pass-brightspot.s3.amazonaws.com%2Fe0%2F59%2F2f4a4be649428531d76617c1efa8%2Fshot2-bay-2024-12-11-clubchampion-nyc-store-0672.jpg"
 description: "最大飛距離ではなく、平均値・方向性・距離の再現性からクラブ性能を考えます。"
 verdict: "JIRO CHECK"
 verdict_note: "一番飛ぶクラブより、一番次のショットが楽になるクラブを選ぶ。"

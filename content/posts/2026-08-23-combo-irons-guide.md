@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["アイアン", "コンボセット", "ギア選び"]
 label: "JIRO'S PICK / アイアン"
-image: "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1400&q=85"
+image: "https://scottsdalegolf.b-cdn.net/storage/269984/conversions/cobra-king-radspeed-combo-golf-irons-used-310838-%281%29-compressed.jpg"
 description: "ロングアイアンはやさしく、ショートアイアンは操作性重視。コンボセットの考え方を分かりやすく解説。"
 verdict: "JIRO CHECK"
 verdict_note: "全部同じモデルに揃えることより、番手ごとの役割がつながっていることの方が大事。"
