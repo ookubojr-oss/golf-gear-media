@@ -16,11 +16,13 @@
 #gear-guide .panel-head a,#weekly .panel-head a,#latest>.panel-head a{flex:none;margin-left:auto;padding:6px 0 5px;white-space:nowrap}
 #gear-guide,#weekly,#latest{padding-top:8px;margin-top:8px}
 #weekly,#latest{margin-top:20px}
-/* Recommended cards: clearer rhythm and visible prices */
+/* Recommended cards: tappable price comparison products */
 #recommended .witb-row{gap:12px}
 #recommended .witb-card{padding-bottom:14px}
 #recommended .witb-card b{line-height:1.32}
 #recommended .witb-card small{line-height:1.45;margin-top:4px}
+.recommend-price-card{appearance:none;-webkit-appearance:none;border:0;font:inherit;text-align:left;cursor:pointer;color:#1d2418}
+.recommend-price-card:focus-visible{outline:3px solid #9bb42f;outline-offset:2px}
 .recommended-price{display:block;margin-top:8px;font-style:normal;font-size:13px;line-height:1;font-weight:900;letter-spacing:-.02em;color:#16351e}
 /* Global reading rhythm */
 .lead-copy p,.flash-item b,.flash-item small,.featured-courses-head p{line-height:1.55}
