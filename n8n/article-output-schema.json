@@ -1,0 +1,13 @@
+{
+  "title": "記事タイトル",
+  "slug": "english-kebab-case",
+  "category": "witb | latest-gear",
+  "categories": ["witb"],
+  "label": "WINNER WITB",
+  "description": "120文字程度",
+  "verdict": "買う | 待つ | 見送る",
+  "verdict_note": "本人入力欄",
+  "draft": true,
+  "body_markdown": "## 見出し\n本文",
+  "sources": [{"name":"公式サイト","url":"https://..."}]
+}
