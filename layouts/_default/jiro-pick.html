@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="jp-all">
+  <section class="jp-hero"{{ with .Params.image }} style="background-image:url('{{ . }}')"{{ end }}>
+    <a class="jp-back" href="/">‹</a>
+    <div class="jp-hero-shade"></div>
+    <div class="jp-hero-copy">
+      <span class="jp-kicker">JIRO'S PICK</span>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
+      <div class="jp-sign">Jiro<small>JIRO GOLF</small></div>
+    </div>
+  </section>
+
+  {{ with .Params.verdict_note }}
+  <section class="jp-check-wrap">
+    <div class="jp-check">
+      <span>JIRO'S CHECK</span>
+      <strong>{{ . }}</strong>
+      <i>”</i>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="jp-story">
+    <div class="jp-story-head"><span>EDITORIAL</span><b>JIRO'S PICK</b></div>
+    <div class="jp-content">{{ .Content }}</div>
+  </section>
+
+  <section class="jp-end">
+    <span>JIRO'S PICK</span>
+    <strong>気になるギアやテーマを、<br>ゴルファー目線でわかりやすく。</strong>
+    <a href="/#recommended">他の記事を見る →</a>
+  </section>
+</article>
+{{ end }}
