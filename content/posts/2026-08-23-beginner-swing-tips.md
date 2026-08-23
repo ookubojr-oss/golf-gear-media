@@ -18,7 +18,7 @@ verdict_note: "初心者ほど『強く振る』より『毎回同じ動き』�
 
 まずは**力み・軸・フィニッシュ**の3つだけ意識するのがおすすめです。
 
-![初心者のスイング練習イメージ](https://funbodhi.com/cdn/shop/products/2023-03-13-_-04.jpg?v=1678697107&width=1000)
+![ドライビングレンジでのスイング練習](https://teachmeto-assets.s3.us-west-1.amazonaws.com/locations/ec59aebe-2c55-47a2-8733-cf8d7ee3f2f0/images/ae72fb22782f01415211c7d892366c7b_0.jpg)
 
 ## 1. 力いっぱい振らない
 
@@ -32,7 +32,7 @@ verdict_note: "初心者ほど『強く振る』より『毎回同じ動き』�
 
 大切なのは頭を完全固定することではなく、スイング中に体が大きく左右へ流れすぎないこと。肩と腰は自然に回してOKです。
 
-![練習場でスイングを確認するイメージ](https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=900&q=82)
+![フィニッシュまで振り切る練習イメージ](https://assets-global.website-files.com/6528c7c2f165c7d17f31b73c/65a7b3e4ab6202e362c5f956_Tailored%20Adult%20Golf%20Lessons%20for%20Every%20Skill%20Level.jpg)
 
 ## 3. フィニッシュまで振り切る
 
