@@ -1,1 +1,13 @@
-<article class="card"><a href="{{ .RelPermalink }}"><div class="thumb"{{ with .Params.image }} style="background-image:linear-gradient(180deg,rgba(5,9,4,.03),rgba(5,9,4,.28)),url('{{ . }}');background-size:cover;background-position:center;background-repeat:no-repeat"{{ end }}><span>{{ .Params.label }}</span></div><div class="card-body"><div class="meta">{{ .Date.Format "2006.01.02" }}</div><h3>{{ .Title }}</h3><p>{{ .Description }}</p></div></a></article>
+<article class="archive-card">
+  <a href="{{ .RelPermalink }}">
+    <div class="archive-thumb"{{ with .Params.image }} style="background-image:linear-gradient(180deg,rgba(4,10,5,.06),rgba(4,10,5,.72)),url('{{ . }}')"{{ end }}>
+      <span class="archive-label">{{ with .Params.label }}{{ . }}{{ else }}記事{{ end }}</span>
+      <span class="archive-arrow">↗</span>
+    </div>
+    <div class="archive-card-body">
+      <div class="archive-meta"><span>{{ .Date.Format "2006.01.02" }}</span><i>READ</i></div>
+      <h2>{{ .Title }}</h2>
+      {{ with .Description }}<p>{{ . }}</p>{{ else }}<p>Jiro Golf編集部の記事を読む。</p>{{ end }}
+    </div>
+  </a>
+</article>
