@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap nav"><a class="brand" href="/">GOLF GEAR NOW</a><nav><a href="/categories/witb/">WITB</a><a href="/categories/latest-gear/">LATEST GEAR</a><a href="/categories/overseas-trends/">海外トレンド</a></nav></div></header>
+<main>{{ block "main" . }}{{ end }}</main>
+<footer><div class="wrap"><p>© {{ now.Year }} GOLF GEAR NOW</p><p class="fine">当サイトはアフィリエイト広告を利用しています。価格・在庫・仕様は各販売先・メーカー公式情報をご確認ください。</p></div></footer>
+</body></html>
