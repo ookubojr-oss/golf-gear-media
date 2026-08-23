@@ -8,6 +8,8 @@
 #weekly .witb-card .gear-photo{width:112px;height:112px;margin:5px auto 3px;object-fit:contain}
 #weekly .witb-card b{font-size:11px;line-height:1.35;margin-top:4px}
 #weekly .witb-card small{font-size:7px;line-height:1.5}
+#weekly button.winner-card{appearance:none;-webkit-appearance:none;font:inherit;text-align:left;cursor:pointer;color:inherit}
+#weekly button.winner-card:focus-visible{outline:3px solid #d7ff36;outline-offset:2px}
 #gear-guide .pick-card b,#latest>.pick-grid .pick-card b{font-size:19px;line-height:1.38;max-width:92%}
 #gear-guide .pick-card span,#latest>.pick-grid .pick-card span{font-size:8px;padding:6px 9px;margin-top:14px}
 #gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{content:'SWIPE →';font-size:6px;font-weight:900;letter-spacing:.12em;color:#dbe58e;margin-left:auto;margin-right:9px}
