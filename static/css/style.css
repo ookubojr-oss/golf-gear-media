@@ -1,11 +1,12 @@
 @import url('https://raw.githubusercontent.com/ookubojr-oss/golf-gear-media/42ad5a9e2584913d68b4a203b2d9f6e902fa1eed/static/css/style.css');
 
-/* Horizontal editorial rails: gear guide + JIRO'S PICK */
-#gear-guide .pick-grid,#latest>.pick-grid{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;padding:2px 18px 12px 0;margin-right:-14px;scrollbar-width:none}
-#gear-guide .pick-grid::-webkit-scrollbar,#latest>.pick-grid::-webkit-scrollbar{display:none}
+/* Horizontal editorial rails: gear guide + WITB + JIRO'S PICK */
+#gear-guide .pick-grid,#weekly .witb-row,#latest>.pick-grid{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;padding:2px 18px 12px 0;margin-right:-14px;scrollbar-width:none}
+#gear-guide .pick-grid::-webkit-scrollbar,#weekly .witb-row::-webkit-scrollbar,#latest>.pick-grid::-webkit-scrollbar{display:none}
 #gear-guide .pick-card,#latest>.pick-grid .pick-card{flex:0 0 72%;min-width:0;min-height:180px;scroll-snap-align:start;scroll-snap-stop:always;border-radius:18px;padding:16px}
+#weekly .witb-card{flex:0 0 72%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
 #gear-guide .pick-card b,#latest>.pick-grid .pick-card b{font-size:19px;line-height:1.28;max-width:90%}
 #gear-guide .pick-card span,#latest>.pick-grid .pick-card span{font-size:7px;padding:5px 8px;margin-top:12px}
-#gear-guide .panel-head:after,#latest>.panel-head:after{content:'SWIPE →';font-size:6px;font-weight:900;letter-spacing:.12em;color:#dbe58e;margin-left:auto;margin-right:9px}
-#gear-guide .panel-head a,#latest>.panel-head a{flex:none}
-@media(min-width:700px){#gear-guide .pick-card,#latest>.pick-grid .pick-card{flex-basis:44%;min-height:210px}}
+#gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{content:'SWIPE →';font-size:6px;font-weight:900;letter-spacing:.12em;color:#dbe58e;margin-left:auto;margin-right:9px}
+#gear-guide .panel-head a,#weekly .panel-head a,#latest>.panel-head a{flex:none}
+@media(min-width:700px){#gear-guide .pick-card,#latest>.pick-grid .pick-card,#weekly .witb-card{flex-basis:44%}}
