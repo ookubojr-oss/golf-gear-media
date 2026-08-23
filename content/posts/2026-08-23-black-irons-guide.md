@@ -2,6 +2,7 @@
 title: "黒いアイアンってどうなの？見た目だけじゃないメリットと注意点"
 date: 2026-08-23T15:20:00+09:00
 draft: false
+layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "JIRO'S PICK / GEAR"
