@@ -2,6 +2,7 @@
 title: "初心者が必ず注意したいスイングのコツ｜まず直したい3つ"
 date: 2026-08-23T15:24:00+09:00
 draft: false
+layout: "jiro-pick"
 category: "beginner"
 categories: ["beginner"]
 label: "JIRO'S PICK / BEGINNER"
