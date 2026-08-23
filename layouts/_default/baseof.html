@@ -4,8 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0f140c">
+  {{ $description := site.Params.description }}{{ with .Description }}{{ $description = . }}{{ end }}
+  {{ $canonical := .Permalink }}
+  {{ $ogImage := site.Params.ogImage }}{{ with .Params.image }}{{ $ogImage = . }}{{ end }}
+  {{ $robots := "index,follow" }}{{ with .Params.robots }}{{ $robots = . }}{{ end }}
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta name="description" content="{{ $description }}">
+  <meta name="robots" content="{{ $robots }}">
+  <link rel="canonical" href="{{ $canonical }}">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:url" content="{{ $canonical }}">
+  {{ with $ogImage }}<meta property="og:image" content="{{ . }}">{{ end }}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/price-sheet.css">
   <link rel="stylesheet" href="/css/jiro-pick.css">
@@ -15,7 +32,7 @@
   <link rel="stylesheet" href="/css/category-articles.css">
 </head>
 <body>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="/"><span class="brand-mark">JG</span><span><b>Jiro Golf</b><small>ゴルフ最新速報部</small></span></a><nav><a href="/categories/witb/">WITB</a><a href="/categories/latest-gear/">NEW GEAR</a><a href="/categories/overseas-trends/">TREND</a></nav></div></header>
+<header class="site-header"><div class="wrap nav"><a class="brand" href="/"><span class="brand-mark">JG</span><span><b>Jiro Golf</b><small>ゴルフ最新速報部</small></span></a><nav><a href="/categories/witb/">プロのクラブ</a><a href="/categories/latest-gear/">最新ギア</a><a href="/categories/jiros-pick/">JIRO'S PICK</a></nav></div></header>
 <main>{{ block "main" . }}{{ end }}</main>
 <footer><div class="wrap"><div class="footer-brand">Jiro Golf <span>ゴルフ最新速報部</span></div><p class="fine">当サイトはアフィリエイト広告を利用しています。価格・在庫・仕様は各販売先・メーカー公式情報をご確認ください。</p></div></footer>
 <script src="/js/app.js" defer></script>
