@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main class="course-article-page">
+  <a class="course-article-back" href="/">‹</a>
+  <section id="courseArticleHero" class="course-article-hero">
+    <div class="course-article-shade"></div>
+    <div class="course-article-hero-copy"><span>JIRO GOLF / COURSE GUIDE</span><small id="courseArticleArea">JGTO TOUR COURSE</small><h1 id="courseArticleName">男子ツアー開催コース</h1><p>男子ツアーの舞台になったゴルフ場を、写真と一緒にコンパクトに紹介。</p></div>
+  </section>
+  <section class="course-article-body">
+    <div class="course-article-label">COURSE PROFILE</div>
+    <h2 id="courseArticleTitle">コースの魅力</h2>
+    <p id="courseArticleIntro">トッププロが戦う舞台として選ばれる、日本を代表するゴルフコースです。</p>
+    <div class="course-info-grid"><div><small>AREA</small><strong id="courseInfoArea">日本</strong></div><div><small>TOUR</small><strong>JGTO</strong></div></div>
+    <figure><img id="courseArticlePhoto" alt="ゴルフコース"><figcaption>コースの景観イメージ</figcaption></figure>
+    <section class="course-point"><span>JIRO'S POINT</span><h3>ここを見てほしい。</h3><p id="courseArticlePoint">景観だけでなく、ティーショットの落とし所やグリーン周りまで想像しながら見ると、ツアー観戦がもっと面白くなります。</p></section>
+    <h2>どんなコース？</h2><p id="courseArticleDetail">戦略性と美しい景観を兼ね備えたコース。プロがどこを狙い、どこを避けるのかに注目すると、そのコースならではの特徴が見えてきます。</p>
+    <a class="course-home-link" href="/">今日の注目コースへ戻る →</a>
+  </section>
+</main>
+<script>
+(()=>{const p=new URLSearchParams(location.search),name=p.get('name'),area=p.get('area'),img=p.get('img');if(name){document.getElementById('courseArticleName').textContent=name;document.getElementById('courseArticleTitle').textContent=name+'の魅力';document.title=name+' | Jiro Golf'}if(area){document.getElementById('courseArticleArea').textContent=area+' / JGTO TOUR COURSE';document.getElementById('courseInfoArea').textContent=area}if(img){document.getElementById('courseArticleHero').style.backgroundImage=`url('${img}')`;document.getElementById('courseArticlePhoto').src=img}const profiles={
+'東京よみうりカントリークラブ':['東京の丘陵地に広がる名門コース。起伏とグリーン周りの難しさが、終盤までプレーヤーに判断を迫ります。','特に終盤は一打のミスが大きく響く。グリーンを狙うショットの精度に注目。'],
+'太平洋クラブ御殿場コース':['富士山を望む雄大な景観と、世界基準を意識した戦略性を併せ持つ代表的なトーナメントコースです。','富士山の景色だけでなく、長いホールでプロがどう距離を作るかを見るのがおすすめ。'],
+'宍戸ヒルズカントリークラブ':['林に囲まれたホールが多く、ティーショットの方向性と正確なアイアンショットが問われるコースです。','フェアウェイを外した後のリカバリーに注目。プロのコースマネジメントが見えやすい。'],
+'フェニックスカントリークラブ':['黒松林にセパレートされた美しい林間コース。ショットの正確性と風への対応力が求められます。','松林と風がポイント。ティーショットをどちら側に置くかを見ると戦略が分かりやすい。'],
+'ABCゴルフ倶楽部':['池やバンカーが効果的に配置され、攻めるか守るかの判断がスコアを左右する戦略的なコースです。','ハザードの手前に刻むのか、越えて攻めるのか。プロの決断に注目。'],
+'三好カントリー倶楽部 西コース':['距離とタフなレイアウトで知られ、ショット力だけでなく粘り強いマネジメントも要求されます。','難しいホールでパーをどう拾うかを見ると、プロの強さがよく分かる。'],
+'札幌ゴルフ倶楽部 輪厚コース':['北海道らしい雄大さの中に繊細な攻略ポイントが隠れた、歴史あるトーナメントコースです。','広く見える場所でも狙い所は限定される。セカンド地点からの角度に注目。'],
+'富士桜カントリー倶楽部':['富士山麓の自然を生かした長くタフなレイアウト。高いショット力が求められるコースです。','飛距離だけでなく長いクラブでグリーンを狙う精度が見どころ。']};if(name&&profiles[name]){document.getElementById('courseArticleIntro').textContent=profiles[name][0];document.getElementById('courseArticleDetail').textContent=profiles[name][0];document.getElementById('courseArticlePoint').textContent=profiles[name][1]}})();
+</script>
+{{ end }}
