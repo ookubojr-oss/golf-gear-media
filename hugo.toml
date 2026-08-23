@@ -1,0 +1,11 @@
+baseURL = "https://example.pages.dev/"
+languageCode = "ja-jp"
+title = "GOLF GEAR NOW"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 12
+
+[params]
+  description = "海外の最新ゴルフギアとツアー優勝者のクラブセッティングを、日本のゴルファー向けにわかりやすく。"
+  tagline = "海外の最新ギアを、日本のゴルファーへ。"
