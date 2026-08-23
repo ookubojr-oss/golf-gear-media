@@ -1,20 +1,29 @@
 @import url('https://cdn.jsdelivr.net/gh/ookubojr-oss/golf-gear-media@42ad5a9e2584913d68b4a203b2d9f6e902fa1eed/static/css/style.css');
 
 /* Horizontal editorial rails */
-#gear-guide .pick-grid,#weekly .witb-row,#latest>.pick-grid{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;padding:2px 18px 12px 0;margin-right:-14px;scrollbar-width:none}
+#gear-guide .pick-grid,#weekly .witb-row,#latest>.pick-grid{display:flex;grid-template-columns:none;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;padding:4px 18px 16px 0;margin-right:-14px;scrollbar-width:none}
 #gear-guide .pick-grid::-webkit-scrollbar,#weekly .witb-row::-webkit-scrollbar,#latest>.pick-grid::-webkit-scrollbar{display:none}
-#gear-guide .pick-card,#latest>.pick-grid .pick-card{flex:0 0 72%;min-width:0;min-height:180px;scroll-snap-align:start;scroll-snap-stop:always;border-radius:18px;padding:16px}
-#weekly .witb-card{flex:0 0 58%;min-width:0;min-height:158px;padding:10px 11px 9px;scroll-snap-align:start;scroll-snap-stop:always}
-#weekly .witb-card .gear-photo{width:112px;height:112px;margin:2px auto 1px;object-fit:contain}
-#weekly .witb-card b{font-size:10px;line-height:1.22;margin-top:3px}
-#weekly .witb-card small{font-size:6px}
-#gear-guide .pick-card b,#latest>.pick-grid .pick-card b{font-size:19px;line-height:1.28;max-width:90%}
-#gear-guide .pick-card span,#latest>.pick-grid .pick-card span{font-size:7px;padding:5px 8px;margin-top:12px}
+#gear-guide .pick-card,#latest>.pick-grid .pick-card{flex:0 0 72%;min-width:0;min-height:188px;scroll-snap-align:start;scroll-snap-stop:always;border-radius:18px;padding:18px}
+#weekly .witb-card{flex:0 0 58%;min-width:0;min-height:158px;padding:12px 12px 11px;scroll-snap-align:start;scroll-snap-stop:always}
+#weekly .witb-card .gear-photo{width:112px;height:112px;margin:5px auto 3px;object-fit:contain}
+#weekly .witb-card b{font-size:11px;line-height:1.35;margin-top:4px}
+#weekly .witb-card small{font-size:7px;line-height:1.5}
+#gear-guide .pick-card b,#latest>.pick-grid .pick-card b{font-size:19px;line-height:1.38;max-width:92%}
+#gear-guide .pick-card span,#latest>.pick-grid .pick-card span{font-size:8px;padding:6px 9px;margin-top:14px}
 #gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{content:'SWIPE →';font-size:6px;font-weight:900;letter-spacing:.12em;color:#dbe58e;margin-left:auto;margin-right:9px}
-#gear-guide .panel-head,#weekly .panel-head,#latest>.panel-head{gap:10px;flex-wrap:wrap;margin-bottom:14px}
-#gear-guide .panel-head h2,#weekly .panel-head h2,#latest>.panel-head h2{flex:1 1 190px}
-#gear-guide .panel-head a,#weekly .panel-head a,#latest>.panel-head a{flex:none;margin-left:auto;padding:5px 0 4px;white-space:nowrap}
-#gear-guide,#weekly,#latest{padding-top:4px;margin-top:4px}
-#weekly,#latest{margin-top:14px}
-@media(max-width:390px){#gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{order:3;margin-left:0}.panel-head a{font-size:7px}}
+#gear-guide .panel-head,#weekly .panel-head,#latest>.panel-head{gap:12px;flex-wrap:wrap;margin-bottom:17px;align-items:flex-end}
+#gear-guide .panel-head h2,#weekly .panel-head h2,#latest>.panel-head h2{flex:1 1 205px;line-height:1.25}
+#gear-guide .panel-head a,#weekly .panel-head a,#latest>.panel-head a{flex:none;margin-left:auto;padding:6px 0 5px;white-space:nowrap}
+#gear-guide,#weekly,#latest{padding-top:8px;margin-top:8px}
+#weekly,#latest{margin-top:20px}
+/* Recommended cards: clearer rhythm and visible prices */
+#recommended .witb-row{gap:12px}
+#recommended .witb-card{padding-bottom:14px}
+#recommended .witb-card b{line-height:1.32}
+#recommended .witb-card small{line-height:1.45;margin-top:4px}
+.recommended-price{display:block;margin-top:8px;font-style:normal;font-size:13px;line-height:1;font-weight:900;letter-spacing:-.02em;color:#16351e}
+/* Global reading rhythm */
+.lead-copy p,.flash-item b,.flash-item small,.featured-courses-head p{line-height:1.55}
+.cream-panel{margin-bottom:18px}
+@media(max-width:390px){#gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{order:3;margin-left:0}.panel-head a{font-size:7px}#gear-guide .panel-head h2,#weekly .panel-head h2,#latest>.panel-head h2{flex-basis:180px}}
 @media(min-width:700px){#gear-guide .pick-card,#latest>.pick-grid .pick-card{flex-basis:44%}#weekly .witb-card{flex-basis:34%}}
