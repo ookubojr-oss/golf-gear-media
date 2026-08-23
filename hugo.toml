@@ -1,11 +1,11 @@
-baseURL = "https://example.pages.dev/"
+baseURL = "https://golf-gear-media.ookubojr.workers.dev/"
 languageCode = "ja-jp"
-title = "GOLF GEAR NOW"
+title = "Jiro Golf｜ゴルフ最新速報部"
 enableRobotsTXT = true
 
 [pagination]
   pagerSize = 12
 
 [params]
-  description = "海外の最新ゴルフギアとツアー優勝者のクラブセッティングを、日本のゴルファー向けにわかりやすく。"
-  tagline = "海外の最新ギアを、日本のゴルファーへ。"
+  description = "PGA TOUR・JGTO・JLPGAの優勝者セッティングと、海外の最新ゴルフギア情報を日本のゴルファー向けに速報。"
+  tagline = "ゴルフ最新速報部"
