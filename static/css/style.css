@@ -1,12 +1,20 @@
 @import url('https://cdn.jsdelivr.net/gh/ookubojr-oss/golf-gear-media@42ad5a9e2584913d68b4a203b2d9f6e902fa1eed/static/css/style.css');
 
-/* Horizontal editorial rails: gear guide + WITB + JIRO'S PICK */
+/* Horizontal editorial rails */
 #gear-guide .pick-grid,#weekly .witb-row,#latest>.pick-grid{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;padding:2px 18px 12px 0;margin-right:-14px;scrollbar-width:none}
 #gear-guide .pick-grid::-webkit-scrollbar,#weekly .witb-row::-webkit-scrollbar,#latest>.pick-grid::-webkit-scrollbar{display:none}
 #gear-guide .pick-card,#latest>.pick-grid .pick-card{flex:0 0 72%;min-width:0;min-height:180px;scroll-snap-align:start;scroll-snap-stop:always;border-radius:18px;padding:16px}
-#weekly .witb-card{flex:0 0 72%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
+#weekly .witb-card{flex:0 0 58%;min-width:0;min-height:158px;padding:10px 11px 9px;scroll-snap-align:start;scroll-snap-stop:always}
+#weekly .witb-card .gear-photo{width:112px;height:112px;margin:2px auto 1px;object-fit:contain}
+#weekly .witb-card b{font-size:10px;line-height:1.22;margin-top:3px}
+#weekly .witb-card small{font-size:6px}
 #gear-guide .pick-card b,#latest>.pick-grid .pick-card b{font-size:19px;line-height:1.28;max-width:90%}
 #gear-guide .pick-card span,#latest>.pick-grid .pick-card span{font-size:7px;padding:5px 8px;margin-top:12px}
 #gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{content:'SWIPE →';font-size:6px;font-weight:900;letter-spacing:.12em;color:#dbe58e;margin-left:auto;margin-right:9px}
-#gear-guide .panel-head a,#weekly .panel-head a,#latest>.panel-head a{flex:none}
-@media(min-width:700px){#gear-guide .pick-card,#latest>.pick-grid .pick-card,#weekly .witb-card{flex-basis:44%}}
+#gear-guide .panel-head,#weekly .panel-head,#latest>.panel-head{gap:10px;flex-wrap:wrap;margin-bottom:14px}
+#gear-guide .panel-head h2,#weekly .panel-head h2,#latest>.panel-head h2{flex:1 1 190px}
+#gear-guide .panel-head a,#weekly .panel-head a,#latest>.panel-head a{flex:none;margin-left:auto;padding:5px 0 4px;white-space:nowrap}
+#gear-guide,#weekly,#latest{padding-top:4px;margin-top:4px}
+#weekly,#latest{margin-top:14px}
+@media(max-width:390px){#gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{order:3;margin-left:0}.panel-head a{font-size:7px}}
+@media(min-width:700px){#gear-guide .pick-card,#latest>.pick-grid .pick-card{flex-basis:44%}#weekly .witb-card{flex-basis:34%}}
