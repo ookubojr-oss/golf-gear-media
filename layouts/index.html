@@ -1,16 +1,24 @@
 {{ define "main" }}
-<section class="app-home">
-  <div class="wrap app-shell">
-    <div class="app-greeting"><div><span>JIRO GOLF</span><h1>HELLO,<br>GOLF LOVERS!</h1><p>● TOKYO, JAPAN</p></div><div class="profile-dot">JG</div></div>
-    <div class="featured-course">
-      <div class="featured-photo"><div class="featured-sky"></div><div class="featured-copy"><span>THIS WEEK</span><h2>WINNER'S<br>BAG</h2><p>PGA / JGTO / JLPGA</p></div></div>
-      <div class="featured-bottom"><div class="tour-faces"><i>P</i><i>J</i><i>L</i><span>3 TOURS</span></div><a href="#weekly">CHECK WITB →</a></div>
-    </div>
-    <div class="quick-tabs"><a href="#weekly" class="active">WITB</a><a href="#latest">NEW GEAR</a><a href="/categories/overseas-trends/">JIRO'S TAKE</a></div>
-    <section id="weekly" class="app-section"><div class="app-section-head"><div><span>UPCOMING / WEEKLY</span><h2>今週の優勝ギア</h2></div><a href="/categories/witb/">VIEW ALL</a></div><div class="match-list">{{ range first 3 (where site.RegularPages "Params.category" "witb") }}{{ partial "card.html" . }}{{ else }}<article class="match-card"><div class="match-photo pga"><span>PGA TOUR</span><b>WINNER'S BAG</b></div><div class="match-info"><div><small>海外男子</small><strong>優勝者セッティング</strong></div><button>→</button></div></article><article class="match-card"><div class="match-photo jgto"><span>JGTO</span><b>WINNER'S BAG</b></div><div class="match-info"><div><small>日本男子</small><strong>優勝者セッティング</strong></div><button>→</button></div></article><article class="match-card"><div class="match-photo jlpga"><span>JLPGA</span><b>WINNER'S BAG</b></div><div class="match-info"><div><small>日本女子</small><strong>優勝者セッティング</strong></div><button>→</button></div></article>{{ end }}</div></section>
-    <section id="latest" class="app-section gear-section"><div class="app-section-head"><div><span>FROM OVERSEAS</span><h2>海外の新作ギア</h2></div><a href="/categories/latest-gear/">VIEW ALL</a></div><div class="gear-grid">{{ range first 4 (where site.RegularPages "Params.category" "latest-gear") }}{{ partial "card.html" . }}{{ else }}<div class="gear-tile driver"><span>DRIVER</span><b>NEW<br>DROP</b><small>海外発表を追跡中</small></div><div class="gear-tile putter"><span>PUTTER</span><b>NEW<br>DROP</b><small>海外発表を追跡中</small></div>{{ end }}</div></section>
-    <section class="jiro-judgement"><div class="judgement-icon">JG</div><div><span>JIRO'S TAKE</span><h2>買う？ 待つ？<br>見送る？</h2><p>スペックだけじゃなく、最後はJiroの目線で。</p></div><a href="/categories/overseas-trends/">→</a></section>
+<section class="course-page">
+  <div class="wrap course-shell">
+    <header class="course-topbar"><div><h1>Jiro Golf</h1><p>ゴルフ最新速報部</p></div><div class="top-icons"><span>⌕</span><span>◯</span></div></header>
+
+    <section class="lead-grid">
+      <article class="lead-story">
+        <div class="lead-overlay"></div>
+        <span class="lead-badge">TOP NEWS</span>
+        <div class="lead-copy"><small>PGA TOUR / WINNER'S BAG</small><h2>今週の優勝者。<br>その14本を全部見る。</h2><p>PGA・JGTO・JLPGAの優勝ギアを最速で。</p><a href="#weekly">記事を読む　›</a></div>
+      </article>
+      <aside class="flash-panel"><h2>⚡ TODAY'S FLASH</h2><div class="flash-item"><div class="flash-thumb one"></div><div><span>PGA</span><b>海外男子の優勝者WITBを更新</b><small>2時間前</small></div></div><div class="flash-item"><div class="flash-thumb two"></div><div><span>GEAR</span><b>海外で新作ドライバーが発表</b><small>5時間前</small></div></div><div class="flash-item"><div class="flash-thumb three"></div><div><span>TOUR</span><b>日本ツアーの最新ギア動向</b><small>8時間前</small></div></div><a class="flash-more" href="#latest">すべて見る　›</a></aside>
+    </section>
+
+    <section id="weekly" class="cream-panel"><div class="panel-head"><h2>WINNER'S WITB <span>最新</span></h2><a href="/categories/witb/">すべて見る　›</a></div><div class="witb-row">{{ range first 5 (where site.RegularPages "Params.category" "witb") }}{{ partial "card.html" . }}{{ else }}<div class="witb-card"><span>DRIVER</span><b>今週の優勝ドライバー</b><div class="gear-orb">D</div><small>詳細を見る</small></div><div class="witb-card"><span>3W</span><b>フェアウェイウッド</b><div class="gear-orb">3W</div><small>詳細を見る</small></div><div class="witb-card"><span>IRON</span><b>アイアンセット</b><div class="gear-orb">I</div><small>詳細を見る</small></div><div class="witb-card"><span>BALL</span><b>使用ボール</b><div class="gear-orb">●</div><small>詳細を見る</small></div><div class="witb-card"><span>PUTTER</span><b>使用パター</b><div class="gear-orb">P</div><small>詳細を見る</small></div>{{ end }}</div></section>
+
+    <section id="latest" class="cream-panel pick-panel"><div class="panel-head"><h2>JIRO'S PICK <span>編集部おすすめ</span></h2><a href="/categories/latest-gear/">すべて見る　›</a></div><div class="pick-grid">{{ range first 3 (where site.RegularPages "Params.category" "latest-gear") }}{{ partial "card.html" . }}{{ else }}<a href="#" class="pick-card pc1"><b>海外で出た、<br>新しいやつ。</b><span>新作ギア　›</span></a><a href="#" class="pick-card pc2"><b>これ、<br>日本で流行る。</b><span>注目ギア　›</span></a><a href="/categories/overseas-trends/" class="pick-card pc3"><b>今週の<br>気になる話題。</b><span>海外ツアー　›</span></a>{{ end }}</div>
+      <div class="course-mini-head"><h3>注目コース特集</h3><a href="#">すべて見る　›</a></div><div class="course-mini-grid"><div class="course-mini cm1"><span>海沿いリンクス</span></div><div class="course-mini cm2"><span>林間コース</span></div><div class="course-mini cm3"><span>山岳コース</span></div><div class="course-mini cm4"><span>リゾートコース</span></div></div>
+    </section>
   </div>
-  <nav class="mobile-dock"><a href="/" class="active">⌂<small>HOME</small></a><a href="#weekly">◇<small>WITB</small></a><a href="#latest">＋<small>GEAR</small></a><a href="/categories/overseas-trends/">◎<small>JIRO</small></a></nav>
+
+  <nav class="site-dock"><a href="/" class="active">⌂<small>ホーム</small></a><a href="#weekly">♕<small>ランキング</small></a><a href="#latest">▱<small>クリップ</small></a><a href="/categories/overseas-trends/">♙<small>マイページ</small></a></nav>
 </section>
 {{ end }}
