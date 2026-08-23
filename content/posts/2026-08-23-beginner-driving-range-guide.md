@@ -4,6 +4,10 @@ date: 2026-08-23
 categories: ["beginner"]
 tags: ["初心者", "打ちっぱなし", "練習場"]
 description: "初めてゴルフ練習場へ行く人向けに、持ち物・服装・受付・最初の練習方法をまとめます。"
+layout: "jiro-pick"
+label: "JIRO'S PICK / BEGINNER"
+image: "https://teachmeto-assets.s3.us-west-1.amazonaws.com/locations/ec59aebe-2c55-47a2-8733-cf8d7ee3f2f0/images/ae72fb22782f01415211c7d892366c7b_0.jpg"
+verdict_note: "初日は上手く打つことより、練習場の流れを知って1球でも気持ちよく当てられれば十分。"
 ---
 
 ## 初めての打ちっぱなし、何を持っていく？
@@ -32,7 +36,7 @@ description: "初めてゴルフ練習場へ行く人向けに、持ち物・服
 4. 慣れてきたら少し振り幅を大きくする
 5. 最後にドライバーを数球試す
 
-## JIRO'S POINT
+## JIRO'S CHECK
 
 初日はナイスショットを連発する必要はありません。
 
