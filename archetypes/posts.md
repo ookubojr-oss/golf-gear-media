@@ -2,10 +2,12 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
+layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
-label: "NEW GEAR"
+label: "JIRO'S PICK"
+image: ""
 description: ""
-verdict: "待つ"
+verdict: "JIRO CHECK"
 verdict_note: ""
 ---
