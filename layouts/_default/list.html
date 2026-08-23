@@ -1,1 +1,24 @@
-{{ define "main" }}<section class="wrap section"><span class="eyebrow">ARCHIVE</span><h1>{{ .Title }}</h1><div class="grid">{{ range .Pages }}{{ partial "card.html" . }}{{ end }}</div></section>{{ end }}
+{{ define "main" }}
+<section class="archive-page">
+  <div class="archive-shell">
+    <header class="archive-hero">
+      <a class="archive-back" href="/">←</a>
+      <span class="archive-kicker">JIRO GOLF / ARCHIVE</span>
+      {{ $title := .Title }}
+      {{ if eq .Title "Latest-Gear" }}{{ $title = "クラブ選び・最新情報" }}{{ end }}
+      {{ if eq .Title "Jiros-Pick" }}{{ $title = "JIRO'S PICK" }}{{ end }}
+      {{ if eq .Title "Witb" }}{{ $title = "プロの使用クラブ" }}{{ end }}
+      <h1>{{ $title }}</h1>
+      <p>過去の記事もここから。気になる記事をタップして読む。</p>
+      <div class="archive-count"><b>{{ len .Pages }}</b><small>ARTICLES</small></div>
+    </header>
+    <div class="archive-tabs">
+      <a href="/categories/latest-gear/">クラブ</a>
+      <a href="/categories/jiros-pick/">JIRO'S PICK</a>
+      <a href="/categories/witb/">プロのクラブ</a>
+    </div>
+    <div class="archive-grid">{{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}</div>
+    <a class="archive-home" href="/">ホームへ戻る</a>
+  </div>
+</section>
+{{ end }}
