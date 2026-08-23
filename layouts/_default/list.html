@@ -5,18 +5,18 @@
       <a class="archive-back" href="/">←</a>
       <span class="archive-kicker">JIRO GOLF / ARCHIVE</span>
       {{ $title := .Title }}
-      {{ if eq .Title "Latest-Gear" }}{{ $title = "クラブ選び・最新情報" }}{{ end }}
+      {{ if eq .Title "Latest-Gear" }}{{ $title = "最新情報・クラブ選び" }}{{ end }}
       {{ if eq .Title "Jiros-Pick" }}{{ $title = "JIRO'S PICK" }}{{ end }}
-      {{ if eq .Title "Witb" }}{{ $title = "プロの使用クラブ" }}{{ end }}
+      {{ if eq .Title "Witb" }}{{ $title = "優勝クラブセッティング" }}{{ end }}
       <h1>{{ $title }}</h1>
       <p>過去の記事もここから。気になる記事をタップして読む。</p>
       <div class="archive-count"><b>{{ len .Pages }}</b><small>ARTICLES</small></div>
     </header>
     {{ $term := .Data.Term }}
     <div class="archive-tabs">
-      <a href="/categories/latest-gear/"{{ if eq $term "latest-gear" }} class="active" aria-current="page"{{ end }}>クラブ</a>
+      <a href="/categories/latest-gear/"{{ if eq $term "latest-gear" }} class="active" aria-current="page"{{ end }}>最新情報・クラブ選び</a>
       <a href="/categories/jiros-pick/"{{ if eq $term "jiros-pick" }} class="active" aria-current="page"{{ end }}>JIRO'S PICK</a>
-      <a href="/categories/witb/"{{ if eq $term "witb" }} class="active" aria-current="page"{{ end }}>プロのクラブ</a>
+      <a href="/categories/witb/"{{ if eq $term "witb" }} class="active" aria-current="page"{{ end }}>優勝クラブセッティング</a>
     </div>
     <div class="archive-grid">{{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}</div>
     <a class="archive-home" href="/">ホームへ戻る</a>
