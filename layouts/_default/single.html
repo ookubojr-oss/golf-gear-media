@@ -6,12 +6,13 @@
       <span class="article-kicker">{{ .Params.label }}</span>
       <h1>{{ .Title }}</h1>
       <p>{{ .Description }}</p>
-      <div class="article-stats"><span>WINNER</span><b>-17</b><span>8 SHOT WIN</span><span>{{ .Date.Format "2006.08.23" }}</span></div>
+      {{ if eq .Params.category "witb" }}<div class="article-stats"><span>WINNER</span><b>-17</b><span>8 SHOT WIN</span><span>{{ .Date.Format "2006.08.23" }}</span></div>{{ end }}
     </div>
   </header>
 
   {{ with .Params.verdict }}<section class="jiro-check"><span>JIRO'S CHECK</span><strong>{{ . }}</strong>{{ with $.Params.verdict_note }}<p>{{ . }}</p>{{ end }}</section>{{ end }}
 
+  {{ if eq .Params.category "witb" }}
   <section class="bag-intro"><span>THE WINNING BAG</span><h2>優勝を支えた14本。</h2><p>クラブをタップして、モデルとスペックをチェック。</p></section>
 
   <section class="article-bag-grid">
@@ -24,6 +25,7 @@
     <div class="article-club"><em>07</em><span>PUTTER</span><b>TaylorMade<br>Spider Tour X</b><img src="https://www.golfworx.co.uk/wp-content/uploads/2025/02/tourx3.webp" alt="Spider Tour X"><small>マレット型</small></div>
     <div class="article-club"><em>08</em><span>BALL</span><b>Titleist<br>Pro V1</b><div class="ball-visual">Pro V1</div><small>High Number</small></div>
   </section>
+  {{ end }}
 
   <div class="article-body content">{{ .Content }}</div>
   <section class="next-read"><span>NEXT READ</span><h2>次に読む。</h2><div><a href="/#recommended">Qi4D Core、何が変わった？ <i>›</i></a><a href="/#recommended">P7TWがプロに選ばれる理由 <i>›</i></a><a href="/#recommended">Vokeyのロフト構成を見る <i>›</i></a></div></section>
