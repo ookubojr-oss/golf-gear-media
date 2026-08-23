@@ -1,6 +1,32 @@
-{{ define "main" }}<article class="article wrap"><div class="article-head"><div><span class="pill">{{ .Params.label }}</span><h1>{{ .Title }}</h1><p class="lead">{{ .Description }}</p><div class="meta">{{ .Date.Format "2006.01.02" }} · {{ .ReadingTime }} min read</div></div></div>
-{{ with .Params.product_name }}<button class="price-trigger" data-sheet-open><span><small>PRICE CHECK</small><b>{{ . }}</b></span><span class="price-quick">{{ with $.Params.price }}{{ . }}{{ else }}価格を見る{{ end }} <i>↗</i></span></button>{{ end }}
-{{ with .Params.verdict }}<div class="verdict"><span>JIRO'S TAKE</span><strong>{{ . }}</strong>{{ with $.Params.verdict_note }}<p>{{ . }}</p>{{ end }}</div>{{ end }}
-<div class="content">{{ .Content }}</div>
-<div class="disclosure"><strong>広告・情報について</strong><p>本記事にはアフィリエイトリンクを含む場合があります。商品仕様・価格・在庫は変更されることがあります。一次情報・メーカー公式情報を優先して確認しています。</p></div></article>
-{{ with .Params.product_name }}<div class="sheet-backdrop" data-sheet-backdrop></div><section class="price-sheet" data-sheet aria-hidden="true"><div class="sheet-handle"></div><button class="sheet-close" data-sheet-close aria-label="閉じる">×</button><div class="sheet-head"><span>PRICE CHECK</span><h2>{{ . }}</h2>{{ with $.Params.price }}<div class="sheet-price">{{ . }}</div>{{ end }}{{ with $.Params.price_note }}<p>{{ . }}</p>{{ end }}</div><div class="shop-list">{{ with $.Params.rakuten_url }}<a href="{{ . }}" target="_blank" rel="nofollow sponsored"><span>楽天市場</span><b>{{ with $.Params.rakuten_price }}{{ . }}{{ else }}価格を見る{{ end }}</b><i>›</i></a>{{ end }}{{ with $.Params.amazon_url }}<a href="{{ . }}" target="_blank" rel="nofollow sponsored"><span>Amazon</span><b>{{ with $.Params.amazon_price }}{{ . }}{{ else }}価格を見る{{ end }}</b><i>›</i></a>{{ end }}{{ with $.Params.official_url }}<a href="{{ . }}" target="_blank" rel="nofollow"><span>公式サイト</span><b>詳細を見る</b><i>›</i></a>{{ end }}</div><p class="sheet-note">価格・在庫は各販売先で最新情報をご確認ください。</p></section>{{ end }}{{ end }}
+{{ define "main" }}
+<article class="article article-editorial wrap">
+  <header class="article-hero"{{ with .Params.image }} style="background-image:linear-gradient(180deg,rgba(4,10,5,.10),rgba(4,10,5,.88)),url('{{ . }}')"{{ end }}>
+    <a class="article-back" href="/">‹</a>
+    <div class="article-hero-copy">
+      <span class="article-kicker">{{ .Params.label }}</span>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
+      <div class="article-stats"><span>WINNER</span><b>-17</b><span>8 SHOT WIN</span><span>{{ .Date.Format "2006.08.23" }}</span></div>
+    </div>
+  </header>
+
+  {{ with .Params.verdict }}<section class="jiro-check"><span>JIRO'S CHECK</span><strong>{{ . }}</strong>{{ with $.Params.verdict_note }}<p>{{ . }}</p>{{ end }}</section>{{ end }}
+
+  <section class="bag-intro"><span>THE WINNING BAG</span><h2>優勝を支えた14本。</h2><p>クラブをタップして、モデルとスペックをチェック。</p></section>
+
+  <section class="article-bag-grid">
+    <div class="article-club"><em>01</em><span>DRIVER</span><b>TaylorMade<br>Qi4D Core</b><img src="https://www.golfwarehouse.nz/cdn/shop/files/TaylorMade-Mens-Qi4D-Core-Driver-At-Golf-Warehouse-NZ.jpg?v=1769474147&width=1214" alt="TaylorMade Qi4D Core"><small>Ventus Black 7 X</small></div>
+    <div class="article-club"><em>02</em><span>3 WOOD</span><b>TaylorMade<br>Qi10</b><img src="https://www.taylormadegolf.ca/on/demandware.static/-/Sites-tmag-master-catalog/en_CA/v1772514404440/zoom/TC299_zoom_D.jpg" alt="TaylorMade Qi10"><small>Ventus Black 8 X</small></div>
+    <div class="article-club"><em>03</em><span>7 WOOD</span><b>TaylorMade<br>Qi4D</b><img src="https://www.taylormadegolf.com/on/demandware.static/-/Sites-tmag-master-catalog/en_US/v1782187549800/zoom/TC448_zoom_D.jpg" alt="TaylorMade Qi4D 7 Wood"><small>Ventus Black 9 X</small></div>
+    <div class="article-club"><em>04</em><span>UTILITY</span><b>Srixon<br>Z U85 4I</b><img src="https://www.snaintongolf.co.uk/media/catalog/product/cache/40d8b27a50ad30ed896f9147f8c9de76/s/r/srixon-z-u85-utility-iron_1.jpg" alt="Srixon Z U85"><small>4番ユーティリティ</small></div>
+    <div class="article-club"><em>05</em><span>IRON</span><b>TaylorMade<br>P7TW</b><img src="https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1" alt="TaylorMade P7TW"><small>5-PW / DG Tour Issue X100</small></div>
+    <div class="article-club"><em>06</em><span>WEDGE</span><b>Vokey<br>SM8 / SM9</b><img src="https://www.vokey.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-vokey-master/default/dw35d2cb1b/images/products/wedgeworks/sm9-chrome-lh.jpg?sw=1024&sh=1024&sm=fit&sfrm=jpg" alt="Vokey SM9"><small>50° / 56° / 60°</small></div>
+    <div class="article-club"><em>07</em><span>PUTTER</span><b>TaylorMade<br>Spider Tour X</b><img src="https://www.golfworx.co.uk/wp-content/uploads/2025/02/tourx3.webp" alt="Spider Tour X"><small>マレット型</small></div>
+    <div class="article-club"><em>08</em><span>BALL</span><b>Titleist<br>Pro V1</b><div class="ball-visual">Pro V1</div><small>High Number</small></div>
+  </section>
+
+  <div class="article-body content">{{ .Content }}</div>
+  <section class="next-read"><span>NEXT READ</span><h2>次に読む。</h2><div><a href="/#recommended">Qi4D Core、何が変わった？ <i>›</i></a><a href="/#recommended">P7TWがプロに選ばれる理由 <i>›</i></a><a href="/#recommended">Vokeyのロフト構成を見る <i>›</i></a></div></section>
+  <div class="disclosure"><strong>広告・情報について</strong><p>本記事にはアフィリエイトリンクを含む場合があります。商品仕様・価格・在庫は変更されることがあります。一次情報・メーカー公式情報を優先して確認しています。</p></div>
+</article>
+{{ end }}
