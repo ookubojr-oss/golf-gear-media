@@ -18,7 +18,7 @@ verdict_note: "飛距離だけなら331yd超。でも本当に強いドライバ
 
 2位はRory McIlroyの328.9ヤード。トップクラスは平均で330ヤード前後という、とんでもない世界です。
 
-![PGA TOURのロングドライブイメージ](https://www.si.com/.image/c_fill%2Cw_1440%2Car_1440%3A810%2Cf_auto%2Cq_auto%2Cg_auto/MjAzNzAxMjg0NTE5MTU5Njk4/bryson-dechambeau-2021-arnold-palmer-classic.jpg)
+![ドライバーのインパクトイメージ](https://i0.wp.com/sotapar.com/wp-content/uploads/2021/02/driver-golf-sota-par-scaled.jpg?fit=2560%2C1444&ssl=1)
 
 ## 331.1ヤードってどのくらい？
 
@@ -34,7 +34,7 @@ verdict_note: "飛距離だけなら331yd超。でも本当に強いドライバ
 
 300ヤードを超えてもラフや林に入れば、次のショットは難しくなります。
 
-![ティーショットとゴルフコース](https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=900&q=82)
+![ドライバー練習イメージ](https://i0.wp.com/images.squarespace-cdn.com/content/v1/52fd3dfae4b09fa4d54fae2b/1629843144236-F9PDIR1A655AGM7YM57X/foimp1.jpg?resize=835%2C596&ssl=1)
 
 ## アマチュアが参考にすべきポイント
 
