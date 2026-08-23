@@ -7,7 +7,7 @@ category: "latest-gear"
 categories: ["latest-gear"]
 tags: ["ミニドライバー", "ドライバー", "フェアウェイウッド", "ギア"]
 label: "JIRO'S PICK / ドライバー"
-image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1400&q=85"
+image: "https://assets.taylormadegolf.com/i/30/979061/R7-Quad-Mini-Studio-Hero~W1000_H562_Mcrop_P50-50.png"
 description: "普通のドライバーや3Wと何が違う？ミニドライバーが合う人・合わない人を整理します。"
 verdict: "JIRO CHECK"
 verdict_note: "最初に買うクラブではない。でもティーショットの選択肢を増やしたい人にはかなり面白い。"
