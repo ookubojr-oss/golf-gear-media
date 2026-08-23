@@ -1,4 +1,4 @@
-@import url('https://raw.githubusercontent.com/ookubojr-oss/golf-gear-media/42ad5a9e2584913d68b4a203b2d9f6e902fa1eed/static/css/style.css');
+@import url('https://cdn.jsdelivr.net/gh/ookubojr-oss/golf-gear-media@42ad5a9e2584913d68b4a203b2d9f6e902fa1eed/static/css/style.css');
 
 /* Horizontal editorial rails: gear guide + WITB + JIRO'S PICK */
 #gear-guide .pick-grid,#weekly .witb-row,#latest>.pick-grid{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;padding:2px 18px 12px 0;margin-right:-14px;scrollbar-width:none}
