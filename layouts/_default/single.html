@@ -5,12 +5,25 @@
 <header class="cat-hero"{{ with .Params.image }} style="background-image:linear-gradient(180deg,rgba(5,10,6,.08),rgba(5,10,6,.86)),url('{{ . }}')"{{ end }}><a class="cat-back" href="/">‹</a><div class="cat-hero-copy"><span class="cat-kicker">{{ if $isBeginner }}はじめてのゴルフ{{ else if $isWitb }}プロの使用クラブ{{ else if $isData }}PGA DATA{{ else if $isGear }}クラブ選び・最新情報{{ else }}JIRO'S PICK{{ end }}</span><h1>{{ .Title }}</h1><p>{{ .Description }}</p></div></header>
 {{ if $isBeginner }}<section class="cat-intro"><span>BEGINNER GUIDE</span><strong>むずかしい言葉は少なめに。最初に知りたいことだけ。</strong></section>{{ else if $isWitb }}<section class="cat-intro"><span>WHAT'S IN THE BAG</span><strong>プロのバッグを、クラブごとに見る。</strong></section>{{ else if $isData }}<section class="cat-intro"><span>BY THE NUMBERS</span><strong>数字から見る、いまのPGA TOUR。</strong></section>{{ else if $isGear }}<section class="cat-intro"><span>GEAR LAB</span><strong>新しいクラブを、選びやすく。</strong></section>{{ else }}{{ with .Params.verdict_note }}<section class="cat-intro"><span>JIRO'S CHECK</span><strong>{{ . }}</strong></section>{{ end }}{{ end }}
 {{ if and $isWitb .Params.gear_items }}
-<section class="witb-shop-section"><div class="witb-shop-head"><small>TAP TO CHECK</small><h2>クラブをタップして価格を見る</h2><p>新品・中古の販売情報を、確認できたページだけ表示します。</p></div><div class="witb-shop-grid">
-{{ range .Params.gear_items }}<button class="witb-shop-card" type="button" data-sheet-open data-name="{{ .name }}" data-category="{{ .category }}" data-spec="{{ .spec }}" data-image="{{ .image }}" data-new-price="{{ .new_price }}" data-used-price="{{ .used_price }}" data-shop-name="{{ .shop_name }}" data-shop-url="{{ .shop_url }}"><span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }}" loading="lazy"><strong>{{ .name }}</strong><small>{{ .spec }}</small><em>価格を見る →</em></button>{{ end }}
+<section class="witb-shop-section"><div class="witb-shop-head"><small>TAP TO COMPARE</small><h2>クラブをタップして価格比較</h2><p>販売先ごとの価格を一覧でチェック。</p></div><div class="witb-shop-grid">
+{{ range .Params.gear_items }}<button class="witb-shop-card" type="button" data-sheet-open data-name="{{ .name }}" data-category="{{ .category }}" data-spec="{{ .spec }}" data-image="{{ .image }}" data-new-price="{{ .new_price }}" data-used-price="{{ .used_price }}" data-shop-name="{{ .shop_name }}" data-shop-url="{{ .shop_url }}"{{ with .shops }} data-shops='{{ . | jsonify }}'{{ end }}><span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }}" loading="lazy"><strong>{{ .name }}</strong><small>{{ .spec }}</small><em>価格を比較 →</em></button>{{ end }}
 </div></section>
 {{ end }}
 <section class="cat-body">{{ .Content }}</section><footer class="cat-end"><span>JIRO GOLF</span><a href="/">ホームへ戻る →</a></footer></article>
 {{ if and $isWitb .Params.gear_items }}
-<div class="price-sheet-backdrop" data-sheet-backdrop></div><aside class="price-sheet" data-sheet aria-hidden="true"><div class="sheet-handle"></div><button class="sheet-close" type="button" data-sheet-close aria-label="閉じる">×</button><span class="sheet-label" data-sheet-category>PRICE CHECK</span><img class="sheet-product-image" data-sheet-image alt=""><h2 data-sheet-name>商品名</h2><p data-sheet-spec></p><div class="condition-tabs"><button class="condition-tab active" type="button" data-condition="new">新品</button><button class="condition-tab" type="button" data-condition="used">中古</button></div><div class="price-main"><small data-price-label>新品価格</small><strong data-sheet-price>価格を確認</strong><span>掲載価格は変動する場合があります</span></div><div class="shop-list" data-shop-list></div><p class="sheet-note">販売先で在庫・仕様・最終価格を確認してください。掲載リンクは実在を確認できたページのみ使用します。</p></aside>
+<div class="price-sheet-backdrop" data-sheet-backdrop></div>
+<aside class="price-sheet" data-sheet aria-hidden="true">
+  <div class="sheet-handle"></div>
+  <button class="sheet-close" type="button" data-sheet-close aria-label="閉じる">×</button>
+  <div class="sheet-product-head">
+    <img class="sheet-product-image" data-sheet-image alt="">
+    <div class="sheet-product-copy"><span class="sheet-label" data-sheet-category>PRICE CHECK</span><h2 data-sheet-name>商品名</h2><p data-sheet-spec></p></div>
+  </div>
+  <div class="condition-tabs"><button class="condition-tab active" type="button" data-condition="new">新品</button><button class="condition-tab" type="button" data-condition="used">中古</button></div>
+  <section class="compare-summary"><div><small>現在の最安値</small><strong data-sheet-price>価格を確認</strong></div><span data-shop-count>販売先を比較</span></section>
+  <div class="compare-heading"><b>ショップ別価格</b><small>安い順</small></div>
+  <div class="shop-list" data-shop-list></div>
+  <p class="sheet-note">価格・在庫・送料・ポイント還元は変動します。購入前に各販売先で最終条件をご確認ください。</p>
+</aside>
 {{ end }}
 {{ end }}
