@@ -1,0 +1,6 @@
+{{ define "main" }}
+<section class="hero"><div class="wrap"><span class="eyebrow">TOUR WITB × GLOBAL GEAR</span><h1>海外の最新ギアを、<br>日本のゴルファーへ。</h1><p>{{ site.Params.description }}</p></div></section>
+<section class="wrap section"><div class="section-head"><div><span class="eyebrow">WEEKLY</span><h2>今週の優勝者セッティング</h2></div><a href="/categories/witb/">すべて見る →</a></div><div class="grid">{{ range first 3 (where site.RegularPages "Params.category" "witb") }}{{ partial "card.html" . }}{{ end }}</div></section>
+<section class="wrap section"><div class="section-head"><div><span class="eyebrow">LATEST</span><h2>最新ギア</h2></div><a href="/categories/latest-gear/">すべて見る →</a></div><div class="grid">{{ range first 6 (where site.RegularPages "Params.category" "latest-gear") }}{{ partial "card.html" . }}{{ end }}</div></section>
+<section class="wrap section trend"><span class="eyebrow">EDITOR'S VIEW</span><h2>これ、日本で流行る？</h2><p>海外で話題になっているギアを、日本のアマチュア目線で「買う・待つ・見送る」に分けて紹介します。</p><a class="button" href="/categories/overseas-trends/">海外トレンドを見る</a></section>
+{{ end }}
