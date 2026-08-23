@@ -7,7 +7,7 @@ category: "beginner"
 categories: ["beginner"]
 tags: ["初心者", "ゴルフ用品", "始め方"]
 label: "JIRO'S PICK / 初心者"
-image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1400&q=85"
+image: "https://www.golfchilled.com/wp-content/uploads/2022/10/62e58d19880845f8ba3498cab4552be1.jpg"
 description: "クラブ、ボール、グローブ、ティー。ゴルフ開始時に必要な物と後回しでいい物を整理。"
 verdict: "JIRO CHECK"
 verdict_note: "最初から全部買う必要なし。プレーに必要な物から順番に揃えれば十分。"
