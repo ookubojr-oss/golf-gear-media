@@ -18,6 +18,8 @@ verdict_note: "飛距離だけなら331yd超。でも本当に強いドライバ
 
 2位はRory McIlroyの328.9ヤード。トップクラスは平均で330ヤード前後という、とんでもない世界です。
 
+![PGA TOURのロングドライブイメージ](https://www.si.com/.image/c_fill%2Cw_1440%2Car_1440%3A810%2Cf_auto%2Cq_auto%2Cg_auto/MjAzNzAxMjg0NTE5MTU5Njk4/bryson-dechambeau-2021-arnold-palmer-classic.jpg)
+
 ## 331.1ヤードってどのくらい？
 
 一般ゴルファーの感覚だと、250ヤード飛べば十分に「飛ばし屋」。そこからさらに80ヤード近く先まで平均で運んでいる計算です。
@@ -31,6 +33,8 @@ verdict_note: "飛距離だけなら331yd超。でも本当に強いドライバ
 **フェアウェイキープ率、Strokes Gained: Off-the-Tee、ミスしたときの幅**まで見ると、その選手が本当にティーショットで強いのかが分かります。
 
 300ヤードを超えてもラフや林に入れば、次のショットは難しくなります。
+
+![ティーショットとゴルフコース](https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=900&q=82)
 
 ## アマチュアが参考にすべきポイント
 
