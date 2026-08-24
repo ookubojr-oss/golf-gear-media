@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / BAG"
-image: "https://loremflickr.com/1200/675/golf?lock=103"
+image: "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1786680948148/zoom/TC448_zoom_D.jpg?sh=900&sm=fit&sw=900"
 description: "7Wとユーティリティをコースによって使い分ける考え方を、弾道とライの違いから整理。"
 verdict: "JIRO CHECK"
 verdict_note: "番手名より、自分のバッグに足りない球筋を埋める。"
