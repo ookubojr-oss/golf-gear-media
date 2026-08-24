@@ -13,7 +13,7 @@ gear_items:
   - category: "ドライバー"
     name: "TaylorMade Qi4D Core"
     spec: "Fujikura Ventus Black 7 X"
-    image: "https://assets.taylormadegolf.com/i/e0/1221790/TM26MWD-TC441-N2844709-Qi4D-Core-Driver-JPO-06002-v1-1280x1280~W800_H600_Mcrop_Fwebp_P50-50.webp"
+    image: "https://www.taylormadegolf.com/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/en_US/v1787154929998/zoom/TC441_zoom_D.jpg?sh=900&sm=fit&sw=900"
     image_verified: true
     new_price: "約¥80,000〜"
     used_price: "約¥58,000〜¥70,000"
@@ -49,7 +49,7 @@ gear_items:
   - category: "アイアン"
     name: "TaylorMade P7TW"
     spec: "5-PW / Dynamic Gold Tour Issue X100"
-    image: "https://www.taylormadegolf.com/on/demandware.static/-/Sites-TMaG-Library/en_US/v1785211631598/TaylorMade/plp/2019/p7tw/images/mobile-header.png"
+    image: "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1787240910549/zoom/ST472_zoom_D.jpg?sh=900&sm=fit&sw=900"
     image_verified: true
     new_price: "セット価格を公式で確認"
     used_price: "約¥110,000〜¥180,000（セット）"
@@ -76,7 +76,7 @@ gear_items:
   - category: "パター"
     name: "TaylorMade Spider Tour X"
     spec: "シェフラー仕様 / Lネック"
-    image: "https://assets.taylormadegolf.com/i/95/864346/TM24PTR-TC958-N7548826-Spider-Tour-X-Black-SS-BMB-TMG07059-v1-2048x2048~W800_H600_Mcrop_Fwebp_P50-50.webp"
+    image: "https://www.taylormadegolf.com/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/en_US/v1787544747870/zoom/TC928_zoom_D.jpeg?sh=900&sm=fit&sw=900"
     image_verified: true
     new_price: "販売先で確認"
     used_price: "約¥34,000〜¥50,000"
