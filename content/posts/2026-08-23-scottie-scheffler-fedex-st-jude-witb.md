@@ -40,7 +40,7 @@ gear_items:
   - category: "ユーティリティ"
     name: "Srixon Z U85 Utility"
     spec: "4-iron"
-    image: "https://sports.dunlop.co.jp/golf/products/clublibrary/iron/images/srzu855000_main.jpg"
+    image: "https://shop.golfdigest.co.jp/newshop/images/goods/000056/0000562759/0000562759_p01_01.jpg"
     image_verified: true
     new_price: "旧モデル / 在庫を確認"
     used_price: "約¥10,000〜¥20,000"
