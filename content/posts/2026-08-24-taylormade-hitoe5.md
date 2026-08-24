@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "NEW GEAR / WEDGE"
-image: "https://loremflickr.com/1200/675/golf?lock=115"
+image: "https://www.taylormadegolf.com/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/en_MX/v1787458396379/zoom/M21645_zoom_D.jpg?sh=900&sm=fit&sw=900"
 description: "Hi-Toe 5の鍛造化、高重心、フルフェースグルーブをアマチュア目線で整理。"
 verdict: "JIRO CHECK"
 verdict_note: "Hi-Toe 5はロフトより先にグラインドを選ぶと失敗しにくい。"

@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "NEW GEAR / IRON"
-image: "https://loremflickr.com/1200/675/golf?lock=117"
+image: "https://prd-sfcc.callawaygolf.com/dw/image/v2/AADH_PRD/on/demandware.static/-/Sites-CGI-ItemMaster/en_US/v1787550061843/sits/irons-2026-apex-mb-tour-raw/irons-2026-apex-mb-tour-raw___1.jpg?bgcolor=F7F7F7&q=90&sfrm=png&sw=3000"
 description: "ツアーで使われてきたApex MB Tour Rawの市販化を、ワイドソールと現代的ブレードという視点で解説。"
 verdict: "JIRO CHECK"
 verdict_note: "見た目がブレードでも、昔の難しいブレードと同じとは限らない。"

@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "NEW GEAR / PUTTER"
-image: "https://loremflickr.com/1200/675/golf?lock=123"
+image: "https://api.next.ping.com/media/catalog/product/p/u/putters_pld_milled_2026_se_dzb_address_1600x1600_a786.png?auto=webp&fit=bounds&format=pjpg&height=&quality=80&width=3840"
 description: "削り出しパターの価格差はどこから来るのか。PLD Milled SEを例に価値を整理する。"
 verdict: "JIRO CHECK"
 verdict_note: "高価格＝自動的に入るではない。所有感と相性の両方で選ぶ。"

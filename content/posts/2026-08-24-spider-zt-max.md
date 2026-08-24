@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "NEW GEAR / PUTTER"
-image: "https://loremflickr.com/1200/675/golf?lock=120"
+image: "https://www.taylormadegolf.com/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/en_US/v1787544747870/zoom/TE630_zoom_D.jpg?sh=900&sm=fit&sw=900"
 description: "大型ゼロトルク系パターのメリットと、ヘッドが大きいほど全員に合うわけではない理由を整理。"
 verdict: "JIRO CHECK"
 verdict_note: "方向性だけでなく、ヘッドを感じられる重さかまで確認する。"

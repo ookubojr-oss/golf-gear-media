@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "NEW GEAR / WEDGE"
-image: "https://loremflickr.com/1200/675/golf?lock=116"
+image: "https://us.dunlopsports.com/on/demandware.static/-/Sites-masterCatalog_DunlopSports/default/dw170308d0/images/large/RTZ2_HERO_TS.jpg"
 description: "Cleveland RTZ 2の話題を入口に、ウェッジ選びでソールとバウンスを見る重要性を解説。"
 verdict: "JIRO CHECK"
 verdict_note: "同じ56度でもソールが違えば別クラブ。ロフトだけで選ばない。"

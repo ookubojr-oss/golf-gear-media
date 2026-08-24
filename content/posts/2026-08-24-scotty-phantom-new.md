@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "NEW GEAR / PUTTER"
-image: "https://loremflickr.com/1200/675/golf?lock=119"
+image: "https://d21buns5ku92am.cloudfront.net/68636/images/636667-2026_SC_Phantom_5_Group_1386-e2f845-large-1767651351.jpg"
 description: "新しいPhantom系マレットを選ぶ時に、MOIだけでなくアライメントの見え方を重視すべき理由。"
 verdict: "JIRO CHECK"
 verdict_note: "パターは打つ前に、構えた瞬間に目標へ向けやすいかを見る。"

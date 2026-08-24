@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "NEW GEAR / DRIVER"
-image: "https://loremflickr.com/1200/675/golf?lock=118"
+image: "https://d21buns5ku92am.cloudfront.net/68636/images/685885-NEW_GTS300_mini_driver_002-66f810-large_webp-1782844029.webp"
 description: "ミニドライバーのヘッドが大型化する理由を、3W代替と第二ドライバーという役割の違いから考える。"
 verdict: "JIRO CHECK"
 verdict_note: "通常ドライバーとの飛距離差が小さすぎるなら、バッグの役割が重複する。"
