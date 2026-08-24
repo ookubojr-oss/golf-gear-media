@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / WEDGE"
-image: "https://loremflickr.com/1200/675/golf?lock=102"
+image: "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw86d87c43/833RSF/833RSF_01.png"
 description: "最新ドライバーと旧世代ウェッジを混ぜるシェフラーのセッティングから、ウェッジの替え時を考える。"
 verdict: "JIRO CHECK"
 verdict_note: "距離感が合うウェッジは残していい。ただし溝の摩耗だけは別問題。"
