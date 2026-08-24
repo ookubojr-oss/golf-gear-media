@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / DRIVER"
-image: "https://loremflickr.com/1200/675/golf?lock=101"
+image: "https://assets.taylormadegolf.com/i/e0/1221790/TM26MWD-TC441-N2844709-Qi4D-Core-Driver-JPO-06002-v1-1280x1280~W800_H600_Mcrop_Fwebp_P50-50.webp"
 description: "シェフラーのQi4D Core投入から、トッププロがドライバーを替える時に何を見ているかを考える。"
 verdict: "JIRO CHECK"
 verdict_note: "新作へ替えるなら、今のクラブで困っていることを1つ言葉にしてから比較する。"
