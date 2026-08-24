@@ -1,4 +1,11 @@
 (()=>{
+const navToggle=document.querySelector('.nav-toggle'),primaryNav=document.getElementById('primary-nav');
+if(navToggle&&primaryNav){
+  const closeNav=()=>{primaryNav.classList.remove('is-open');navToggle.setAttribute('aria-expanded','false');navToggle.setAttribute('aria-label','メニューを開く')};
+  navToggle.addEventListener('click',()=>{const open=!primaryNav.classList.contains('is-open');primaryNav.classList.toggle('is-open',open);navToggle.setAttribute('aria-expanded',String(open));navToggle.setAttribute('aria-label',open?'メニューを閉じる':'メニューを開く')});
+  primaryNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeNav));
+  window.addEventListener('resize',()=>{if(window.innerWidth>=768)closeNav()});
+}
 const sheet=document.querySelector('[data-sheet]');
 const backdrop=document.querySelector('[data-sheet-backdrop]');
 if(sheet&&backdrop){
