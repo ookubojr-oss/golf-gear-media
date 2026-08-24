@@ -10,21 +10,29 @@
     ball:'https://images.unsplash.com/photo-1621005570368-8c1f58c98ca5?fm=jpg&ixlib=rb-4.1.0&q=80&w=1800',
     gps:'https://beaugolf.fr/IMG/garmin-gps-golf-s62.webp',
     launch:'https://cdn.shopify.com/s/files/1/2031/8247/files/SkyTrakPlusSIG10GolfSimulatorWith4x10SoftyHittingMat.jpg?v=1717794914',
-    tour:'https://uploads.mygolfspy.com/uploads/2026/03/Screenshot-2026-03-19-at-2.16.09-PM.jpg'
+    tour:'https://uploads.mygolfspy.com/uploads/2026/03/Screenshot-2026-03-19-at-2.16.09-PM.jpg',
+    qi4dCore:'https://assets.taylormadegolf.com/i/e0/1221790/TM26MWD-TC441-N2844709-Qi4D-Core-Driver-JPO-06002-v1-1280x1280~W800_H600_Mcrop_Fwebp_P50-50.webp',
+    vokeySm8:'https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw86d87c43/833RSF/833RSF_01.png',
+    ventusTr:'https://www.fujikurashaft.jp/wp-content/uploads/2026/04/ventus_tr_2604.png',
+    spiderTour:'https://assets.taylormadegolf.com/i/81/866150/TM24PTR-TC961-N7550326-Spider-Tour-Black-SS-BMB-TMG07191-v1-2048x2048~W800_H600_Mcrop_Fwebp_P50-50.webp'
   };
 
   const rules=[
+    [/scheffler-qi4d-core-switch/,IMG.qi4dCore],
+    [/scheffler-old-wedges/,IMG.vokeySm8],
+    [/ventus-headspeed-40/,IMG.ventusTr],
+    [/spider-tour-2026/,IMG.spiderTour],
     [/build-14-club-bag|playoff-bag-changes|jason-day-bag-overhaul|bmw-bellerive-gear-strategy|club-length-fit|grip-size|swingweight/,IMG.bag],
     [/face-angle|driver-moi|driver-loft-9-vs-105|used-driver-check|titleist-new-mini-driver/,IMG.driver],
     [/3w-vs-5w|7wood-popularity|9wood-amateur|cameron-young-gts-3wood|scheffler-7wood-utility/,IMG.fairway],
     [/ball-alignment-line|ball-compression/,IMG.ball],
     [/blade-vs-cavity-single|hollow-body-irons|iron-lie-angle|iron-sole-width|used-irons-groove|callaway-apex-mb-raw/,IMG.iron],
-    [/counterbalance-shaft|shaft-torque|shaft-weight-50-60-70|ventus-headspeed-40/,IMG.shaft],
-    [/cleveland-rtz2|high-toe-wedge-fit|raw-wedge-rust|wedge-grind-guide|taylormade-hitoe5|scheffler-old-wedges/,IMG.wedge],
-    [/lab-vzn1i|ping-pld-dzb|spider-tour-2026|spider-zt-max|scotty-phantom-new|zero-torque-fit|koepka-putter-changes|thorbjornsen-putter-switch/,IMG.putter],
+    [/counterbalance-shaft|shaft-torque|shaft-weight-50-60-70/,IMG.shaft],
+    [/cleveland-rtz2|high-toe-wedge-fit|raw-wedge-rust|wedge-grind-guide|taylormade-hitoe5/,IMG.wedge],
+    [/lab-vzn1i|ping-pld-dzb|spider-zt-max|scotty-phantom-new|zero-torque-fit|koepka-putter-changes|thorbjornsen-putter-switch/,IMG.putter],
     [/rangefinder-vs-gps/,IMG.gps],
     [/launch-monitor-home/,IMG.launch],
-    [/ben-griffin-quantum-max|fedexcup-top30|liv-golf-now|mcilroy-memphis-reset|min-woo-lee-prototypes|scheffler-qi4d-core-switch|spieth-playoff-pressure/,IMG.tour]
+    [/ben-griffin-quantum-max|fedexcup-top30|liv-golf-now|mcilroy-memphis-reset|min-woo-lee-prototypes|spieth-playoff-pressure/,IMG.tour]
   ];
 
   function imageFor(path){
