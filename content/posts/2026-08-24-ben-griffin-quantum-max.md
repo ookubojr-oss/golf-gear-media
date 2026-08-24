@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "TOUR GEAR / DRIVER"
-image: "https://loremflickr.com/1200/675/golf?lock=111"
+image: "https://prd-sfcc.callawaygolf.com/dw/image/v2/AADH_PRD/on/demandware.static/-/Sites-CGI-ItemMaster/en_US/v1787550061843/sits/drivers-2026-quantum-max/drivers-2026-quantum-max___1.jpg?bgcolor=F7F7F7&q=90&sfrm=png&sw=3000"
 description: "寛容性の高いドライバーをツアープロが選ぶ理由から、やさしいヘッド＝初心者用という思い込みを考え直す。"
 verdict: "JIRO CHECK"
 verdict_note: "上級者ほど、ミスした時にスコアが壊れない性能を評価する。"

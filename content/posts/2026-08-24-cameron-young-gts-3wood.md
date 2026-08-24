@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "TOUR GEAR / FAIRWAY"
-image: "https://loremflickr.com/1200/675/golf?lock=110"
+image: "https://d21buns5ku92am.cloudfront.net/68636/images/673238-GTS3%20fairway-e88f0d-large_webp-1778469990.webp"
 description: "ツアーの未発売3Wを見る時に、プロトタイプ＝市販品より上と考えない方がいい理由。"
 verdict: "JIRO CHECK"
 verdict_note: "発売前モデルを追うより、自分が3Wで何をしたいかを先に決める。"
