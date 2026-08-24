@@ -36,6 +36,16 @@ if(sheet&&backdrop){
     nameEl.textContent=activeData.name;categoryEl.textContent=activeData.category||'PRICE CHECK';specEl.textContent=activeData.spec;imageEl.src=activeData.image;imageEl.alt=activeData.name;render('new');sheet.classList.add('is-open');backdrop.classList.add('is-open');sheet.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'
   };
   const close=()=>{sheet.classList.remove('is-open');backdrop.classList.remove('is-open');sheet.setAttribute('aria-hidden','true');document.body.style.overflow=''};
+  const recommendedRow=document.querySelector('#recommended .witb-row');
+  if(recommendedRow){
+    const additions=[
+      {name:'L.A.B. Golf MEZZ.1 MAX Custom',category:'パター',spec:'ライ角バランス / 6061アルミ＋303ステンレス / カスタム',image:'https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992&width=832',price:'132000',label:'L.A.B. Golf<br>MEZZ.1 MAX',small:'Lie Angle Balance',url:'https://labgolf.jp/products/max-custom-all'},
+      {name:'L.A.B. Golf DF 2.1 Custom',category:'パター',spec:'ライ角バランス / 6061アルミ / 標準長・長尺・アームロック',image:'https://labgolf.jp/cdn/shop/files/cover-df21-custom.jpg?v=1763456019&width=832',price:'110000',label:'L.A.B. Golf<br>DF 2.1',small:'Original L.A.B. design',url:'https://labgolf.jp/products/df21-custom-all'},
+      {name:'COBRA OPTM X Driver',category:'ドライバー',spec:'460cc / 9.0°・10.5° / FutureFit33 / 2026',image:'https://cdn.shopify.com/s/files/1/0634/7833/3657/files/SS26_Ecom_Cobra_OPTM_PDP_Driver_X_ImgGal-1-min.jpg',price:'93500',label:'COBRA<br>OPTM X Driver',small:'POI × MOI / 2026',url:'https://www.cobragolf.com/ja-jp/products/optm-x-driver'},
+      {name:'Titleist GTS2 Driver',category:'ドライバー',spec:'GTS2 / 8.0°・9.0°・10.0°・11.0° / デュアルウェイト',image:'https://acushnet.scene7.com/is/image/titleist/GTS2-landing-model-1080x1080?fmt=png-alpha&wid=1080',price:'115500',label:'Titleist<br>GTS2 Driver',small:'GTS METALS / 2026',url:'https://www.titleist.co.jp/gts-metals'}
+    ];
+    additions.forEach(g=>{if(recommendedRow.querySelector(`[data-name="${g.name}"]`))return;const el=document.createElement('button');el.className='witb-card photo-card recommend-price-card';el.type='button';el.setAttribute('data-sheet-open','');el.dataset.name=g.name;el.dataset.category=g.category;el.dataset.spec=g.spec;el.dataset.image=g.image;el.dataset.shops=JSON.stringify([{name:'公式サイト',condition:'new',price:g.price,note:'2026年8月24日確認 / 仕様・在庫で変動',url:g.url}]);el.innerHTML=`<span>${g.category}</span><b>${g.label}</b><img class="gear-photo" src="${g.image}" alt="${g.name}"><small>${g.small}</small><em class="recommended-price">¥${Number(g.price).toLocaleString('ja-JP')}〜</em>`;recommendedRow.appendChild(el)})
+  }
   document.querySelectorAll('[data-sheet-open]').forEach(el=>el.addEventListener('click',()=>open(el)));document.querySelectorAll('[data-sheet-close]').forEach(el=>el.addEventListener('click',close));document.querySelectorAll('.condition-tab').forEach(btn=>btn.addEventListener('click',()=>render(btn.dataset.condition)));backdrop.addEventListener('click',close);document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})
 }
 const recommendedMore=document.querySelector('#recommended .panel-head a');if(recommendedMore)recommendedMore.href='/recommended-gear/';
