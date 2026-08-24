@@ -50,6 +50,8 @@ if(sheet&&backdrop){
 }
 const recommendedMore=document.querySelector('#recommended .panel-head a');if(recommendedMore)recommendedMore.href='/recommended-gear/';
 
+document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{if(!img.dataset.fallbackApplied){img.dataset.fallbackApplied='1';img.src='/images/gear-fallback-transparent.png';img.alt=(img.alt||'ギア画像')+'（参考ビジュアル）'}}));
+
 const swingVideos=[
   {id:'IFtLPEnsQVI',title:"Scottie Scheffler's WILDEST swings of the 2026 season",source:'PGA TOUR',player:'Scottie Scheffler',tournament:'2026 PGA TOUR season',club:'TaylorMade Qi4D Core Driver / P7TW irons',categories:['選手別','メーカー別'],tags:['Scottie Scheffler','TaylorMade']},
   {id:'VNxj0ncQjwI',title:"PGA TOUR pros explain Scottie Scheffler's unique swing",source:'PGA TOUR',player:'Scottie Scheffler',tournament:'The American Express 2026 / swing analysis',club:'TaylorMade setup',categories:['選手別','スイング解説','メーカー別'],tags:['Scottie Scheffler','TaylorMade','解説']}

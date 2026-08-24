@@ -118,6 +118,8 @@ gear_items:
         url: "https://shopping.yahoo.co.jp/search?p=Spider+Tour+X+%E4%B8%AD%E5%8F%A4"
 ---
 
+各クラブの役割から知りたい方は、[はじめてのゴルフ完全ガイド](/beginner/)もあわせてご覧ください。
+
 ## 今週のPGA優勝者
 
 **Scottie Scheffler（スコッティ・シェフラー）**  

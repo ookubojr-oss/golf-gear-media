@@ -1,12 +1,79 @@
 {{ define "main" }}
-<main class="course-article-page"><a class="course-article-back" href="/#courses">‹</a><section id="courseArticleHero" class="course-article-hero"><div class="course-article-shade"></div><div class="course-article-hero-copy"><span>JIRO GOLF / COURSE GUIDE</span><small id="courseArticleArea">TOUR COURSE</small><h1 id="courseArticleName">トーナメントコース</h1><p>名物ホール、食、料金まで。観戦にもラウンドにも使えるコースガイド。</p></div></section><section class="course-article-body"><div class="course-article-label">COURSE PROFILE</div><h2 id="courseArticleTitle">コースの魅力</h2><p id="courseArticleIntro"></p><div class="course-info-grid"><div><small>AREA</small><strong id="courseInfoArea"></strong></div><div><small>STYLE</small><strong id="courseInfoStyle"></strong></div></div><figure><img id="courseArticlePhoto" alt="ゴルフコース"><figcaption id="courseArticleCaption"></figcaption></figure><section class="course-point"><span>JIRO'S POINT</span><h3>ここを見てほしい。</h3><p id="courseArticlePoint"></p></section><h2>コース攻略・特徴</h2><p id="courseArticleDetail"></p><h2>有名ホール</h2><p id="courseArticleHole"></p><h2>ゴルフ場で楽しみたいグルメ</h2><p id="courseArticleFood"></p><h2>プレー料金の目安</h2><p id="courseArticleFee"></p><p class="fine">※料金は季節・曜日・プラン・会員区分などで変動します。予約時に公式サイトで最新料金をご確認ください。</p><a id="courseOfficial" class="course-home-link" target="_blank" rel="noopener">公式ホームページを見る →</a><br><a class="course-home-link" href="/#courses">今日の注目コースへ戻る →</a></section></main>
+<main class="course-article-page">
+<a class="course-article-back" href="/#courses">‹</a>
+<section id="courseArticleHero" class="course-article-hero">
+<div class="course-article-shade">
+</div>
+<div class="course-article-hero-copy">
+<span>JIRO GOLF / COURSE GUIDE</span>
+<small id="courseArticleArea">TOUR COURSE</small>
+<h1 id="courseArticleName">トーナメントコース</h1>
+<p>名物ホール、食、料金まで。観戦にもラウンドにも使えるコースガイド。</p>
+</div>
+</section>
+<section class="course-article-body">
+<div class="course-article-label">COURSE PROFILE</div>
+<h2 id="courseArticleTitle">コースの魅力</h2>
+<p id="courseArticleIntro">
+</p>
+<div class="course-info-grid">
+<div>
+<small>AREA</small>
+<strong id="courseInfoArea">
+</strong>
+</div>
+<div>
+<small>STYLE</small>
+<strong id="courseInfoStyle">
+</strong>
+</div>
+<div>
+<small>DIFFICULTY</small>
+<strong id="courseDifficulty"></strong>
+</div>
+<div>
+<small>BREAK 80</small>
+<strong id="courseBreak80"></strong>
+</div>
+</div>
+<p class="fine">難易度はレギュラーティーを想定した編集部評価です。「80切り時の上位%」は、一般アマチュアのスコア分布を基準に、距離・コースレート・レイアウトの難しさを加味した推定目安であり、公式統計ではありません。</p>
+<figure>
+<img id="courseArticlePhoto" alt="ゴルフコース">
+<figcaption id="courseArticleCaption">
+</figcaption>
+</figure>
+<section class="course-point">
+<span>JIRO'S POINT</span>
+<h3>ここを見てほしい。</h3>
+<p id="courseArticlePoint">
+</p>
+</section>
+<h2>コース攻略・特徴</h2>
+<p id="courseArticleDetail">
+</p>
+<h2>有名ホール</h2>
+<p id="courseArticleHole">
+</p>
+<h2>ゴルフ場で楽しみたいグルメ</h2>
+<p id="courseArticleFood">
+</p>
+<h2>プレー料金の目安</h2>
+<p id="courseArticleFee">
+</p>
+<a id="courseFeeSource" class="course-home-link" target="_blank" rel="noopener">料金の確認元を見る →</a>
+<p class="fine">※料金は季節・曜日・プラン・会員区分などで変動します。予約時に公式サイトで最新料金をご確認ください。</p>
+<a id="courseOfficial" class="course-home-link" target="_blank" rel="noopener">公式ホームページを見る →</a>
+<br>
+<a class="course-home-link" href="/#courses">今日の注目コースへ戻る →</a>
+</section>
+</main>
 <script>(()=>{const profiles={
-'東京よみうりカントリークラブ':{area:'東京',style:'丘陵・名門',img:'https://i.gimg.jp/resource/reserve/gstart/gcimg/363505/18.png',intro:'東京都稲城市の丘陵地に広がる名門。歴史ある競技の舞台として知られ、起伏と高速グリーンへの対応が問われます。',point:'終盤ほどショットの精度が重要。ピンだけでなく、次のパットを打ちやすい面へ運ぶ判断に注目。',detail:'アップダウンを使った立体的なレイアウトで、ティーショットの置き場所が次打の難易度を大きく変えます。',hole:'名物として知られる18番パー3は、試合終盤のドラマが生まれやすいフィニッシングホール。風と距離感、グリーン周りのプレッシャーが見どころです。',food:'クラブハウスレストランではラウンド前後に季節メニューや定番のゴルフ場ランチをチェック。内容は時期で変わるため公式案内を確認してください。',fee:'ビジター料金は日程や予約条件で大きく変わる名門コースです。具体的な料金は公式の予約・利用案内で確認するのがおすすめです。',url:'https://www.tokyoyomiuri.com/'},
-'太平洋クラブ御殿場コース':{area:'静岡',style:'富士山・ロング',img:'https://book.alba.co.jp/image/club/220048/640x480/flexible/0_0002_0.jpg',intro:'富士山を望む景観と国際大会クラスの戦略性を併せ持つ、日本を代表するトーナメントコース。',point:'富士山だけでなく、長いホールでプロがどこからグリーンを狙うかを見ると面白い。',detail:'距離、池、バンカー、アンジュレーションを組み合わせたレイアウト。飛距離と精密なセカンドショットの両方が必要です。',hole:'18番は富士山を背景にした象徴的なフィニッシングホール。池が絡み、最終盤の攻める・刻むという判断が大きな見どころです。',food:'クラブハウスでの食事も御殿場ラウンドの楽しみ。季節の料理に加え、御殿場・静岡らしい食材を使ったメニューが出ることがあります。',fee:'太平洋クラブは会員・同伴・ゲスト、曜日や季節で料金体系が異なります。公式の料金・予約案内で当日のプランを確認してください。',url:'https://www.taiheiyoclub.co.jp/course/gotemba/'},
-'宍戸ヒルズカントリークラブ':{area:'茨城',style:'林間・戦略性',img:'https://www.golf-net.co.jp/search/detail/official/west18-shishidohills.JPG',intro:'深い林にセパレートされたホールが続き、方向性とアイアン精度がスコアに直結するトーナメントコース。',point:'フェアウェイを外した後のリカバリーに注目するとプロのマネジメントが分かりやすい。',detail:'西コースを中心にツアーで知られ、狭く見えるティーショットとグリーン周りの難しさが特徴です。',hole:'終盤の17番・18番は勝負どころとして注目。ティーショットのプレッシャーとセカンドの距離感が試合を動かします。',food:'クラブレストランでは茨城の食材や季節メニューも楽しみの一つ。プレー日のおすすめ・限定メニューは公式情報を確認してください。',fee:'平日・土日祝、季節、プランで変動します。トーナメントコースのため予約条件も含め公式予約ページで最新情報を確認してください。',url:'https://www.shishido.co.jp/'},
-'フェニックスカントリークラブ':{area:'宮崎',style:'松林・風',img:'https://i.gimg.jp/resource/reserve/gstart/gcimg/965301/9653013.jpg?w=1000',intro:'黒松林に囲まれた美しい林間コース。国内外のトップ選手が戦う舞台として長い歴史があります。',point:'松林と海からの風をどう避け、フェアウェイのどちら側へ置くかを見るのがおすすめ。',detail:'高い松でホールが明確に分けられ、曲げると次打の選択肢が一気に狭くなるためショット精度が重要です。',hole:'住吉・高千穂など各コースの終盤は大会でも印象的。松林のプレッシャーと風を受けながらのショットが見どころです。',food:'隣接するシーガイアを含め宮崎牛、地鶏、チキン南蛮など宮崎グルメを楽しみやすいのが大きな魅力です。',fee:'宿泊パッケージや季節、曜日によって料金差があります。シーガイア公式のゴルフプラン・予約ページで確認してください。',url:'https://seagaia.co.jp/pcc'},
-'ABCゴルフ倶楽部':{area:'兵庫',style:'池・バンカー',img:'https://itsudatsu.jp/cdn/shop/collections/cts_hdr_cg_750x.jpg?v=1708993430',intro:'池とバンカーを大胆に配置した、攻めと守りの判断が面白い兵庫の名門トーナメントコース。',point:'ハザードに対して選手がどちら側へボールを置くかに注目。',detail:'一見広く見えても次打の角度を考えるとベストポジションは限定されます。',hole:'18番は池が絡むフィニッシングホールとして有名。最終日の優勝争いでは2オンを狙うか安全に運ぶかが大きなポイントになります。',food:'クラブハウスレストランの定番メニューに加え、兵庫らしい食材や季節料理にも注目。最新メニューは公式サイトで確認を。',fee:'ゲスト料金は曜日・季節・利用条件によって変わります。公式の料金案内・予約条件を確認してください。',url:'https://abc-golf.co.jp/'},
-'三好カントリー倶楽部 西コース':{area:'愛知',style:'距離・タフ',img:'https://d1uzk9o9cg136f.cloudfront.net/f/16783386/rc/2019/11/11/f13552dcf8d1a329ec8e8407daefdbcb5d8b1f9b_large.jpg',intro:'距離とタフなレイアウトで知られる愛知の名門。難しいホールでパーを拾う力が問われます。',point:'ボギーになりそうな状況からプロがどうパーを残すかを見ると面白い。',detail:'長いパー4を含めショット力が要求され、ラフやグリーン周りからのリカバリーも重要です。',hole:'西コース終盤は大会の勝負所。長さとプレッシャーのあるホールが続き、ティーショットのフェアウェイキープが重要になります。',food:'愛知でのラウンドなら味噌系料理や名古屋めしも楽しみ。クラブ内メニューと合わせ、周辺での食事も選択肢です。',fee:'会員制コースのためゲスト利用条件や料金は紹介・予約方法によって異なります。必ず公式情報で確認してください。',url:'https://www.miyoshi-cc.jp/'},
-'札幌ゴルフ倶楽部 輪厚コース':{area:'北海道',style:'雄大・歴史',img:'https://i.gimg.jp/resource/reserve/gstart/gcimg/112106/112106_6.jpg?w=686',intro:'北海道らしい雄大な景観と歴史を持つ名門。広く見えてもセカンドを考えた正確なポジショニングが必要です。',point:'ティーショットの飛距離だけでなく、セカンドを打ちやすい角度を作れているかに注目。',detail:'自然の地形を活かしたレイアウトで、風と季節によってプレー感が大きく変わります。',hole:'大会では終盤ホールが優勝争いの舞台。北海道特有の風と洋芝への対応も重要な観戦ポイントです。',food:'北海道ラウンドでは海鮮、ジンギスカン、スープカレーなど周辺グルメも豊富。クラブレストランの季節メニューも確認したいところです。',fee:'営業期間が季節に左右され、料金も時期・曜日・ゲスト条件で変動します。公式営業案内を確認してください。',url:'https://www.sapporo-gc.or.jp/'},
-'富士桜カントリー倶楽部':{area:'山梨',style:'富士山麓・タフ',img:'https://www.jcbtravel.co.jp/concierge/golf/img/08/03.jpg',intro:'富士山麓のスケール感と長いレイアウトが印象的。トップ選手でも長いクラブを持たされるタフなコースです。',point:'ドライバーの飛距離だけでなく、その後のロングアイアンやフェアウェイウッドの精度に注目。',detail:'標高と長さへの対応がテーマ。長いパー4では無理に攻めず次の一打をどこから打つかという判断も重要です。',hole:'終盤の長いホール群は富士桜らしさが凝縮された勝負所。富士山を背景に、長いセカンドショットの精度が試されます。',food:'山梨ならほうとう、甲州牛、富士山麓の食材などが周辺グルメ候補。クラブ内の季節メニューも合わせて楽しめます。',fee:'季節・曜日・予約区分で料金が変動します。公式サイトの営業・予約案内で最新のプレーフィーを確認してください。',url:'https://www.fujizakura-cc.jp/'}
-};const name=new URLSearchParams(location.search).get('name'),d=name&&profiles[name];if(!d)return;const set=(id,v)=>document.getElementById(id).textContent=v;set('courseArticleName',name);set('courseArticleTitle',name+'の魅力');set('courseArticleArea',d.area+' / TOUR COURSE');set('courseInfoArea',d.area);set('courseInfoStyle',d.style);set('courseArticleIntro',d.intro);set('courseArticlePoint',d.point);set('courseArticleDetail',d.detail);set('courseArticleHole',d.hole);set('courseArticleFood',d.food);set('courseArticleFee',d.fee);set('courseArticleCaption',name+'のコースイメージ');document.getElementById('courseArticleHero').style.backgroundImage=`url('${d.img}')`;const p=document.getElementById('courseArticlePhoto');p.src=d.img;p.alt=name;const a=document.getElementById('courseOfficial');a.href=d.url;document.title=name+' | Jiro Golf'})();</script>{{ end }}
+'東京よみうりカントリークラブ':{area:'東京',style:'丘陵・名門',difficulty:5,rank:'上位約1%',img:'https://i.gimg.jp/resource/reserve/gstart/gcimg/363505/18.png',intro:'東京都稲城市の丘陵地に広がる名門。歴史ある競技の舞台として知られ、起伏と高速グリーンへの対応が問われます。',point:'終盤ほどショットの精度が重要。ピンだけでなく、次のパットを打ちやすい面へ運ぶ判断に注目。',detail:'アップダウンを使った立体的なレイアウトで、ティーショットの置き場所が次打の難易度を大きく変えます。',hole:'名物として知られる18番パー3は、試合終盤のドラマが生まれやすいフィニッシングホール。風と距離感、グリーン周りのプレッシャーが見どころです。',food:'クラブハウスレストランではラウンド前後に季節メニューや定番のゴルフ場ランチをチェック。内容は時期で変わるため公式案内を確認してください。',fee:'2026年ビジター1R総額概算：火〜金は閑散期28,050円／通常期31,350円、土日祝は閑散期40,150円／通常期45,650円。利用税等は条件により別途。',feeUrl:'https://www.tokyoyomiuri.com/guide/',url:'https://www.tokyoyomiuri.com/'},
+'太平洋クラブ御殿場コース':{area:'静岡',style:'富士山・ロング',difficulty:5,rank:'上位約1%',img:'https://book.alba.co.jp/image/club/220048/640x480/flexible/0_0002_0.jpg',intro:'富士山を望む景観と国際大会クラスの戦略性を併せ持つ、日本を代表するトーナメントコース。',point:'富士山だけでなく、長いホールでプロがどこからグリーンを狙うかを見ると面白い。',detail:'距離、池、バンカー、アンジュレーションを組み合わせたレイアウト。飛距離と精密なセカンドショットの両方が必要です。',hole:'18番は富士山を背景にした象徴的なフィニッシングホール。池が絡み、最終盤の攻める・刻むという判断が大きな見どころです。',food:'クラブハウスでの食事も御殿場ラウンドの楽しみ。季節の料理に加え、御殿場・静岡らしい食材を使ったメニューが出ることがあります。',fee:'2026年ゲスト（キャディ付）：同伴ゲストは平日35,050円／土日祝50,050円、紹介ゲストは平日43,050円。利用税・基金等が別途必要です。',feeUrl:'https://www.taiheiyoclub.co.jp/course/gotenba/price.html',url:'https://www.taiheiyoclub.co.jp/course/gotemba/'},
+'宍戸ヒルズカントリークラブ':{area:'茨城',style:'林間・戦略性',difficulty:5,rank:'上位約1%',img:'https://www.golf-net.co.jp/search/detail/official/west18-shishidohills.JPG',intro:'深い林にセパレートされたホールが続き、方向性とアイアン精度がスコアに直結するトーナメントコース。',point:'フェアウェイを外した後のリカバリーに注目するとプロのマネジメントが分かりやすい。',detail:'西コースを中心にツアーで知られ、狭く見えるティーショットとグリーン周りの難しさが特徴です。',hole:'終盤の17番・18番は勝負どころとして注目。ティーショットのプレッシャーとセカンドの距離感が試合を動かします。',food:'クラブレストランでは茨城の食材や季節メニューも楽しみの一つ。プレー日のおすすめ・限定メニューは公式情報を確認してください。',fee:'2026年8月の公式オンライン予約は日付・東西コース・キャディ有無で変動。西コースは予約画面の表示額を確認してください（具体額は日付選択後に表示）。',feeUrl:'https://www.hillsgolf.jp/shishido/',url:'https://www.hillsgolf.jp/shishido/'},
+'フェニックスカントリークラブ':{area:'宮崎',style:'松林・風',difficulty:4,rank:'上位約2%',img:'https://i.gimg.jp/resource/reserve/gstart/gcimg/965301/9653013.jpg?w=1000',intro:'黒松林に囲まれた美しい林間コース。国内外のトップ選手が戦う舞台として長い歴史があります。',point:'松林と海からの風をどう避け、フェアウェイのどちら側へ置くかを見るのがおすすめ。',detail:'高い松でホールが明確に分けられ、曲げると次打の選択肢が一気に狭くなるためショット精度が重要です。',hole:'住吉・高千穂など各コースの終盤は大会でも印象的。松林のプレッシャーと風を受けながらのショットが見どころです。',food:'隣接するシーガイアを含め宮崎牛、地鶏、チキン南蛮など宮崎グルメを楽しみやすいのが大きな魅力です。',fee:'2026年夏の一般ゲスト例：平日キャディ付・歩き総額26,900円、早朝プラン総額17,900〜18,800円。土日祝や宿泊セットは日別変動です。',feeUrl:'https://seagaia.co.jp/pcc/index.html',url:'https://seagaia.co.jp/pcc'},
+'ABCゴルフ倶楽部':{area:'兵庫',style:'池・バンカー',difficulty:4,rank:'上位約2%',img:'https://itsudatsu.jp/cdn/shop/collections/cts_hdr_cg_750x.jpg?v=1708993430',intro:'池とバンカーを大胆に配置した、攻めと守りの判断が面白い兵庫の名門トーナメントコース。',point:'ハザードに対して選手がどちら側へボールを置くかに注目。',detail:'一見広く見えても次打の角度を考えるとベストポジションは限定されます。',hole:'18番は池が絡むフィニッシングホールとして有名。最終日の優勝争いでは2オンを狙うか安全に運ぶかが大きなポイントになります。',food:'クラブハウスレストランの定番メニューに加え、兵庫らしい食材や季節料理にも注目。最新メニューは公式サイトで確認を。',fee:'2026年ゲスト（キャディ・カート付）：平日29,850円、土日祝36,450円。会員紹介が条件で、土日祝は会員同伴が必要です。',feeUrl:'https://abc-golf.co.jp/guide/price/',url:'https://abc-golf.co.jp/'},
+'三好カントリー倶楽部 西コース':{area:'愛知',style:'距離・タフ',difficulty:5,rank:'上位約1%',img:'https://d1uzk9o9cg136f.cloudfront.net/f/16783386/rc/2019/11/11/f13552dcf8d1a329ec8e8407daefdbcb5d8b1f9b_large.jpg',intro:'距離とタフなレイアウトで知られる愛知の名門。難しいホールでパーを拾う力が問われます。',point:'ボギーになりそうな状況からプロがどうパーを残すかを見ると面白い。',detail:'長いパー4を含めショット力が要求され、ラフやグリーン周りからのリカバリーも重要です。',hole:'西コース終盤は大会の勝負所。長さとプレッシャーのあるホールが続き、ティーショットのフェアウェイキープが重要になります。',food:'愛知でのラウンドなら味噌系料理や名古屋めしも楽しみ。クラブ内メニューと合わせ、周辺での食事も選択肢です。',fee:'2026年ビジター：通常期は平日25,820円／土日祝29,120円。季節料金（1・2・7・8月）は平日20,320円／土日祝29,120円。',feeUrl:'https://miyoshi-cc.jp/outline/',url:'https://www.miyoshi-cc.jp/'},
+'札幌ゴルフ倶楽部 輪厚コース':{area:'北海道',style:'雄大・歴史',difficulty:4,rank:'上位約2%',img:'https://i.gimg.jp/resource/reserve/gstart/gcimg/112106/112106_6.jpg?w=686',intro:'北海道らしい雄大な景観と歴史を持つ名門。広く見えてもセカンドを考えた正確なポジショニングが必要です。',point:'ティーショットの飛距離だけでなく、セカンドを打ちやすい角度を作れているかに注目。',detail:'自然の地形を活かしたレイアウトで、風と季節によってプレー感が大きく変わります。',hole:'大会では終盤ホールが優勝争いの舞台。北海道特有の風と洋芝への対応も重要な観戦ポイントです。',food:'北海道ラウンドでは海鮮、ジンギスカン、スープカレーなど周辺グルメも豊富。クラブレストランの季節メニューも確認したいところです。',fee:'2026年ゲスト4バッグ総額：平日29,250円／土日祝34,860円。3バッグは平日29,580円／土日祝35,190円。営業期間は積雪等で変動します。',feeUrl:'https://sapporo-gc.or.jp/wattsu/',url:'https://www.sapporo-gc.or.jp/'},
+'富士桜カントリー倶楽部':{area:'山梨',style:'富士山麓・タフ',difficulty:5,rank:'上位約1%',img:'https://www.jcbtravel.co.jp/concierge/golf/img/08/03.jpg',intro:'富士山麓のスケール感と長いレイアウトが印象的。トップ選手でも長いクラブを持たされるタフなコースです。',point:'ドライバーの飛距離だけでなく、その後のロングアイアンやフェアウェイウッドの精度に注目。',detail:'標高と長さへの対応がテーマ。長いパー4では無理に攻めず次の一打をどこから打つかという判断も重要です。',hole:'終盤の長いホール群は富士桜らしさが凝縮された勝負所。富士山を背景に、長いセカンドショットの精度が試されます。',food:'山梨ならほうとう、甲州牛、富士山麓の食材などが周辺グルメ候補。クラブ内の季節メニューも合わせて楽しめます。',fee:'2026年は3月15,000円〜、4月平日21,000〜28,500円・週末25,900〜34,000円、5〜7月平日28,500〜29,000円・週末34,000〜36,000円。日別料金です。',feeUrl:'https://www.fujizakura-cc.jp/feecalendar/',url:'https://www.fujizakura-cc.jp/'}
+};const name=new URLSearchParams(location.search).get('name'),d=name&&profiles[name];if(!d)return;const set=(id,v)=>document.getElementById(id).textContent=v;set('courseArticleName',name);set('courseArticleTitle',name+'の魅力');set('courseArticleArea',d.area+' / TOUR COURSE');set('courseInfoArea',d.area);set('courseInfoStyle',d.style);set('courseDifficulty','★'.repeat(d.difficulty)+'☆'.repeat(5-d.difficulty));set('courseBreak80',d.rank);set('courseArticleIntro',d.intro);set('courseArticlePoint',d.point);set('courseArticleDetail',d.detail);set('courseArticleHole',d.hole);set('courseArticleFood',d.food);set('courseArticleFee',d.fee);set('courseArticleCaption',name+'のコースイメージ');document.getElementById('courseArticleHero').style.backgroundImage=`url('${d.img}')`;const p=document.getElementById('courseArticlePhoto');p.src=d.img;p.alt=name;const fs=document.getElementById('courseFeeSource');fs.href=d.feeUrl||d.url;const a=document.getElementById('courseOfficial');a.href=d.url;document.title=name+' | Jiro Golf'})();</script>{{ end }}

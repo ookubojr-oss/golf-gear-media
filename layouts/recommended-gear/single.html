@@ -1,5 +1,13 @@
 {{ define "main" }}
-<main class="archive-page"><section class="archive-hero"><div class="wrap"><span>JIRO GOLF / EDITOR'S GEAR</span><h1>おすすめクラブ・ギア一覧</h1><p>最新モデルを中心に、クラブからボールまで掲載。価格・在庫・仕様は変動するため、購入前にメーカー公式・販売先で確認してください。</p></div></section><section class="wrap archive-list">
+<main class="archive-page">
+<section class="archive-hero">
+<div class="wrap">
+<span>JIRO GOLF / EDITOR'S GEAR</span>
+<h1>おすすめクラブ・ギア一覧</h1>
+<p>最新モデルを中心に、クラブからボールまで掲載。価格・在庫・仕様は変動するため、購入前にメーカー公式・販売先で確認してください。</p>
+</div>
+</section>
+<section class="wrap archive-list">
 {{ $gear := slice
 (dict "cat" "ドライバー" "name" "TaylorMade Qi4D Driver" "desc" "2026年の新世代ドライバー。第5世代カーボンフェースとTASウェイトでスピードと弾道調整を追求。" "url" "https://www.taylormadegolf.jp/2026-new-product/driver.html")
 (dict "cat" "ドライバー" "name" "TaylorMade Qi4D MAX Driver" "desc" "高MOIとドローバイアスを重視した2026モデル。7075鍛造アルミフレームを採用。" "url" "https://www.taylormadegolf.jp/2026-new-product/driver.html")
@@ -22,5 +30,31 @@
 (dict "cat" "ミニドライバー" "name" "Callaway QUANTUM MINI Driver" "desc" "QUANTUMの三層構造フェースをミニドライバーに採用した2026モデル。" "url" "https://www.callawaygolf.jp/news/product_news/260306")
 (dict "cat" "アイアン" "name" "Callaway QUANTUM Iron Series" "desc" "2026年新製品として登場したQUANTUMアイアンシリーズ。最新Callawayのアイアン候補。" "url" "https://www.callawaygolf.jp/release-information")
 }}
-{{ range $gear }}<article class="archive-card"><div class="archive-gear-placeholder"><small>{{ .cat }}</small></div><div><small>{{ .cat }}</small><h2>{{ .name }}</h2><p>{{ .desc }}</p><strong>価格・仕様を公式で確認</strong><a href="{{ .url }}" target="_blank" rel="noopener">公式情報を見る →</a></div></article>{{ end }}
-</section></main>{{ end }}
+{{ $images := dict
+"TaylorMade Qi4D Driver" "https://www.taylormadegolf.jp/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/dw0db3f3b4/zoom/DW-TF932_zoom_D.jpg"
+"TaylorMade Qi4D MAX Driver" "https://www.golfwarehouse.nz/cdn/shop/files/TaylorMade-Mens-Qi4D-Core-Driver-At-Golf-Warehouse-NZ.jpg?v=1769474147&width=1214"
+"TaylorMade Qi4D Fairway" "https://www.taylormadegolf.com/on/demandware.static/-/Sites-tmag-master-catalog/default/dw25a24bb6/zoom/N2643209_zoom_D.jpg"
+"Callaway QUANTUM MAX Driver" "https://cdn11.bigcommerce.com/s-l8ce6/images/stencil/1280x1280/products/100746/307660/2026_callaway_quantum_max_driver_hero__62267.1768867529.jpg?c=2"
+"Callaway QUANTUM Triple Diamond Driver" "https://cdn11.bigcommerce.com/s-l8ce6/images/stencil/1280x1280/products/100746/307660/2026_callaway_quantum_max_driver_hero__62267.1768867529.jpg?c=2"
+"Callaway QUANTUM Triple Diamond Fairway" "https://cdn11.bigcommerce.com/s-l8ce6/images/stencil/1280x1280/products/100746/307660/2026_callaway_quantum_max_driver_hero__62267.1768867529.jpg?c=2"
+"COBRA OPTM X Driver" "https://www.cobragolf.com/cdn/shop/files/d0E11_hero_3802b84b-b0a0-4736-b616-1e401f92a76f.jpg?v=1768591373"
+"Titleist GTS2 Driver" "https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dwa8a59a0d/560BC/560BC_01.png?sfrm=png&sh=650&sm=fit&sw=650"
+"L.A.B. Golf MEZZ.1 MAX Custom" "https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992"
+"L.A.B. Golf DF 2.1 Custom" "https://labgolf.jp/cdn/shop/files/cover-df21-custom.jpg?v=1763456019"
+}}
+{{ range $gear }}<article class="archive-card gear-catalog-card">
+<div class="archive-gear-placeholder">
+{{ $img := index $images .name | default "/images/gear-fallback-transparent.png" }}
+<img src="{{ $img }}" alt="{{ .name }}" loading="lazy" onerror="this.onerror=null;this.src='/images/gear-fallback-transparent.png'">
+<small>{{ if eq $img "/images/gear-fallback-transparent.png" }}オリジナル参考ビジュアル{{ else }}メーカー／正規販売元画像{{ end }}</small>
+</div>
+<div>
+<small>{{ .cat }}</small>
+<h2>{{ .name }}</h2>
+<p>{{ .desc }}</p>
+<strong>価格・仕様を公式で確認</strong>
+<a href="{{ .url }}" target="_blank" rel="noopener">公式情報を見る →</a>
+</div>
+</article>{{ end }}
+</section>
+</main>{{ end }}

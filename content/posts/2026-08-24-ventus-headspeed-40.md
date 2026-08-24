@@ -5,7 +5,7 @@ draft: false
 category: "jiros-pick"
 categories: ["jiros-pick"]
 label: "JIRO'S PICK / SHAFT"
-image: "https://fujikuragolf.com/wp-content/uploads/2025/05/VENTUS-Collection-lineup-2025-1-scaled.jpg"
+image: "https://www.fujikurashaft.jp/wp-content/uploads/2026/04/ventus_tr_2604.png"
 description: "ヘッドスピード40〜43m/s前後のゴルファーにVENTUSは必要なのか。ブランド名ではなく、重量・硬さ・球筋から考える。"
 verdict: "JIRO CHECK"
 verdict_note: "40前半だからVENTUSが不要、という話ではない。ただし“VENTUS＝6S”で選ぶのは危険。"
@@ -19,7 +19,9 @@ verdict_note: "40前半だからVENTUSが不要、という話ではない。た
 
 ツアーでよく見るVENTUS BLACKの6Xや7Xをそのまま真似しても、多くのアマチュアにはオーバースペックになりやすい。振り切れないシャフトは、硬く感じるだけでなく、打点やフェース向きまで不安定にすることがあります。
 
-![Fujikura VENTUS シャフト](https://fujikuragolf.com/wp-content/uploads/2025/05/VENTUS-Collection-lineup-2025-1-scaled.jpg)
+![Fujikura 26 VENTUS TR シャフト（メーカー公式・透過PNG）](https://www.fujikurashaft.jp/wp-content/uploads/2026/04/ventus_tr_2604.png)
+
+[26 VENTUS TR メーカー公式情報](https://www.fujikurashaft.jp/material/ventus/26ventus_trbl/)
 
 ## 40〜43m/sなら、まず50g台も見たい。
 
