@@ -13,7 +13,8 @@ gear_items:
   - category: "ドライバー"
     name: "TaylorMade Qi4D Core"
     spec: "Fujikura Ventus Black 7 X"
-    image: "https://www.golfwarehouse.nz/cdn/shop/files/TaylorMade-Mens-Qi4D-Core-Driver-At-Golf-Warehouse-NZ.jpg?v=1769474147&width=1214"
+    image: "https://assets.taylormadegolf.com/i/e0/1221790/TM26MWD-TC441-N2844709-Qi4D-Core-Driver-JPO-06002-v1-1280x1280~W800_H600_Mcrop_Fwebp_P50-50.webp"
+    image_verified: true
     new_price: "約¥80,000〜"
     used_price: "約¥58,000〜¥70,000"
     shop_name: "TaylorMade Golf 公式"
@@ -48,6 +49,7 @@ gear_items:
     name: "TaylorMade Qi10"
     spec: "Fujikura Ventus Black 8 X"
     image: "https://www.taylormadegolf.ca/on/demandware.static/-/Sites-tmag-master-catalog/en_CA/v1772514404440/zoom/TC299_zoom_D.jpg"
+    image_verified: true
     new_price: "販売先で確認"
     used_price: "約¥22,000〜¥35,000"
     shop_name: "TaylorMade Golf 公式"
@@ -71,7 +73,8 @@ gear_items:
   - category: "アイアン"
     name: "TaylorMade P7TW"
     spec: "5-PW / Dynamic Gold Tour Issue X100"
-    image: "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1"
+    image: "https://www.taylormadegolf.com/on/demandware.static/-/Sites-TMaG-Library/en_US/v1785211631598/TaylorMade/plp/2019/p7tw/images/mobile-header.png"
+    image_verified: true
     new_price: "セット価格を公式で確認"
     used_price: "約¥110,000〜¥180,000（セット）"
     shop_name: "TaylorMade Golf 公式"
@@ -95,7 +98,8 @@ gear_items:
   - category: "パター"
     name: "TaylorMade Spider Tour X"
     spec: "シェフラー仕様 / Lネック"
-    image: "https://www.golfworx.co.uk/wp-content/uploads/2025/02/tourx3.webp"
+    image: "https://assets.taylormadegolf.com/i/95/864346/TM24PTR-TC958-N7548826-Spider-Tour-X-Black-SS-BMB-TMG07059-v1-2048x2048~W800_H600_Mcrop_Fwebp_P50-50.webp"
+    image_verified: true
     new_price: "販売先で確認"
     used_price: "約¥34,000〜¥50,000"
     shop_name: "TaylorMade Golf 公式"
