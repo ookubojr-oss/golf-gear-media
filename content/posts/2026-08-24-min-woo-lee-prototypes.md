@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "TOUR GEAR / PROTOTYPE"
-image: "https://loremflickr.com/1200/675/golf?lock=114"
+image: ""
 description: "ツアーのプロトタイプクラブを見る時に、市販モデルとの違いをどう考えればいいかを整理。"
 verdict: "JIRO CHECK"
 verdict_note: "プロトタイプは上位版ではなく、選手専用の検証道具でもある。"

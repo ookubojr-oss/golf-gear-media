@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / STRATEGY"
-image: "https://loremflickr.com/1200/675/golf?lock=108"
+image: ""
 description: "プレーオフ圏内争いのようなプレッシャー下で、ドライバーか3Wかをどう決めるか。"
 verdict: "JIRO CHECK"
 verdict_note: "残りホールと必要スコアから逆算すると、攻めるクラブと守るクラブを選びやすい。"

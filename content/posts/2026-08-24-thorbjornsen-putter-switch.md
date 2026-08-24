@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "TOUR GEAR / PUTTER"
-image: "https://loremflickr.com/1200/675/golf?lock=109"
+image: ""
 description: "パターを替えるべきタイミングを、方向性・距離感・構えやすさの3点から考える。"
 verdict: "JIRO CHECK"
 verdict_note: "短い距離の方向性と、長い距離のタッチ。この2つが揃えば替える理由になる。"

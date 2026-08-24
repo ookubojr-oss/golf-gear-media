@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "FITTING / BALANCE"
-image: "https://loremflickr.com/1200/675/golf?lock=147"
+image: ""
 description: "スイングウェイトのD2・D3・D4が何を示し、総重量とどう違うのかを解説。"
 verdict: "JIRO CHECK"
 verdict_note: "数値を全部揃えるより、番手間で振り感が自然につながることが大切。"

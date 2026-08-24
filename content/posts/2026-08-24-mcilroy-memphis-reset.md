@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / FORM"
-image: "https://loremflickr.com/1200/675/golf?lock=107"
+image: ""
 description: "トップ選手の不調から、すぐ道具を替える前に打点やテンポを確認する重要性を考える。"
 verdict: "JIRO CHECK"
 verdict_note: "数ラウンド悪いだけで総入れ替えしない。原因を分けてから道具を疑う。"

@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "GADGET GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=143"
+image: ""
 description: "家庭用ローンチモニターで飛距離以外に確認したい、初速・打ち出し・スピン・キャリー・左右幅。"
 verdict: "JIRO CHECK"
 verdict_note: "飛距離の数字より、同じクラブで結果が揃うかを見ると練習に使いやすい。"

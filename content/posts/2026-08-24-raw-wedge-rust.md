@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "WEDGE GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=126"
+image: ""
 description: "RAWウェッジの錆は問題なのか。スピンへの誤解と日常メンテナンスを整理。"
 verdict: "JIRO CHECK"
 verdict_note: "錆がスピンを魔法のように増やすわけではない。溝と摩耗状態を見る。"

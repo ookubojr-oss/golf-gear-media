@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "GADGET GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=142"
+image: ""
 description: "レーザー距離計とGPSウォッチを、測定精度・コース全体の把握・プレー速度で比較。"
 verdict: "JIRO CHECK"
 verdict_note: "自分がラウンド中に一番迷う場面を減らせる方を選ぶ。"

@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "FITTING / LENGTH"
-image: "https://loremflickr.com/1200/675/golf?lock=146"
+image: ""
 description: "クラブ長さを身長だけで決めず、腕の長さ・前傾・打点から考える方法。"
 verdict: "JIRO CHECK"
 verdict_note: "長くして速く振るより、芯に当たる長さを探す。"

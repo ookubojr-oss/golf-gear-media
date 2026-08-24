@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "SHAFT GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=133"
+image: ""
 description: "シャフトのトルク値を、ねじれ・打感・メーカー間比較の注意点からやさしく解説。"
 verdict: "JIRO CHECK"
 verdict_note: "トルク値だけでシャフトを選ばず、重量・硬さ・キックポイントとセットで見る。"

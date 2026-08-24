@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "IRON GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=138"
+image: ""
 description: "中空構造アイアンの飛距離・寛容性と、番手間のキャリー差を確認する重要性を解説。"
 verdict: "JIRO CHECK"
 verdict_note: "ロフト表より実測キャリー。飛ぶアイアンほど距離階段を確認する。"

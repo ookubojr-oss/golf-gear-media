@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "BALL GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=140"
+image: ""
 description: "ゴルフボールの硬さを示すコンプレッションを、ドライバーだけでなくアイアンとパターまで含めて考える。"
 verdict: "JIRO CHECK"
 verdict_note: "コンプレッション数字だけで決めず、全クラブの打感と弾道で選ぶ。"

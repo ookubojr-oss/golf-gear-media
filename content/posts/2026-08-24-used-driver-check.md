@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "USED GEAR"
-image: "https://loremflickr.com/1200/675/golf?lock=144"
+image: ""
 description: "中古ドライバー購入時にクラウン、可変スリーブ、シャフト差し替え履歴まで確認する理由。"
 verdict: "JIRO CHECK"
 verdict_note: "型番が同じでも長さ・バランス・シャフトが標準とは限らない。"

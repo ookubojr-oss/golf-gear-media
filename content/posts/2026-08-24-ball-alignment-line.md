@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "BALL GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=141"
+image: ""
 description: "パッティングでボールのラインを使うメリットと、逆に迷いが増えるケースを整理。"
 verdict: "JIRO CHECK"
 verdict_note: "ラインを使う目的は方向を決めること。ルーティンが複雑になるなら無理に使わない。"

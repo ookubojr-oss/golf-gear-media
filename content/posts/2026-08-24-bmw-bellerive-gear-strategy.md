@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / COURSE"
-image: "https://loremflickr.com/1200/675/golf?lock=104"
+image: ""
 description: "2026 BMW Championshipの舞台Belleriveを、観戦時のクラブ選択という視点から見る。"
 verdict: "JIRO CHECK"
 verdict_note: "難コースほど最大飛距離より、次の一打を打ちやすい場所へ置くクラブ選択が重要。"

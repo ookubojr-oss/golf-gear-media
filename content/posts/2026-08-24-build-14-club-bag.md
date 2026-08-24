@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "BAG GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=150"
+image: ""
 description: "14本をブランドや番手で揃えるのではなく、キャリーの穴と必要な球筋から組む方法。"
 verdict: "JIRO CHECK"
 verdict_note: "同じ距離のクラブが2本あるなら、弾道やライ適性に違いがあるか確認する。"

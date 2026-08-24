@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "USED GEAR"
-image: "https://loremflickr.com/1200/675/golf?lock=145"
+image: ""
 description: "中古アイアンのフェース摩耗、シャフト錆、ソケット浮きなど購入前に見るポイント。"
 verdict: "JIRO CHECK"
 verdict_note: "7番だけ極端に摩耗しているセットは使用頻度の偏りもチェック。"

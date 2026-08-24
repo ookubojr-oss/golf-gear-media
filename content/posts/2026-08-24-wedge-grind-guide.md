@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "WEDGE GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=127"
+image: ""
 description: "ウェッジのグラインド記号を暗記する前に、入射角と芝の硬さから考える方法。"
 verdict: "JIRO CHECK"
 verdict_note: "同じロフトでソール違いを打つと、グラインドの意味が一番分かりやすい。"

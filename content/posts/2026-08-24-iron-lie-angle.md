@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "FITTING / IRON"
-image: "https://loremflickr.com/1200/675/golf?lock=136"
+image: ""
 description: "アイアンのライ角がインパクト時のフェース向きと打ち出し方向に与える影響を整理。"
 verdict: "JIRO CHECK"
 verdict_note: "身長だけでライ角を決めず、実際の打点と弾道で確認する。"

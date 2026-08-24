@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "IRON GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=139"
+image: ""
 description: "ハンデが減ったら難しいアイアンへ替えるべきか。上級者が寛容性を使うメリットを考える。"
 verdict: "JIRO CHECK"
 verdict_note: "上手くなっても、ミスに強いアイアンを使い続けていい。"

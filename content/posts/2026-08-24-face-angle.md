@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "DRIVER GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=149"
+image: ""
 description: "ドライバーのオープン・クローズな見え方が、構えやすさと打ち出し方向にどう影響するか。"
 verdict: "JIRO CHECK"
 verdict_note: "構えた時に違和感のないフェース向きは、スペック以上に大切。"

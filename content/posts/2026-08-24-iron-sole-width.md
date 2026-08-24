@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "IRON GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=137"
+image: ""
 description: "ワイドソールと細いソールの違いを、ダフリ・抜け・芝との相性から解説。"
 verdict: "JIRO CHECK"
 verdict_note: "ソールは見た目よりミスの種類で選ぶ。"

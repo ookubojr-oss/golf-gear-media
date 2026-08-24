@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "SHAFT GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=134"
+image: ""
 description: "手元側に重量を配分するカウンターバランス設計が、ヘッド重量と振り感にどう影響するかを解説。"
 verdict: "JIRO CHECK"
 verdict_note: "総重量が同じでもバランスポイントで振り感は別物になる。"

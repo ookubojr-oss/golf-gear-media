@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "WEDGE GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=125"
+image: ""
 description: "トウが高いウェッジのメリットを、バンカー・ラフ・フルショットの使い方から整理。"
 verdict: "JIRO CHECK"
 verdict_note: "フェースを開くショットが多い人ほどハイトウの良さを感じやすい。"

@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "TOUR GEAR / BAG"
-image: "https://loremflickr.com/1200/675/golf?lock=113"
+image: ""
 description: "クラブを複数替える時に、何から順番にテストすれば原因が分からなくならないかを解説。"
 verdict: "JIRO CHECK"
 verdict_note: "全部最新にするより、残すクラブを決めることもフィッティング。"

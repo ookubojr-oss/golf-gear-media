@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PUTTER GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=124"
+image: ""
 description: "ゼロトルクパターを買う前に、方向性・距離感・構え方の3点をどう試すか。"
 verdict: "JIRO CHECK"
 verdict_note: "方向性が良くても距離感が崩れるなら、慣れる時間か別モデルが必要。"

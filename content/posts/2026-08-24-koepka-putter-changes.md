@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "TOUR GEAR / PUTTER"
-image: "https://loremflickr.com/1200/675/golf?lock=112"
+image: ""
 description: "パターを頻繁に替える時に、感覚だけでなく比較テストを残すべき理由を整理。"
 verdict: "JIRO CHECK"
 verdict_note: "何本も試すなら、同じ距離・同じ傾斜で結果を記録する。"

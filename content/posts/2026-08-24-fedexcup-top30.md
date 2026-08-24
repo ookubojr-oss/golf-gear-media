@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / DATA"
-image: "https://loremflickr.com/1200/675/golf?lock=105"
+image: ""
 description: "BMW Championshipで注目されるFedExCupトップ30の意味と、順位がクラブ選択に与える影響を整理。"
 verdict: "JIRO CHECK"
 verdict_note: "同じホールでも必要な順位によって攻め方が変わる。それがプレーオフの面白さ。"

@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "FAIRWAY GUIDE"
-image: "https://loremflickr.com/1200/675/golf?lock=130"
+image: ""
 description: "9Wが長いアイアンの代わりになる人と、UTとの距離重複を避ける考え方を解説。"
 verdict: "JIRO CHECK"
 verdict_note: "珍しい番手でも、自分の距離の穴を埋めるなら十分アリ。"

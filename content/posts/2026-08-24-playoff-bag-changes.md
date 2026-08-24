@@ -6,7 +6,7 @@ layout: "jiro-pick"
 category: "latest-gear"
 categories: ["latest-gear"]
 label: "PGA TOUR / FITTING"
-image: "https://loremflickr.com/1200/675/golf?lock=106"
+image: ""
 description: "大事な試合直前のクラブ変更が成立する条件と、アマチュアが真似する時の注意点。"
 verdict: "JIRO CHECK"
 verdict_note: "ラウンド前日に大変更しない。替えるなら目的と比較データを持つ。"
