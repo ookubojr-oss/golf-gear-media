@@ -36,4 +36,5 @@
 <main>{{ block "main" . }}{{ end }}</main>
 <footer><div class="wrap"><div class="footer-brand">Jiro Golf <span>ゴルフ最新速報部</span></div><p class="fine">当サイトはアフィリエイト広告を利用しています。価格・在庫・仕様は各販売先・メーカー公式情報をご確認ください。</p></div></footer>
 <script src="/js/app.js" defer></script>
+{{ if .IsHome }}<script src="/js/home-swing.js" defer></script>{{ end }}
 </body></html>
