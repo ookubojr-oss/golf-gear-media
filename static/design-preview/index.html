@@ -23,6 +23,7 @@
       <strong>JIRO GOLF</strong>
       <small>ゴルフ最新速報部</small>
     </a>
+    <a class="mobile-search" href="/categories/" aria-label="カテゴリーを検索">⌕</a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="concept-nav" aria-label="メニューを開く">
       <span></span><span></span>
     </button>
@@ -95,7 +96,45 @@
         <button type="button" data-scroll="next" aria-label="次の商品へ">→</button>
       </div>
     </section>
+
+    <div class="mobile-content">
+      <section class="mobile-news" aria-labelledby="top-news-title">
+        <div class="mobile-section-head">
+          <h2 id="top-news-title">TOP NEWS</h2>
+          <a href="/categories/witb/">すべて見る <span>→</span></a>
+        </div>
+        <a class="top-news-card" href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/" style="background-image:linear-gradient(180deg,rgba(4,8,5,.04),rgba(4,8,5,.88)),url('https://cdn.mos.cms.futurecdn.net/YjPf8xAd8AYQp2XeB8DjMX.jpg')">
+          <span>TOURNAMENT</span>
+          <div>
+            <small>2026.08</small>
+            <h3>シェフラーがFedEx St. Judeで圧勝。優勝ギアを全部見る</h3>
+            <p>Qi4D Core投入。14本＋ボールまで詳しく掲載。</p>
+          </div>
+        </a>
+        <div class="news-dots" aria-hidden="true"><b></b><i></i><i></i><i></i></div>
+      </section>
+
+      <section class="mobile-picks" aria-labelledby="today-pick-title">
+        <div class="mobile-section-head">
+          <h2 id="today-pick-title">TODAY'S PICK</h2>
+          <a href="/categories/jiros-pick/">すべて見る <span>→</span></a>
+        </div>
+        <div class="mobile-pick-row">
+          <a href="/posts/2026-08-24-scheffler-qi4d-core-switch/" style="background-image:linear-gradient(180deg,rgba(4,8,5,.05),rgba(4,8,5,.82)),url('https://www.golfwarehouse.nz/cdn/shop/files/TaylorMade-Mens-Qi4D-Core-Driver-At-Golf-Warehouse-NZ.jpg?v=1769474147&width=1214')"><span>NEW GEAR</span><b>Qi4D Coreは<br>何が変わった？</b></a>
+          <a href="/posts/2026-08-23-black-irons-guide/" style="background-image:linear-gradient(180deg,rgba(4,8,5,.06),rgba(4,8,5,.82)),url('https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dwa8a59a0d/560BC/560BC_01.png?sfrm=png&sh=650&sm=fit&sw=650')"><span>GEAR REVIEW</span><b>黒いアイアンって<br>どうなの？</b></a>
+          <a href="/posts/2026-08-23-beginner-driving-range-guide/" style="background-image:linear-gradient(180deg,rgba(4,8,5,.08),rgba(4,8,5,.8)),url('https://images.unsplash.com/photo-1530028828-25e8270793c5?auto=format&fit=crop&w=900&q=82')"><span>HOW TO</span><b>練習場デビュー<br>完全ガイド</b></a>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <nav class="mobile-bottom-nav" aria-label="スマートフォンメニュー">
+    <a class="active" href="/"><b>◆</b><span>ホーム</span></a>
+    <a href="/categories/latest-gear/"><b>▤</b><span>ニュース</span></a>
+    <a href="/recommended-gear/"><b>⌁</b><span>ギア</span></a>
+    <a href="/categories/witb/"><b>♜</b><span>ツアー</span></a>
+    <a href="/#courses"><b>⚑</b><span>コース</span></a>
+  </nav>
 
   <script>
     const row = document.querySelector('[data-gear-row]');
