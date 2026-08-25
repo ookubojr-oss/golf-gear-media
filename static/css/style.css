@@ -77,3 +77,81 @@
   #gear-guide .panel-head:after,#weekly .panel-head:after,#latest>.panel-head:after{display:none}
 }
 @media (min-width:1440px){.article-grid,.archive-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+/* 2026 desktop editorial redesign — scoped so the mobile app experience stays intact. */
+@media (min-width:1024px){
+  :root{--pc-ink:#0a0e0a;--pc-forest:#111a13;--pc-paper:#eeeadd;--pc-line:rgba(238,234,221,.16);--pc-acid:#d7ff36}
+  body{background:var(--pc-ink);color:var(--pc-paper)}
+  .site-header{background:rgba(7,11,8,.96);backdrop-filter:blur(18px);border-bottom:1px solid var(--pc-line)}
+  .site-header .nav{width:min(100% - 80px,1380px);min-height:88px}
+  .site-header .brand{gap:14px}
+  .site-header .brand-mark{width:43px;height:43px;border-radius:4px;font-size:13px;transform:rotate(-3deg)}
+  .site-header .brand b{font-size:20px;letter-spacing:-.045em}
+  .site-header .brand small{font-size:8px;letter-spacing:.16em;text-transform:uppercase}
+  .site-header nav{gap:6px!important;padding:5px;border:1px solid var(--pc-line);border-radius:999px;background:rgba(255,255,255,.025)}
+  .site-header nav a{min-height:38px!important;padding:0 15px;border-radius:999px;font-size:11px;letter-spacing:.015em}
+  .site-header nav a:hover{background:var(--pc-acid);color:var(--pc-ink)!important}
+
+  .course-page{background:
+    radial-gradient(circle at 78% 2%,rgba(126,165,61,.14),transparent 27rem),
+    linear-gradient(180deg,#111810 0,#080c09 56rem,#0a0e0a 100%);
+    padding:34px 0 88px}
+  .course-shell{width:min(100% - 80px,1380px)!important;max-width:1380px!important}
+  .course-shell:before{content:'JIRO GOLF  /  TOKYO  /  ISSUE 08.2026';display:block;margin-bottom:13px;color:#aab1a7;font:800 9px/1.2 system-ui;letter-spacing:.22em}
+
+  .course-shell .lead-grid{display:grid!important;grid-template-columns:minmax(0,2.05fr) minmax(310px,.72fr)!important;gap:18px!important;align-items:stretch}
+  .course-shell .lead-story{min-height:610px!important;border-radius:2px!important;border:1px solid rgba(255,255,255,.13);box-shadow:0 28px 80px rgba(0,0,0,.38);background-position:center!important;overflow:hidden}
+  .course-shell .lead-story:after{content:'FEATURE 01';position:absolute;right:22px;top:22px;color:#fff;font:900 9px/1 system-ui;letter-spacing:.18em;writing-mode:vertical-rl}
+  .course-shell .lead-badge{left:36px!important;top:34px!important;padding:9px 14px!important;border-radius:2px!important;background:var(--pc-acid)!important;color:#0b120c!important;font-size:9px!important;letter-spacing:.12em}
+  .course-shell .lead-copy{left:42px!important;right:42px!important;bottom:44px!important;max-width:780px!important}
+  .course-shell .lead-copy small{font-size:10px!important;letter-spacing:.18em!important;color:var(--pc-acid)!important}
+  .course-shell .lead-copy h2{max-width:760px!important;margin:12px 0 15px!important;font-size:clamp(54px,5.2vw,82px)!important;line-height:.92!important;letter-spacing:-.075em!important;text-wrap:balance}
+  .course-shell .lead-copy p{max-width:560px;font-size:16px!important;line-height:1.7!important;color:#e5e6df!important}
+  .course-shell .lead-copy a{display:inline-flex!important;align-items:center;min-height:48px!important;margin-top:20px!important;padding:0 20px!important;border-radius:2px!important;background:#f3f0e5!important;color:#101510!important;font-size:11px!important;font-weight:900!important;text-decoration:none!important}
+  body .course-shell .lead-grid .flash-panel{display:flex!important;flex-direction:column!important;min-width:0!important;padding:28px!important;border:1px solid var(--pc-line)!important;border-radius:2px!important;background:rgba(18,27,20,.9)!important;color:var(--pc-paper)!important}
+  .flash-panel h2{margin:0 0 20px!important;padding-bottom:18px!important;border-bottom:1px solid var(--pc-line)!important;color:var(--pc-acid)!important;font-size:12px!important;letter-spacing:.17em!important}
+  .flash-item{display:block!important;flex:1!important;padding:22px 0!important;border:0!important;border-bottom:1px solid var(--pc-line)!important;background:transparent!important}
+  .flash-item span{display:block;margin-bottom:8px;color:#879286!important;font-size:8px!important;letter-spacing:.16em!important}
+  .flash-item b{display:block;color:#f2eee3!important;font-size:19px!important;line-height:1.35!important;letter-spacing:-.025em}
+  .flash-item small{display:block;margin-top:7px;color:#89928a!important;font-size:10px!important}
+  .flash-more{display:flex!important;align-items:center;justify-content:space-between;min-height:50px;margin-top:18px!important;color:#f1eee3!important;text-decoration:none!important;font-size:10px!important;font-weight:900!important}
+
+  .cream-panel{position:relative;margin:26px 0 0!important;padding:30px!important;border:1px solid var(--pc-line)!important;border-radius:2px!important;background:#121913!important;color:var(--pc-paper)!important;overflow:hidden}
+  .cream-panel:before{content:'';position:absolute;left:0;top:0;width:68px;height:3px;background:var(--pc-acid)}
+  .panel-head{align-items:center!important;margin:0 0 24px!important;padding-bottom:16px!important;border-bottom:1px solid var(--pc-line)!important}
+  .panel-head h2{color:#f2eee3!important;font-size:25px!important;letter-spacing:-.04em!important}
+  .panel-head h2 span{margin-left:8px;color:#808a81!important;font-size:8px!important;letter-spacing:.15em!important}
+  .panel-head a{color:#cfd5cd!important;font-size:9px!important;letter-spacing:.1em!important;text-decoration:none!important}
+
+  #weekly .witb-row{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important}
+  #weekly .witb-card{min-height:238px!important;padding:14px!important;border:1px solid #cbc7bb!important;border-radius:2px!important;background:#f1eee4!important;transition:transform .2s ease,border-color .2s ease}
+  #weekly .witb-card:hover{transform:translateY(-5px);border-color:var(--pc-acid)!important}
+  #weekly .witb-card .gear-photo{width:100%!important;height:126px!important;margin:8px auto!important}
+  #weekly .witb-card b{font-size:12px!important;line-height:1.3!important}
+  #weekly .witb-card span{font-size:7px!important;letter-spacing:.1em!important}
+
+  #recommended .witb-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:14px!important;overflow:visible!important}
+  #recommended .witb-card{min-width:0!important;min-height:320px!important;padding:18px!important;border:1px solid #d2cdbf!important;border-radius:2px!important;background:#f0ede3!important;transition:transform .2s ease}
+  #recommended .witb-card:hover{transform:translateY(-6px)}
+  #recommended .gear-photo{width:100%!important;height:170px!important;object-fit:contain!important}
+  #recommended .witb-card b{color:#141a14!important;font-size:15px!important}
+  #recommended .recommended-price{font-size:15px!important;color:#254c2e!important}
+
+  #gear-guide .pick-grid,#latest>.pick-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+  #gear-guide .pick-card,#latest>.pick-grid .pick-card{min-height:270px!important;padding:24px!important;border:1px solid rgba(255,255,255,.13)!important;border-radius:2px!important;background-position:center!important;transition:transform .22s ease,filter .22s ease}
+  #gear-guide .pick-card:first-child,#latest>.pick-grid .pick-card:first-child{grid-column:span 2}
+  #gear-guide .pick-card:hover,#latest>.pick-grid .pick-card:hover{transform:translateY(-5px);filter:brightness(1.08)}
+  #gear-guide .pick-card b,#latest>.pick-grid .pick-card b{font-size:26px!important;line-height:1.18!important;letter-spacing:-.045em!important;text-shadow:0 2px 18px rgba(0,0,0,.7)}
+  #gear-guide .pick-card span,#latest>.pick-grid .pick-card span{border-radius:2px!important;background:var(--pc-acid)!important;color:#0c120d!important;font-size:8px!important;letter-spacing:.1em!important}
+
+  .featured-courses{margin-top:26px!important;border-radius:2px!important}
+  .featured-courses-head h2{font-size:32px!important;letter-spacing:-.05em!important}
+  .featured-course-card{min-height:430px!important;border-radius:2px!important}
+  footer{border-top:1px solid var(--pc-line)!important;background:#080b08!important}
+}
+
+@media (min-width:1440px){
+  #weekly .witb-row{grid-template-columns:repeat(8,minmax(0,1fr))!important}
+  #weekly .witb-card{min-height:224px!important}
+  #weekly .witb-card .gear-photo{height:114px!important}
+}
