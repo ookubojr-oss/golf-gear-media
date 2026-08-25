@@ -1,317 +1,36 @@
 {{ define "main" }}
-<section class="course-page">
-<div class="wrap course-shell">
-<header class="course-topbar">
-<div>
-<h1>Jiro Golf</h1>
-<p>ゴルフ最新速報部</p>
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $drivers := where site.Data.gear "category" "ドライバー" }}
+{{ $woods := where site.Data.gear "category" "フェアウェイウッド／ハイブリッド" }}
+{{ $irons := where site.Data.gear "category" "アイアンセット" }}
+{{ $wedges := where site.Data.gear "category" "ウェッジ" }}
+{{ $putters := where site.Data.gear "category" "パター" }}
+{{ $witb := site.GetPage "posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb" }}
+<div class="concept-home">
+  <header class="concept-home-header">
+    <a class="concept-home-brand" href="/"><strong>JIRO GOLF</strong><small>ゴルフ最新速報部</small></a>
+    <div class="concept-home-actions"><a href="/categories/" aria-label="検索">⌕</a><button type="button" class="concept-menu" aria-label="メニュー">☰</button></div>
+    <nav class="concept-home-nav"><a href="/categories/latest-gear/">NEWS</a><a href="/recommended-gear/">GEAR</a><a href="/categories/witb/">TOUR</a><a href="/beginner/">BEGINNER</a><a href="/used-clubs-2026/">USED 2026</a></nav>
+  </header>
+  <div class="concept-ticker"><b>TRENDING NOW</b><a href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/">シェフラーがFedEx St. Judeを制覇。優勝クラブを掲載</a><span>›</span></div>
+
+  <section class="concept-hero"><div class="concept-wrap"><p>JIRO GOLF / EQUIPMENT &amp; PLAY</p><h1>enjoy golf.<br><em>play your way.</em></h1><strong>誰にも縛られず、やりたいゴルフを。欲しいギアを選び、自分のスタイルで楽しもう。</strong><small>Play what you love. Choose the gear you want.</small></div></section>
+
+  <section class="concept-gear" id="recommended"><div class="concept-wrap"><div class="concept-section-head"><h2>FEATURED GEAR</h2><a href="/recommended-gear/">すべて見る　→</a></div><div class="concept-gear-row">
+    {{ range slice (index $drivers 0) (index $woods 0) (index $irons 0) (index $wedges 0) (index $putters 0) }}
+    <button class="concept-gear-card" type="button" data-sheet-open data-name="{{ .name }}" data-category="{{ .category }}" data-spec="{{ .summary }}" data-image="{{ .image }}" data-new-price="{{ .price }}" data-shop-name="Yahoo!ショッピング" data-shop-url="{{ .yahoo }}"><span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }} 実物商品写真" loading="lazy"><b>{{ .name }}</b><small>{{ .price }}</small></button>
+    {{ end }}
+  </div><div class="concept-dots"><b></b><i></i><i></i><i></i></div></div></section>
+
+  <section class="concept-news"><div class="concept-wrap"><div class="concept-section-head"><h2>TOP NEWS</h2><a href="/categories/witb/">すべて見る　→</a></div><a class="concept-lead-news" href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/" style="background-image:linear-gradient(180deg,rgba(2,10,4,.04),rgba(2,10,4,.88)),url('https://cdn.mos.cms.futurecdn.net/YjPf8xAd8AYQp2XeB8DjMX.jpg')"><span>PGA WINNER WITB</span><div><small>2026.08 / FedEx St. Jude</small><h2>シェフラーが8打差で優勝。14本のクラブを全部見る</h2><p>Qi4D Core投入、旧型ウェッジ継続。実物写真と価格比較つき。</p></div></a></div></section>
+
+  <section class="concept-witb"><div class="concept-wrap"><div class="concept-section-head"><h2>WINNER'S WITB</h2><a href="/categories/witb/">14本を見る　→</a></div><div class="concept-witb-row">{{ range first 8 $witb.Params.gear_items }}<a class="concept-witb-card" href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/"><span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }} 実物商品写真" loading="lazy"><b>{{ .name }}</b><small>{{ .spec }}</small></a>{{ end }}</div></div></section>
+
+  <section class="concept-picks"><div class="concept-wrap"><div class="concept-section-head"><h2>TODAY'S PICK</h2><a href="/categories/jiros-pick/">すべて見る　→</a></div><div class="concept-pick-grid">{{ range first 6 $posts }}<a href="{{ .RelPermalink }}" class="concept-pick-card" style="background-image:linear-gradient(180deg,rgba(2,10,4,.06),rgba(2,10,4,.86)),url('{{ .Params.image }}')"><span>{{ with .Params.label }}{{ . }}{{ else }}JIRO'S PICK{{ end }}</span><b>{{ .Title }}</b></a>{{ end }}</div></div></section>
+
+  <section class="concept-courses" id="courses"><div class="concept-wrap"><div class="concept-section-head"><h2>FEATURED COURSES</h2><a href="/posts/course-guide/">コースを見る　→</a></div><div id="conceptDailyCourses" class="concept-course-grid"><a href="/posts/course-guide/?name=太平洋クラブ御殿場コース" style="background-image:url('https://book.alba.co.jp/image/club/220048/640x480/flexible/0_0002_0.jpg')"><span>静岡 / 富士山麓</span><b>太平洋クラブ御殿場コース</b></a><a href="/posts/course-guide/?name=東京よみうりカントリークラブ" style="background-image:url('https://i.gimg.jp/resource/reserve/gstart/gcimg/363505/18.png')"><span>東京 / 名門丘陵</span><b>東京よみうりカントリークラブ</b></a></div></div></section>
 </div>
-<div class="top-icons">
-<span>⌕</span>
-<span>◯</span>
-</div>
-</header>
-<section class="lead-grid">
-<article class="lead-story" style="background-image:linear-gradient(180deg,rgba(5,9,4,.08),rgba(5,9,4,.82)),url('/images/jiro-golf-hero-original.jpg')">
-<div class="lead-overlay">
-</div>
-<span class="lead-badge">START GOLF</span>
-<div class="lead-copy">
-<small>JIRO GOLF / ORIGINAL VISUAL</small>
-<h2>ゴルフを、もっと身近に。</h2>
-<p>クラブ選びからコースデビューまで、迷わないための実践ガイド</p>
-<a href="/beginner/">初心者ガイドを見る　›</a>
-</div>
-</article>
-<aside class="flash-panel">
-<h2>TODAY'S FLASH</h2>
-<div class="flash-item">
-<div>
-<span>PGA</span>
-<b>シェフラーが8打差で優勝</b>
-<small>FedEx St. Jude</small>
-</div>
-</div>
-<div class="flash-item">
-<div>
-<span>新製品</span>
-<b>Qi4D Coreを優勝バッグに投入</b>
-<small>使用クラブ</small>
-</div>
-</div>
-<div class="flash-item">
-<div>
-<span>クラブ</span>
-<b>14本＋ボールまでフル掲載</b>
-<small>優勝セッティング</small>
-</div>
-</div>
-<a class="flash-more" href="#weekly">詳しく見る　›</a>
-</aside>
-</section>
-<section id="weekly" class="cream-panel">
-<div class="panel-head">
-<h2>優勝クラブセッティング <span>14 CLUBS + BALL</span>
-</h2>
-<a href="/categories/witb/">すべて見る　›</a>
-</div>
-<div class="witb-row">
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="TaylorMade Qi4D Core" data-category="ドライバー" data-spec="Ventus Black 7 X / 市販品はシャフト仕様が異なります" data-image="https://www.golfwarehouse.nz/cdn/shop/files/TaylorMade-Mens-Qi4D-Core-Driver-At-Golf-Warehouse-NZ.jpg?v=1769474147&width=1214" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"72200","note":"市販Qi4Dの確認価格 / 仕様で変動","url":"https://shopping.yahoo.co.jp/search?p=Qi4D+ドライバー"},{"name":"楽天市場","condition":"new","price":"107800","note":"市販Qi4Dの確認価格 / 仕様で変動","url":"https://search.rakuten.co.jp/search/mall/Qi4D+ドライバー/"},{"name":"Yahoo!ショッピング","condition":"used","price":"67745","note":"中古市販モデル例 / シャフト・状態で変動","url":"https://shopping.yahoo.co.jp/search?p=Qi4D+ドライバー+中古"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"確認時に比較可能な中古掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/Qi4D+ドライバー+中古/"}]'>
-<span>1 / DRIVER</span>
-<b>TaylorMade<br>Qi4D Core</b>
-<img class="gear-photo" src="https://www.golfwarehouse.nz/cdn/shop/files/TaylorMade-Mens-Qi4D-Core-Driver-At-Golf-Warehouse-NZ.jpg?v=1769474147&width=1214" alt="TaylorMade Qi4D Core">
-<small>Ventus Black 7 X</small>
-</button>
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="TaylorMade Qi10 3W" data-category="3番ウッド" data-spec="Ventus Black 8 X / 市販品はシャフト仕様が異なります" data-image="https://www.taylormadegolf.ca/on/demandware.static/-/Sites-tmag-master-catalog/en_CA/v1772514404440/zoom/TC299_zoom_D.jpg" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"27940","note":"Qi10 3W 市販品例","url":"https://shopping.yahoo.co.jp/search?p=Qi10+3W"},{"name":"楽天市場","condition":"new","price":"24900","note":"Qi10 3W 市販品例","url":"https://search.rakuten.co.jp/search/mall/Qi10+3W/"},{"name":"Yahoo!ショッピング","condition":"used","price":"20482","note":"中古例 / シャフト・状態で変動","url":"https://shopping.yahoo.co.jp/search?p=Qi10+3W+中古"},{"name":"楽天市場","condition":"used","price":"32107","note":"中古例 / シャフト・状態で変動","url":"https://search.rakuten.co.jp/search/mall/Qi10+3W+中古/"}]'>
-<span>2 / 3W</span>
-<b>TaylorMade<br>Qi10</b>
-<img class="gear-photo" src="https://www.taylormadegolf.ca/on/demandware.static/-/Sites-tmag-master-catalog/en_CA/v1772514404440/zoom/TC299_zoom_D.jpg" alt="Qi10 3W">
-<small>Ventus Black 8 X</small>
-</button>
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="TaylorMade Qi4D 7W" data-category="7番ウッド" data-spec="Ventus Black 9 X / 市販品はシャフト仕様が異なります" data-image="https://www.taylormadegolf.com/on/demandware.static/-/Sites-tmag-master-catalog/default/dw25a24bb6/zoom/N2643209_zoom_D.jpg" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"67100","note":"Qi4D 7W 市販品例","url":"https://shopping.yahoo.co.jp/search?p=Qi4D+7W"},{"name":"楽天市場","condition":"new","price":"67100","note":"Qi4D 7W 市販品例","url":"https://search.rakuten.co.jp/search/mall/Qi4D+7W/"},{"name":"Yahoo!ショッピング","condition":"used","price":"48907","note":"中古掲載例 / 仕様・状態を要確認","url":"https://shopping.yahoo.co.jp/search?p=Qi4D+7W+中古"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"確認時に比較可能な中古掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/Qi4D+7W+中古/"}]'>
-<span>3 / 7W</span>
-<b>TaylorMade<br>Qi4D</b>
-<img class="gear-photo" src="https://www.taylormadegolf.com/on/demandware.static/-/Sites-tmag-master-catalog/default/dw25a24bb6/zoom/N2643209_zoom_D.jpg" alt="Qi4D 7W">
-<small>Ventus Black 9 X</small>
-</button>
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="Srixon Z U85 4" data-category="ユーティリティアイアン" data-spec="4番 / 23°前後・中古中心" data-image="https://www.dunlopsports.com/dw/image/v2/AAJP_PRD/on/demandware.static/-/Sites-master-catalog-srixon/default/dw9e92f530/images/large/zu85_iron.jpg" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://shopping.yahoo.co.jp/search?p=SRIXON+Z+U85+U4"},{"name":"楽天市場","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://search.rakuten.co.jp/search/mall/SRIXON+Z+U85+U4/"},{"name":"Yahoo!ショッピング","condition":"used","price":"11947","note":"Z U85 U4 中古確認価格","url":"https://store.shopping.yahoo.co.jp/golfpartner/zu85.html"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"確認時に価格を特定できる掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/SRIXON+Z+U85+U4+中古/"}]'>
-<span>4 / UT</span>
-<b>Srixon<br>Z U85</b>
-<img class="gear-photo" src="https://www.dunlopsports.com/dw/image/v2/AAJP_PRD/on/demandware.static/-/Sites-master-catalog-srixon/default/dw9e92f530/images/large/zu85_iron.jpg" alt="Srixon Z U85">
-<small>4 iron</small>
-</button>
-{{ range slice "5" "6" "7" "8" "9" "PW" }}<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="TaylorMade P7TW {{ . }}" data-category="アイアン {{ . }}" data-spec="P7TW 5-PW / Dynamic Gold Tour Issue X100・価格はセット基準" data-image="https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"384000","note":"3-9,PW 8本セット新品掲載例","url":"https://store.shopping.yahoo.co.jp/prolinegolf/10007454.html"},{"name":"楽天市場","condition":"new","price":"掲載なし","note":"確認時に価格を特定できる新品掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/P7TW+アイアンセット/"},{"name":"Yahoo!ショッピング","condition":"used","price":"188800","note":"4-9,PW 7本セット中古掲載例","url":"https://shopping.yahoo.co.jp/search?p=P7TW+アイアン+中古"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"確認時に価格を特定できる中古掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/P7TW+中古/"}]'>
-<span>IRON / {{ . }}</span>
-<b>TaylorMade<br>P7TW {{ . }}</b>
-<img class="gear-photo" src="https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1" alt="P7TW {{ . }}">
-<small>DG Tour Issue X100</small>
-</button>{{ end }}
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="Vokey SM8 50°" data-category="ウェッジ" data-spec="50° / Dynamic Gold Tour Issue S400・旧モデル" data-image="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw86d87c43/833RSF/833RSF_01.png" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://shopping.yahoo.co.jp/search?p=Vokey+SM8+50"},{"name":"楽天市場","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://search.rakuten.co.jp/search/mall/Vokey+SM8+50/"},{"name":"Yahoo!ショッピング","condition":"used","price":"8587","note":"SM8 50°中古確認価格","url":"https://store.shopping.yahoo.co.jp/golfpartner/spinmilled4.html"},{"name":"楽天市場","condition":"used","price":"9080","note":"SM8 50.12F 中古確認価格","url":"https://search.rakuten.co.jp/search/mall/sm8%2B5012/"}]'>
-<span>11 / WEDGE</span>
-<b>Vokey SM8<br>50°</b>
-<img class="gear-photo" src="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw86d87c43/833RSF/833RSF_01.png" alt="Vokey SM8 50">
-<small>DG Tour Issue S400</small>
-</button>
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="Vokey SM8 56°" data-category="ウェッジ" data-spec="56° / Dynamic Gold Tour Issue S400・旧モデル" data-image="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw86d87c43/833RSF/833RSF_01.png" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://shopping.yahoo.co.jp/search?p=Vokey+SM8+56"},{"name":"楽天市場","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://search.rakuten.co.jp/search/mall/Vokey+SM8+56/"},{"name":"Yahoo!ショッピング","condition":"used","price":"6348","note":"SM8 56°中古確認価格","url":"https://store.shopping.yahoo.co.jp/golfpartner/spinmilled4.html"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"確認時に56°の価格を特定できる掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/Vokey+SM8+56+中古/"}]'>
-<span>12 / WEDGE</span>
-<b>Vokey SM8<br>56°</b>
-<img class="gear-photo" src="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw86d87c43/833RSF/833RSF_01.png" alt="Vokey SM8 56">
-<small>DG Tour Issue S400</small>
-</button>
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="Vokey SM9 60°" data-category="ウェッジ" data-spec="60° / Dynamic Gold Tour Issue S400・旧モデル" data-image="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw77ef934e/852RSS/852RSS_01.png" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://shopping.yahoo.co.jp/search?p=Vokey+SM9+60"},{"name":"楽天市場","condition":"new","price":"掲載なし","note":"旧モデルのため新品実売を確認できず","url":"https://search.rakuten.co.jp/search/mall/Vokey+SM9+60/"},{"name":"Yahoo!ショッピング","condition":"used","price":"9707","note":"SM9 60°中古確認価格","url":"https://shopping.yahoo.co.jp/product/j/0706843166711/compare.html"},{"name":"楽天市場","condition":"used","price":"6370","note":"SM9 60°中古確認価格","url":"https://search.rakuten.co.jp/search/mall/sm9%2B60%2F10/101070/"}]'>
-<span>13 / WEDGE</span>
-<b>Vokey SM9<br>60°</b>
-<img class="gear-photo" src="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw77ef934e/852RSS/852RSS_01.png" alt="Vokey SM9 60">
-<small>DG Tour Issue S400</small>
-</button>
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="TaylorMade Spider Tour X" data-category="パター" data-spec="シェフラー仕様 / Lネック・市販品と仕様差あり" data-image="https://www.golfworx.co.uk/wp-content/uploads/2025/02/tourx3.webp" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"42000","note":"Spider Tour X Black 市販品例","url":"https://shopping.yahoo.co.jp/search?p=Spider+Tour+X+Black"},{"name":"楽天市場","condition":"new","price":"掲載なし","note":"確認時に価格を特定できる新品掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/Spider+Tour+X/"},{"name":"Yahoo!ショッピング","condition":"used","price":"37506","note":"Spider Tour X 中古掲載例","url":"https://store.shopping.yahoo.co.jp/golfpartner/spidertour4.html"},{"name":"楽天市場","condition":"used","price":"37760","note":"Spider Tour X 中古掲載例","url":"https://search.rakuten.co.jp/search/mall/Spider+Tour+X+中古/"}]'>
-<span>14 / PUTTER</span>
-<b>TaylorMade<br>Spider Tour X</b>
-<img class="gear-photo" src="https://www.golfworx.co.uk/wp-content/uploads/2025/02/tourx3.webp" alt="Spider Tour X">
-<small>L neck</small>
-</button>
-<button class="witb-card photo-card winner-card" type="button" data-sheet-open data-name="Titleist Pro V1" data-category="ボール" data-spec="2025 Pro V1 / High Number・1ダース価格" data-image="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwf626864d/T2029S-H-J/T2029S-H-J_01.png" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"6640","note":"2025 Pro V1 1ダース最安掲載例","url":"https://shopping.yahoo.co.jp/products/332a52307e"},{"name":"楽天市場","condition":"new","price":"7370","note":"2025 Pro V1 1ダース掲載目安","url":"https://search.rakuten.co.jp/search/mall/Titleist+Pro+V1+2025/"},{"name":"Yahoo!ショッピング","condition":"used","price":"対象外","note":"ボールは新品価格を比較。中古はロストボール等で状態差が大きいため対象外","url":"https://shopping.yahoo.co.jp/search?p=Pro+V1+ロストボール"},{"name":"楽天市場","condition":"used","price":"対象外","note":"ボールは新品価格を比較。中古はロストボール等で状態差が大きいため対象外","url":"https://search.rakuten.co.jp/search/mall/Pro+V1+ロストボール/"}]'>
-<span>BALL</span>
-<b>Titleist<br>Pro V1</b>
-<img class="gear-photo" src="https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwf626864d/T2029S-H-J/T2029S-H-J_01.png" alt="Titleist Pro V1">
-<small>High Number</small>
-</button>
-</div>
-</section>
-<section id="recommended" class="cream-panel">
-<div class="panel-head">
-<h2>おすすめクラブ・ギア <span>実売価格</span>
-</h2>
-<a href="/recommended-gear/">すべて見る　›</a>
-</div>
-<div class="witb-row">
-<button class="witb-card photo-card recommend-price-card" type="button" data-sheet-open data-name="TaylorMade R7 Quad Mini" data-category="ミニドライバー" data-spec="305cc / 11.5°・在庫/仕様で変動" data-image="https://www.taylormadegolf.jp/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/dw0db3f3b4/zoom/DW-TF932_zoom_D.jpg" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"54800","note":"新品最安掲載例","url":"https://shopping.yahoo.co.jp/products/2574553e48"},{"name":"楽天市場","condition":"new","price":"59800","note":"新品掲載例","url":"https://search.rakuten.co.jp/search/mall/r7+QUAD+MINI+DRIVER/"},{"name":"Yahoo!ショッピング","condition":"used","price":"46465","note":"中古最安掲載例 / 状態で変動","url":"https://shopping.yahoo.co.jp/products/2574553e48"},{"name":"楽天市場","condition":"used","price":"54305","note":"中古掲載例 / 状態で変動","url":"https://search.rakuten.co.jp/search/mall/r7+QUAD+MINI+DRIVER+中古/"}]'>
-<span>ミニドライバー</span>
-<b>TaylorMade<br>R7 Quad Mini</b>
-<img class="gear-photo" src="https://www.taylormadegolf.jp/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/dw0db3f3b4/zoom/DW-TF932_zoom_D.jpg" alt="R7 Quad Mini">
-<small>305cc / 4ウェイト</small>
-<em class="recommended-price">¥54,800〜</em>
-</button>
-<button class="witb-card photo-card recommend-price-card" type="button" data-sheet-open data-name="Callaway Quantum Max" data-category="ドライバー" data-spec="TENSEI GRAY 60等・シャフト仕様で価格差あり" data-image="https://cdn11.bigcommerce.com/s-l8ce6/images/stencil/1280x1280/products/100746/307660/2026_callaway_quantum_max_driver_hero__62267.1768867529.jpg?c=2" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"72501","note":"TENSEI GRAY 60新品掲載例","url":"https://shopping.yahoo.co.jp/search?p=QUANTUM+MAX+ドライバー"},{"name":"楽天市場","condition":"new","price":"110000","note":"TENSEI GRAY 60新品掲載例","url":"https://search.rakuten.co.jp/search/mall/QUANTUM+MAX+ドライバー/"},{"name":"Yahoo!ショッピング","condition":"used","price":"67948","note":"中古掲載例 / 仕様で変動","url":"https://shopping.yahoo.co.jp/search?p=QUANTUM+MAX+ドライバー+中古"},{"name":"楽天市場","condition":"used","price":"70080","note":"ATHLEMAX 50中古掲載例 / 仕様差あり","url":"https://search.rakuten.co.jp/search/mall/QUANTUM+MAX+中古/"}]'>
-<span>ドライバー</span>
-<b>Callaway<br>Quantum Max</b>
-<img class="gear-photo" src="https://cdn11.bigcommerce.com/s-l8ce6/images/stencil/1280x1280/products/100746/307660/2026_callaway_quantum_max_driver_hero__62267.1768867529.jpg?c=2" alt="Quantum Max">
-<small>2026モデル</small>
-<em class="recommended-price">¥72,501〜</em>
-</button>
-<button class="witb-card photo-card recommend-price-card" type="button" data-sheet-open data-name="Titleist T150 Black Vapor" data-category="アイアン" data-spec="Black Vapor / セット本数・US/Japan仕様で変動" data-image="https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dwa8a59a0d/560BC/560BC_01.png?sfrm=png&sh=650&sm=fit&sw=650" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"324000","note":"Black Vapor 6本セット新品掲載例","url":"https://shopping.yahoo.co.jp/search?p=T150+Black+Vapor"},{"name":"楽天市場","condition":"new","price":"327000","note":"Black Vapor 7本セットUS新品掲載例","url":"https://search.rakuten.co.jp/search/mall/T150+Black+Vapor/"},{"name":"Yahoo!ショッピング","condition":"used","price":"掲載なし","note":"Black Vaporの中古実在掲載を確認できず","url":"https://shopping.yahoo.co.jp/search?p=T150+Black+Vapor+中古"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"Black Vaporの中古実在掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/T150+Black+Vapor+中古/"}]'>
-<span>アイアン</span>
-<b>Titleist T150<br>Black Vapor</b>
-<img class="gear-photo" src="https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dwa8a59a0d/560BC/560BC_01.png?sfrm=png&sh=650&sm=fit&sw=650" alt="T150 Black Vapor">
-<small>限定ブラック</small>
-<em class="recommended-price">¥324,000〜 / set</em>
-</button>
-<button class="witb-card photo-card recommend-price-card" type="button" data-sheet-open data-name="Vokey SM11 Black Vapor" data-category="ウェッジ" data-spec="Black Vapor / ロフト・グラインドで在庫変動" data-image="https://www.vokey.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-vokey-master/default/dw27293be2/images/products/wedgeworks/sm11-blackvapor-rh.jpg?sw=1024&sh=1024&sm=fit&sfrm=jpg" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"40700","note":"Black Vapor新品掲載例","url":"https://shopping.yahoo.co.jp/search?p=SM11+Black+Vapor"},{"name":"楽天市場","condition":"new","price":"掲載なし","note":"確認時に価格を特定できるBlack Vapor新品掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/SM11+Black+Vapor/"},{"name":"Yahoo!ショッピング","condition":"used","price":"掲載なし","note":"Black Vapor中古掲載を確認できず","url":"https://shopping.yahoo.co.jp/search?p=SM11+Black+Vapor+中古"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"Black Vapor中古掲載を確認できず","url":"https://search.rakuten.co.jp/search/mall/SM11+Black+Vapor+中古/"}]'>
-<span>ウェッジ</span>
-<b>Vokey SM11<br>Black Vapor</b>
-<img class="gear-photo" src="https://www.vokey.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-vokey-master/default/dw27293be2/images/products/wedgeworks/sm11-blackvapor-rh.jpg?sw=1024&sh=1024&sm=fit&sfrm=jpg" alt="SM11 Black Vapor">
-<small>限定仕上げ</small>
-<em class="recommended-price">¥40,700〜</em>
-</button>
-<button class="witb-card photo-card recommend-price-card" type="button" data-sheet-open data-name="PING Scottsdale TEC Ally Blue Onset" data-category="パター" data-spec="Ally Blue Onset / 2026" data-image="https://www.clickgolf.co.uk/images/product/main/g_Scottsdale-Tec-Ally-Blue-Onset-Face.jpg" data-shops='[{"name":"Yahoo!ショッピング","condition":"new","price":"71500","note":"新品掲載価格","url":"https://shopping.yahoo.co.jp/search?p=Scottsdale+TEC+Ally+Blue+Onset"},{"name":"楽天市場","condition":"new","price":"71500","note":"新品掲載価格","url":"https://search.rakuten.co.jp/search/mall/Scottsdale+TEC+Ally+Blue+Onset/"},{"name":"Yahoo!ショッピング","condition":"used","price":"54305","note":"Golf Partner系中古掲載例","url":"https://shopping.yahoo.co.jp/search?p=Scottsdale+TEC+Ally+Blue+Onset+中古"},{"name":"楽天市場","condition":"used","price":"掲載なし","note":"確認時に同モデル中古価格を特定できず","url":"https://search.rakuten.co.jp/search/mall/Scottsdale+TEC+Ally+Blue+Onset+中古/"}]'>
-<span>パター</span>
-<b>PING Scottsdale TEC<br>Ally Blue Onset</b>
-<img class="gear-photo" src="https://www.clickgolf.co.uk/images/product/main/g_Scottsdale-Tec-Ally-Blue-Onset-Face.jpg" alt="PING Scottsdale TEC">
-<small>2026モデル</small>
-<em class="recommended-price">¥71,500〜</em>
-</button>
-</div>
-</section>
-<section id="gear-guide" class="cream-panel">
-<div class="panel-head">
-<h2>最新情報・クラブ選び <span>NEW</span>
-</h2>
-<a href="/categories/latest-gear/">すべて見る　›</a>
-</div>
-<div class="pick-grid">
-<a href="/posts/2026-08-23-2026-gear-trends/" class="pick-card pc1">
-<b>2026年のクラブ、<br>何が変わった？</b>
-<span>最新トレンド　›</span>
-</a>
-<a href="/posts/2026-08-23-mini-driver-guide/" class="pick-card pc2">
-<b>ミニドライバーって<br>本当に必要？</b>
-<span>ドライバー　›</span>
-</a>
-<a href="/posts/2026-08-23-combo-irons-guide/" class="pick-card pc3">
-<b>アイアンは全部<br>同じじゃなくていい。</b>
-<span>アイアン　›</span>
-</a>
-<a href="/posts/2026-08-23-black-irons-guide/" class="pick-card pc1">
-<b>黒いアイアンって<br>どうなの？</b>
-<span>クラブ解説　›</span>
-</a>
-<a href="/posts/2026-08-23-left-handed-putters-2026/" class="pick-card" style="background-image:url('https://images.unsplash.com/photo-1776245110286-02363d7d67a2?auto=format&fit=crop&fm=jpg&q=82&w=1600')">
-<b>左利きのパター、<br>2026年は何を選ぶ？</b>
-<span>パター選び　›</span>
-</a>
-<a href="/posts/2026-08-23-urethane-ball-spin/" class="pick-card" style="background-image:url('https://images.unsplash.com/photo-1722374046676-628b15b67c9c?auto=format&fit=crop&fm=jpg&q=82&w=1600')">
-<b>ウレタンなら全部<br>スピンする？</b>
-<span>ボール検証　›</span>
-</a>
-<a href="/posts/2026-08-23-ping-scottsdale-tec-new-models/" class="pick-card" style="background-image:url('https://www.clickgolf.co.uk/images/product/main/g_Scottsdale-Tec-Ally-Blue-Onset-Face.jpg')">
-<b>Scottsdale TEC、<br>2モデル追加。</b>
-<span>新製品　›</span>
-</a>
-<a href="/posts/2026-08-23-nikon-coolshot-stabilization/" class="pick-card" style="background-image:url('https://images.contentstack.io/v3/assets/blt0e5ec1de4817c440/blt63ab819262e94f05/67867969441823676d376dbd/hero-desktop.jpg')">
-<b>COOLSHOT、<br>手ブレ補正は必要？</b>
-<span>距離計比較　›</span>
-</a>
-</div>
-</section>
-<section id="latest" class="cream-panel pick-panel">
-<div class="panel-head">
-<h2>JIRO'S PICK <span>編集部おすすめ</span>
-</h2>
-<a href="/categories/jiros-pick/">すべて見る　›</a>
-</div>
-<div class="pick-grid">
-<a href="/posts/2026-08-24-liv-golf-now/" class="pick-card" style="background-image:linear-gradient(180deg,rgba(5,15,9,.04),rgba(5,15,9,.84)),url('https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=1200&q=84')">
-<b>LIVゴルフって<br>今どうなってるの？</b>
-<span>LIV GOLF　›</span>
-</a>
-<a href="/posts/2026-08-24-ventus-headspeed-40/" class="pick-card" style="background-image:linear-gradient(180deg,rgba(5,15,9,.05),rgba(5,15,9,.82)),url('https://www.fujikurashaft.jp/wp-content/uploads/2026/04/ventus_tr_2604.png')">
-<b>ヘッドスピード40前半に<br>ベンタスは必要か？</b>
-<span>シャフト選び　›</span>
-</a>
-<a href="/posts/2026-08-23-first-golf-hub/" class="pick-card pc3">
-<b>はじめてのゴルフ。<br>何から始める？</b>
-<span>初心者　›</span>
-</a>
-<a href="/posts/2026-08-23-beginner-driving-range-guide/" class="pick-card" style="background-image:url('https://images.unsplash.com/photo-1530028828-25e8270793c5?auto=format&fit=crop&w=1200&q=84')">
-<b>練習場デビュー、<br>まず何をする？</b>
-<span>初心者　›</span>
-</a>
-<a href="/posts/2026-08-23-pga-driving-distance-leader/" class="pick-card pc2">
-<b>実際いま1番<br>ドライバーが飛んでるのは誰？</b>
-<span>PGAデータ　›</span>
-</a>
-</div>
-<section id="courses" class="featured-courses">
-<div class="featured-courses-head">
-<div>
-<span>COURSE EDIT / JGTO</span>
-<h3>今日の注目コース</h3>
-<p>男子ツアーの舞台から、今日見ておきたい2コース。</p>
-</div>
-<b class="course-day">TODAY<br>
-<em>02</em>
-</b>
-</div>
-<div id="dailyTourCourses" class="featured-courses-grid">
-<article class="featured-course-card daily-tour-card">
-<div class="featured-course-overlay">
-</div>
-<span class="featured-course-no">01</span>
-<div class="featured-course-copy">
-<small>静岡 / JGTO</small>
-<strong>太平洋クラブ御殿場コース</strong>
-<em>コースを見る →</em>
-</div>
-</article>
-<article class="featured-course-card daily-tour-card">
-<div class="featured-course-overlay">
-</div>
-<span class="featured-course-no">02</span>
-<div class="featured-course-copy">
-<small>茨城 / JGTO</small>
-<strong>宍戸ヒルズカントリークラブ</strong>
-<em>コースを見る →</em>
-</div>
-</article>
-</div>
-</section>
-</section>
-</div>
-<nav class="site-dock" aria-label="メインナビゲーション">
-<a href="/" class="active">
-<span>⌂</span>
-<small>ホーム</small>
-</a>
-<a href="/recommended-gear/">
-<span aria-hidden="true">♧</span>
-<small>クラブ</small>
-</a>
-<a href="/categories/latest-gear/">
-<span aria-hidden="true">▤</span>
-<small>ニュース</small>
-</a>
-<a href="/videos/">
-<span aria-hidden="true">▶</span>
-<small>動画</small>
-</a>
-</nav>
-</section>
-<div class="price-sheet-backdrop" data-sheet-backdrop>
-</div>
-<aside class="price-sheet" data-sheet aria-hidden="true">
-<div class="sheet-handle">
-</div>
-<button class="sheet-close" type="button" data-sheet-close aria-label="閉じる">×</button>
-<div class="sheet-product-head">
-<img class="sheet-product-image" data-sheet-image alt="">
-<div>
-<span class="sheet-label" data-sheet-category>PRICE CHECK</span>
-<h2 data-sheet-name>商品名</h2>
-<p data-sheet-spec>
-</p>
-</div>
-</div>
-<div class="condition-tabs">
-<button class="condition-tab active" type="button" data-condition="new">新品</button>
-<button class="condition-tab" type="button" data-condition="used">中古</button>
-</div>
-<div class="price-main">
-<small>現在の最安値</small>
-<strong data-sheet-price>価格を確認</strong>
-<span data-shop-count>販売先を比較</span>
-</div>
-<div class="shop-list" data-shop-list>
-</div>
-<p class="sheet-note">価格は2026年8月24日確認時点の掲載例です。価格・在庫・送料・商品状態・シャフト仕様は変動します。購入前に各販売先で最終条件をご確認ください。</p>
-</aside>
+<nav class="concept-bottom-nav" aria-label="メインナビゲーション"><a href="/" class="active"><b>⌂</b><small>ホーム</small></a><a href="/categories/latest-gear/"><b>▤</b><small>ニュース</small></a><a href="/recommended-gear/"><b>♧</b><small>ギア</small></a><a href="/categories/witb/"><b>♜</b><small>ツアー</small></a><a href="/#courses"><b>⚑</b><small>コース</small></a></nav>
+<div class="price-sheet-backdrop" data-sheet-backdrop></div>
+<aside class="price-sheet" data-sheet aria-hidden="true"><div class="sheet-handle"></div><button class="sheet-close" type="button" data-sheet-close aria-label="閉じる">×</button><div class="sheet-product-head"><img class="sheet-product-image" data-sheet-image alt=""><div><span class="sheet-label" data-sheet-category>PRICE CHECK</span><h2 data-sheet-name>商品名</h2><p data-sheet-spec></p></div></div><div class="condition-tabs"><button class="condition-tab active" type="button" data-condition="new">新品</button><button class="condition-tab" type="button" data-condition="used">中古</button></div><div class="price-main"><small>現在の最安値</small><strong data-sheet-price>価格を確認</strong><span data-shop-count>販売先を比較</span></div><div class="shop-list" data-shop-list></div><p class="sheet-note">価格・在庫・仕様は販売先でご確認ください。</p></aside>
 {{ end }}

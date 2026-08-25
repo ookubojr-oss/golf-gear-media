@@ -32,8 +32,9 @@
   <link rel="stylesheet" href="/css/category-articles.css">
   <link rel="stylesheet" href="/css/gear-archive.css">
   <link rel="stylesheet" href="/css/used-clubs.css">
+  {{ if .IsHome }}<link rel="stylesheet" href="/css/home-concept.css">{{ end }}
 </head>
-<body>
+<body{{ if .IsHome }} class="is-concept-home"{{ end }}>
 <header class="site-header">
 <div class="wrap nav">
 <a class="brand" href="/">
