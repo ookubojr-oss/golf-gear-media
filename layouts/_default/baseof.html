@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0f140c">
   {{ $description := site.Params.description }}{{ with .Description }}{{ $description = . }}{{ end }}
   {{ $canonical := .Permalink }}
@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="/css/course-feature.css">
   <link rel="stylesheet" href="/css/archive.css">
   <link rel="stylesheet" href="/css/category-articles.css">
+  <link rel="stylesheet" href="/css/gear-archive.css">
+  <link rel="stylesheet" href="/css/used-clubs.css">
 </head>
 <body>
 <header class="site-header">
@@ -46,6 +48,7 @@
 <a href="/beginner/">初心者ガイド</a>
 <a href="/categories/witb/">優勝クラブ</a>
 <a href="/categories/latest-gear/">最新情報・クラブ選び</a>
+<a href="/used-clubs-2026/">中古クラブ2026</a>
 <a href="/categories/jiros-pick/">JIRO'S PICK</a>
 </nav>
 </div>

@@ -33,6 +33,7 @@
 @media(min-width:700px){#gear-guide .pick-card,#latest>.pick-grid .pick-card{flex-basis:44%}#weekly .witb-card{flex-basis:34%}}
 
 /* Responsive shell: mobile, tablet and desktop are intentionally separated. */
+.site-header{position:sticky;top:0;z-index:100}
 .nav-toggle{display:none}
 @media (max-width:767px){
   .site-header .nav{position:relative;min-height:64px;display:flex;align-items:center;justify-content:space-between}
@@ -51,6 +52,8 @@
   .wrap{width:min(100% - 48px,920px)}
   .article-grid,.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   #gear-guide .pick-card,#latest>.pick-grid .pick-card{flex-basis:46%}
+  .site-header nav{display:flex;align-items:center;gap:12px;overflow-x:auto}
+  .site-header nav a{display:flex;align-items:center;min-height:44px;white-space:nowrap;font-size:11px}
 }
 @media (min-width:1024px){
   .wrap{width:min(100% - 72px,1240px)}
