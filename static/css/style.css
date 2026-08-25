@@ -123,14 +123,14 @@
   .panel-head h2 span{margin-left:8px;color:#808a81!important;font-size:8px!important;letter-spacing:.15em!important}
   .panel-head a{color:#cfd5cd!important;font-size:9px!important;letter-spacing:.1em!important;text-decoration:none!important}
 
-  #weekly .witb-row{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important}
+  #weekly .witb-row{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;grid-auto-flow:row!important;grid-auto-columns:auto!important;gap:10px!important}
   #weekly .witb-card{min-height:238px!important;padding:14px!important;border:1px solid #cbc7bb!important;border-radius:2px!important;background:#f1eee4!important;transition:transform .2s ease,border-color .2s ease}
   #weekly .witb-card:hover{transform:translateY(-5px);border-color:var(--pc-acid)!important}
   #weekly .witb-card .gear-photo{width:100%!important;height:126px!important;margin:8px auto!important}
   #weekly .witb-card b{font-size:12px!important;line-height:1.3!important}
   #weekly .witb-card span{font-size:7px!important;letter-spacing:.1em!important}
 
-  #recommended .witb-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:14px!important;overflow:visible!important}
+  #recommended .witb-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-auto-flow:row!important;grid-auto-columns:auto!important;gap:14px!important;overflow:visible!important}
   #recommended .witb-card{min-width:0!important;min-height:320px!important;padding:18px!important;border:1px solid #d2cdbf!important;border-radius:2px!important;background:#f0ede3!important;transition:transform .2s ease}
   #recommended .witb-card:hover{transform:translateY(-6px)}
   #recommended .gear-photo{width:100%!important;height:170px!important;object-fit:contain!important}
