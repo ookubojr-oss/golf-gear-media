@@ -6,7 +6,76 @@
 {{ $wedges := where site.Data.gear "category" "ウェッジ" }}
 {{ $putters := where site.Data.gear "category" "パター" }}
 {{ $witb := site.GetPage "posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb" }}
-<div class="concept-home">
+
+<div class="desktop-home-ref">
+  <div class="desktop-ticker">
+    <div><b>TRENDING NOW</b><span>松山英樹がFedEx St. Jude選手権で健闘！</span></div>
+    <div><b>NEW GEAR</b><span>Callaway Paradym Ai Smoke ◆ Titleist GT3 Driver</span></div>
+    <div><b>TOURNAMENT</b><span>BMW Championship Preview</span></div>
+    <a href="/categories/latest-gear/">VIEW ALL</a>
+  </div>
+
+  <header class="desktop-header">
+    <a class="desktop-brand" href="/"><strong>JIRO GOLF</strong><small>ゴルフ最新速報部</small></a>
+    <nav><a href="/categories/latest-gear/">NEWS / TOPICS</a><a href="/recommended-gear/">GEAR REVIEWS</a><a href="/categories/witb/">TOURNAMENTS</a><a href="/posts/course-guide/">COURSES</a><a href="/categories/" aria-label="検索">⌕</a></nav>
+  </header>
+
+  <section class="desktop-hero">
+    <div class="desktop-hero-copy">
+      <h1>the innovation<br>of golf equipment</h1>
+      <b>最新ギアの情報を、もっと早く、もっと深く。</b>
+      <p>Discover, explore, and shop the latest golf gear.</p>
+    </div>
+    <div class="desktop-gear-row">
+      {{ range slice (index $drivers 0) (index $woods 0) (index $irons 0) (index $wedges 0) (index $putters 0) }}
+      <button class="desktop-gear-card" type="button" data-sheet-open data-name="{{ .name }}" data-category="{{ .category }}" data-spec="{{ .summary }}" data-image="{{ .image }}" data-new-price="{{ .price }}" data-shop-name="Yahoo!ショッピング" data-shop-url="{{ .yahoo }}">
+        <span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }}" loading="lazy"><strong>{{ .name }}</strong><p>{{ .summary }}</p><small>VIEW DETAIL →</small>
+      </button>
+      {{ end }}
+    </div>
+    <div class="desktop-progress"><span>Ⅱ</span><i><b></b></i></div>
+  </section>
+
+  <section class="desktop-section">
+    <div class="desktop-section-head"><h2>TOP NEWS</h2><a href="/categories/latest-gear/">すべて見る →</a></div>
+    <div class="desktop-news-row">
+      {{ range first 4 $posts }}
+      <a class="desktop-news-card" href="{{ .RelPermalink }}" style="background-image:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.82)),url('{{ .Params.image }}')"><span>{{ with .Params.label }}{{ . }}{{ else }}NEWS{{ end }}</span><div><small>{{ .Date.Format "2006.01.02" }}</small><strong>{{ .Title }}</strong><p>{{ .Summary | plainify | truncate 58 }}</p></div></a>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="desktop-section desktop-categories">
+    <div class="desktop-section-head"><h2>MAIN CATEGORIES</h2></div>
+    <div class="desktop-category-row">
+      <a href="/beginner/"><i>♙</i><strong>初心者ガイド</strong><p>ゴルフを始める前に。クラブ選びや練習場の使い方まで。</p><span>→</span></a>
+      <a href="/categories/witb/"><i>♜</i><strong>優勝クラブ・WITB</strong><p>PGA・国内ツアー優勝者の使用クラブをチェック。</p><span>→</span></a>
+      <a href="/categories/latest-gear/"><i>♧</i><strong>最新情報・クラブ選び</strong><p>新製品情報やクラブ選びのコツ・比較記事をまとめて。</p><span>→</span></a>
+      <a href="/used-clubs-2026/"><i>▣</i><strong>中古クラブ2026</strong><p>狙い目や中古クラブ選び。価格相場や選び方も掲載。</p><span>→</span></a>
+      <a href="/categories/jiros-pick/"><i>☆</i><strong>JIRO'S PICK</strong><p>編集部が本当に気になったギアや話題をピックアップ。</p><span>→</span></a>
+    </div>
+  </section>
+
+  <section class="desktop-section desktop-picks-section">
+    <div class="desktop-section-head"><h2>JIRO'S PICK</h2><a href="/categories/jiros-pick/">すべて見る →</a></div>
+    <div class="desktop-pick-row">
+      {{ range first 3 $posts }}
+      <a href="{{ .RelPermalink }}"><div style="background-image:url('{{ .Params.image }}')"></div><strong>{{ .Title }}</strong><p>{{ .Summary | plainify | truncate 54 }}</p><small>VIEW DETAIL →</small></a>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="desktop-section desktop-course-section">
+    <div class="desktop-section-head"><h2>注目ゴルフコース</h2><a href="/posts/course-guide/">すべて見る →</a></div>
+    <div class="desktop-course-row">
+      <a href="/posts/course-guide/?name=川奈ホテルゴルフコース富士コース"><img src="https://book.alba.co.jp/image/club/220048/640x480/flexible/0_0002_0.jpg" alt="川奈ホテルゴルフコース"><div><strong>川奈ホテルゴルフコース<br>富士コース</strong><p>海と富士の絶景が楽しめる、日本を代表する名門コース。</p><small>VIEW DETAIL →</small></div></a>
+      <a href="/posts/course-guide/?name=太平洋クラブ御殿場コース"><img src="https://book.alba.co.jp/image/club/220048/640x480/flexible/0_0002_0.jpg" alt="太平洋クラブ御殿場コース"><div><strong>太平洋クラブ<br>御殿場コース</strong><p>戦略性の高いレイアウトと美しい景観が魅力。</p><small>VIEW DETAIL →</small></div></a>
+      <a href="/posts/course-guide/?name=ザ・ロイヤルゴルフクラブ"><img src="https://i.gimg.jp/resource/reserve/gstart/gcimg/363505/18.png" alt="ザ・ロイヤルゴルフクラブ"><div><strong>ザ・ロイヤルゴルフクラブ</strong><p>美麗なリンクスコース。風との戦いが攻略のカギ。</p><small>VIEW DETAIL →</small></div></a>
+    </div>
+  </section>
+</div>
+
+<div class="concept-home mobile-home-existing">
   <header class="concept-home-header">
     <a class="concept-home-brand" href="/"><strong>JIRO GOLF</strong><small>ゴルフ最新速報部</small></a>
     <div class="concept-home-actions"><a href="/categories/" aria-label="検索">⌕</a><button type="button" class="concept-menu" aria-label="メニュー">☰</button></div>
