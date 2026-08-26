@@ -101,12 +101,10 @@
   });
 
   const courses=home.querySelector('.concept-courses');
-  if(courses && !document.querySelector('.mobile-newsletter')){
-    const newsletter=document.createElement('section'); newsletter.className='mobile-newsletter mobile-only-injected';
-    newsletter.innerHTML='<h3>メールマガジン登録</h3><p>最新ギア情報や限定コンテンツをいち早くお届けします。</p><form action="#" onsubmit="return false"><input type="email" inputmode="email" placeholder="メールアドレスを入力" aria-label="メールアドレス"><button type="submit">登録する</button></form>';
+  if(courses && !document.querySelector('.mobile-follow')){
     const follow=document.createElement('section'); follow.className='mobile-follow mobile-only-injected';
     follow.innerHTML='<h3>FOLLOW US</h3><div class="mobile-socials"><a href="#" aria-label="X">X</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a></div><div class="mobile-legal">運営者情報　　プライバシーポリシー　　利用規約<br>© 2026 JIRO GOLF</div>';
-    courses.after(newsletter,follow);
+    courses.after(follow);
   }
 
   const bottom=document.querySelector('.concept-bottom-nav');
