@@ -25,14 +25,14 @@
   {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/price-sheet.css">
-  <link rel="stylesheet" href="/css/jiro-pick.css">
-  <link rel="stylesheet" href="/css/jiro-pick-all.css">
+  <link rel="stylesheet" href="/css/jiro-pick.css?v=20260826-1616">
+  <link rel="stylesheet" href="/css/jiro-pick-all.css?v=20260826-1616">
   <link rel="stylesheet" href="/css/course-feature.css">
-  <link rel="stylesheet" href="/css/archive.css">
+  <link rel="stylesheet" href="/css/archive.css?v=20260826-1616">
   <link rel="stylesheet" href="/css/category-articles.css">
-  <link rel="stylesheet" href="/css/gear-archive.css">
+  <link rel="stylesheet" href="/css/gear-archive.css?v=20260826-1616">
   <link rel="stylesheet" href="/css/used-clubs.css">
-  {{ if .IsHome }}<link rel="stylesheet" href="/css/home-concept.css"><link rel="stylesheet" href="/css/home-desktop-reference.css"><link rel="stylesheet" href="/css/home-mobile-reference.css">{{ end }}
+  {{ if .IsHome }}<link rel="stylesheet" href="/css/home-concept.css"><link rel="stylesheet" href="/css/home-desktop-reference.css"><link rel="stylesheet" href="/css/home-mobile-reference.css?v=20260826-1616">{{ end }}
 </head>
 <body{{ if .IsHome }} class="is-concept-home"{{ end }}>
 <header class="site-header">
@@ -65,6 +65,6 @@
 <script src="/js/app.js" defer></script>
 <script src="/js/image-fixes.js" defer></script>
 <script src="/js/article-image-fixes.js" defer></script>
-{{ if .IsHome }}<script src="/js/home-swing.js" defer></script><script src="/js/home-hero-carousel.js" defer></script><script src="/js/home-mobile-reference.js" defer></script>{{ end }}
+{{ if .IsHome }}<script src="/js/home-swing.js" defer></script><script src="/js/home-hero-carousel.js" defer></script><script src="/js/home-mobile-reference.js?v=20260826-1616" defer></script>{{ end }}
 </body>
 </html>
