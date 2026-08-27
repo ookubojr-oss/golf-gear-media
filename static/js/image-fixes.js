@@ -16,13 +16,54 @@
     {match:/mezz\.1\s*max/i,alt:'L.A.B. Golf MEZZ.1 MAX 正規販売元商品写真',srcs:['https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992&width=832']},
     {match:/df\s*2\.1/i,alt:'L.A.B. Golf DF 2.1 正規販売元商品写真',srcs:['https://labgolf.jp/cdn/shop/files/cover-df21-custom.jpg?v=1763456019&width=832']},
     {match:/cobra\s*optm\s*x|optm\s*x\s*driver/i,alt:'COBRA OPTM X Driver メーカー公式商品写真',srcs:['https://cdn.shopify.com/s/files/1/0634/7833/3657/files/SS26_Ecom_Cobra_OPTM_PDP_Driver_X_ImgGal-1-min.jpg']},
-    {match:/titleist\s*gts2|gts2\s*driver/i,alt:'Titleist GTS2 Driver メーカー公式商品写真',srcs:['https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dwa8a59a0d/560BC/560BC_01.png?sfrm=png&sh=650&sm=fit&sw=650']}
+    {match:/titleist\s*gts2|gts2\s*driver/i,alt:'Titleist GTS2 Driver メーカー公式商品写真',srcs:['https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dwa8a59a0d/560BC/560BC_01.png?sfrm=png&sh=650&sm=fit&sw=650']},
+    {match:/callaway\s*elyte\s*x|elyte\s*x\s*driver/i,alt:'Callaway ELYTE X Driver メーカー公式商品写真',srcs:['https://cdn2.webdamdb.com/1280_YjeDKtjEyD518FnA.png?1753642061']}
   ];
-  function identify(img){const card=img.closest('[data-name],.witb-card,.gear-card,.photo-card,.gear-card-v3');return [img.alt||'',card?.dataset?.name||'',card?.textContent||''].join(' ')}
+  const BRAND_RULES = [
+    {name:/\bping\b|g440/i,src:/ping|clubping/i},
+    {name:/callaway|elyte/i,src:/callaway|webdamdb/i},
+    {name:/srixon|zxi|cleveland/i,src:/srixon|dunlop|cleveland/i},
+    {name:/titleist|vokey|pro\s*v1/i,src:/titleist|acushnet/i},
+    {name:/cobra|optm/i,src:/cobra|shopify/i},
+    {name:/taylormade|qi4d|qi10|p7tw|spider\s*tour|r7\s*quad/i,src:/taylormade/i},
+    {name:/lab\s*golf|mezz\.1|df\s*2\.1/i,src:/labgolf/i}
+  ];
+  function identify(img){const card=img.closest('[data-name],.witb-card,.gear-card,.photo-card,.gear-card-v3,.desktop-gear-card,.concept-gear-card');return [img.alt||'',card?.dataset?.name||'',card?.textContent||''].join(' ')}
   function productFor(img){const text=identify(img);return PRODUCTS.find(p=>p.match.test(text))}
-  function setRealImage(img,p,index=0){if(!(img instanceof HTMLImageElement)||!p)return;const i=Math.max(0,Math.min(index,p.srcs.length-1));img.dataset.realImageIndex=String(i);img.dataset.realProductPhoto='1';img.style.display='';img.removeAttribute('aria-hidden');img.alt=p.alt;const next=p.srcs[i];if(img.getAttribute('src')!==next)img.src=next}
-  function fix(img,force=false){if(!(img instanceof HTMLImageElement))return;const p=productFor(img);if(!p)return;const current=img.getAttribute('src')||'';const isGeneric=current.includes('gear-fallback-transparent');const isKnown=p.srcs.includes(current);if(force||isGeneric||!isKnown)setRealImage(img,p,Number(img.dataset.realImageIndex||0))}
-  function wire(img){if(!(img instanceof HTMLImageElement)||img.dataset.realPhotoWired==='1')return;img.dataset.realPhotoWired='1';img.addEventListener('error',()=>{const p=productFor(img);if(!p)return;const current=Number(img.dataset.realImageIndex||0),next=current+1;if(next<p.srcs.length)setTimeout(()=>setRealImage(img,p,next),0)});fix(img,true)}
+  function mismatchFor(img){
+    const text=identify(img),src=(img.getAttribute('src')||'').toLowerCase();
+    if(!text||!src||src.startsWith('data:'))return false;
+    const rule=BRAND_RULES.find(r=>r.name.test(text));
+    if(!rule)return false;
+    if(/amazon|rakuten|yahoo|golfpartner|golf5|victoria|alpen/.test(src))return false;
+    return !rule.src.test(src);
+  }
+  function pendingPlaceholder(img){
+    if(!(img instanceof HTMLImageElement)||img.dataset.imageMismatch==='1')return;
+    img.dataset.imageMismatch='1';
+    img.style.display='none';
+    img.setAttribute('aria-hidden','true');
+    const holder=document.createElement('div');
+    holder.className='product-image-pending';
+    holder.dataset.generatedImagePending='1';
+    holder.setAttribute('role','img');
+    holder.setAttribute('aria-label','商品画像を確認中');
+    holder.innerHTML='<b>PHOTO CHECK</b><small>モデル一致画像を確認中</small>';
+    holder.style.cssText='width:100%;min-height:150px;aspect-ratio:4/3;display:grid;place-content:center;gap:6px;text-align:center;background:#f1f1ed;color:#4c514b;padding:14px;font-size:12px;letter-spacing:.04em';
+    img.insertAdjacentElement('afterend',holder);
+  }
+  function clearPlaceholder(img){
+    if(!(img instanceof HTMLImageElement))return;
+    const holder=img.nextElementSibling;
+    if(holder?.dataset?.generatedImagePending==='1')holder.remove();
+    img.dataset.imageMismatch='0';
+    img.style.display='';
+    img.removeAttribute('aria-hidden');
+  }
+  function setRealImage(img,p,index=0){if(!(img instanceof HTMLImageElement)||!p)return;const i=Math.max(0,Math.min(index,p.srcs.length-1));img.dataset.realImageIndex=String(i);img.dataset.realProductPhoto='1';clearPlaceholder(img);img.alt=p.alt;const next=p.srcs[i];if(img.getAttribute('src')!==next)img.src=next}
+  function audit(img){if(!(img instanceof HTMLImageElement))return;if(mismatchFor(img))pendingPlaceholder(img);else if(img.dataset.imageMismatch==='1')clearPlaceholder(img)}
+  function fix(img,force=false){if(!(img instanceof HTMLImageElement))return;const p=productFor(img);if(!p){audit(img);return;}const current=img.getAttribute('src')||'';const isGeneric=current.includes('gear-fallback-transparent');const isKnown=p.srcs.includes(current);if(force||isGeneric||!isKnown)setRealImage(img,p,Number(img.dataset.realImageIndex||0));audit(img)}
+  function wire(img){if(!(img instanceof HTMLImageElement)||img.dataset.realPhotoWired==='1')return;img.dataset.realPhotoWired='1';img.addEventListener('error',()=>{const p=productFor(img);if(!p){audit(img);return;}const current=Number(img.dataset.realImageIndex||0),next=current+1;if(next<p.srcs.length)setTimeout(()=>setRealImage(img,p,next),0);else pendingPlaceholder(img)});fix(img,true)}
   document.querySelectorAll('img').forEach(wire);
-  const observer=new MutationObserver(ms=>{ms.forEach(m=>{if(m.type==='attributes'&&m.target instanceof HTMLImageElement){wire(m.target);if((m.target.getAttribute('src')||'').includes('gear-fallback-transparent'))fix(m.target,true)}m.addedNodes.forEach(node=>{if(!(node instanceof Element))return;if(node.matches('img'))wire(node);node.querySelectorAll?.('img').forEach(wire)})})});observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['src']});
+  const observer=new MutationObserver(ms=>{ms.forEach(m=>{if(m.type==='attributes'&&m.target instanceof HTMLImageElement){if((m.target.getAttribute('src')||'').includes('gear-fallback-transparent'))fix(m.target,true);else audit(m.target)}m.addedNodes.forEach(node=>{if(!(node instanceof Element))return;if(node.matches('img'))wire(node);node.querySelectorAll?.('img').forEach(wire)})})});observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['src']});
 })();
