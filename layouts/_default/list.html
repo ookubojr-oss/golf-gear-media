@@ -2,23 +2,30 @@
 <section class="archive-page">
   <div class="archive-shell">
     <header class="archive-hero">
-      <a class="archive-back" href="/">←</a>
+      <a class="archive-back" href="/" aria-label="ホームへ戻る">←</a>
       <span class="archive-kicker">JIRO GOLF / ARCHIVE</span>
       {{ $title := .Title }}
-      {{ if eq .Title "Latest-Gear" }}{{ $title = "最新情報・クラブ選び" }}{{ end }}
-      {{ if eq .Title "Jiros-Pick" }}{{ $title = "JIRO'S PICK" }}{{ end }}
-      {{ if eq .Title "Witb" }}{{ $title = "優勝クラブセッティング" }}{{ end }}
+      {{ $description := "過去の記事もここから。気になる記事をタップして読む。" }}
+      {{ if eq .Title "Latest-Gear" }}{{ $title = "最新情報・クラブ選び" }}{{ $description = "新作ギア、クラブ選び、比較・検証記事を新しい順にまとめています。" }}{{ end }}
+      {{ if eq .Title "Jiros-Pick" }}{{ $title = "JIRO'S PICK" }}{{ $description = "編集部JIROが気になったギアやテーマを、独自の視点で掘り下げます。" }}{{ end }}
+      {{ if eq .Title "Witb" }}{{ $title = "優勝クラブセッティング" }}{{ $description = "ツアー優勝者のクラブセッティングを、大会ごとに確認できます。" }}{{ end }}
       <h1>{{ $title }}</h1>
-      <p>過去の記事もここから。気になる記事をタップして読む。</p>
+      <p>{{ $description }}</p>
       <div class="archive-count"><b>{{ len .Pages }}</b><small>ARTICLES</small></div>
     </header>
     {{ $term := .Data.Term }}
-    <div class="archive-tabs">
+    <div class="archive-tabs" role="navigation" aria-label="記事カテゴリー">
       <a href="/categories/latest-gear/"{{ if eq $term "latest-gear" }} class="active" aria-current="page"{{ end }}>最新情報・クラブ選び</a>
       <a href="/categories/jiros-pick/"{{ if eq $term "jiros-pick" }} class="active" aria-current="page"{{ end }}>JIRO'S PICK</a>
-      <a href="/categories/witb/"{{ if eq $term "witb" }} class="active" aria-current="page"{{ end }}>優勝クラブセッティング</a>
+      <a href="/categories/witb/"{{ if eq $term "witb" }} class="active" aria-current="page"{{ end }}>優勝クラブ</a>
+      <a href="/beginner/">初心者ガイド</a>
+      <a href="/used-clubs-2026/">中古クラブ2026</a>
     </div>
-    <div class="archive-grid">{{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}</div>
+    {{ if gt (len .Pages) 0 }}
+      <div class="archive-grid">{{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}</div>
+    {{ else }}
+      <div class="archive-empty"><h2>記事を準備中です</h2><p>公開できる内容を確認してから追加します。</p></div>
+    {{ end }}
     <a class="archive-home" href="/">ホームへ戻る</a>
   </div>
 </section>
