@@ -1,5 +1,7 @@
 {{ define "main" }}
 {{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $newsPosts := where $posts "Params.layout" "ne" "jiro-pick" }}
+{{ $jiroPicks := where $posts "Params.layout" "jiro-pick" }}
 {{ $drivers := where site.Data.gear "category" "ドライバー" }}
 {{ $woods := where site.Data.gear "category" "フェアウェイウッド／ハイブリッド" }}
 {{ $irons := where site.Data.gear "category" "アイアンセット" }}
@@ -9,8 +11,8 @@
 
 <div class="desktop-home-ref">
   <div class="desktop-ticker">
-    <div><b>TRENDING NOW:</b><span>スコッティ・シェフラーがFedEx St. Jude選手権で優勝！</span></div>
-    <div><b>NEW GEAR:</b><span>Callaway Paradym Ai Smoke　◆　Titleist GT3 Driver</span></div>
+    <div><b>TRENDING NOW:</b><span>スコッティ・シェフラーがFedEx St. Jude選手権で8打差優勝</span></div>
+    <div><b>NEW GEAR:</b><span>2026注目ギアをモデル別にチェック</span></div>
     <div><b>TOURNAMENT:</b><span>Wyndham Clark wins BMW Championship</span></div>
     <a href="/categories/latest-gear/">VIEW ALL</a>
   </div>
@@ -36,7 +38,7 @@
     <div class="desktop-gear-row">
       {{ range slice (index $drivers 0) (index $woods 0) (index $irons 0) (index $wedges 0) (index $putters 0) }}
       <button class="desktop-gear-card" type="button" data-sheet-open data-name="{{ .name }}" data-category="{{ .category }}" data-spec="{{ .summary }}" data-image="{{ .image }}" data-new-price="{{ .price }}" data-shop-name="Yahoo!ショッピング" data-shop-url="{{ .yahoo }}">
-        <span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }}" loading="lazy"><strong>{{ .name }}</strong><p>{{ .summary }}</p><small>VIEW DETAIL　→</small>
+        <span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }} 商品画像" loading="lazy" decoding="async"><strong>{{ .name }}</strong><p>{{ .summary }}</p><small>VIEW DETAIL　→</small>
       </button>
       {{ end }}
     </div>
@@ -46,7 +48,7 @@
   <section class="desktop-section">
     <div class="desktop-section-head"><h2>TOP NEWS</h2><a href="/categories/latest-gear/">すべて見る　→</a></div>
     <div class="desktop-news-row">
-      {{ range first 4 $posts }}
+      {{ range first 4 $newsPosts.ByDate.Reverse }}
       <a class="desktop-news-card" href="{{ .RelPermalink }}" style="background-image:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.82)),url('{{ .Params.image }}')"><span>{{ with .Params.label }}{{ . }}{{ else }}NEWS{{ end }}</span><div><small>{{ .Date.Format "2006.01.02" }}</small><strong>{{ .Title }}</strong><p>{{ .Summary | plainify | truncate 58 }}</p></div></a>
       {{ end }}
     </div>
@@ -66,7 +68,7 @@
   <section class="desktop-section desktop-picks-section">
     <div class="desktop-section-head"><h2>JIRO'S PICK</h2><a href="/categories/jiros-pick/">すべて見る　→</a></div>
     <div class="desktop-pick-row">
-      {{ range first 3 $posts }}
+      {{ range first 3 $jiroPicks.ByDate.Reverse }}
       <a class="desktop-pick-card" href="{{ .RelPermalink }}" style="background-image:url('{{ .Params.image }}')"><span>JIRO'S PICK</span><div><strong>{{ .Title }}</strong><p>{{ .Summary | plainify | truncate 54 }}</p><small>VIEW DETAIL　→</small></div></a>
       {{ end }}
     </div>
@@ -84,8 +86,8 @@
 
   <footer class="desktop-footer">
     <div class="desktop-footer-grid">
-      <div class="desktop-footer-brand"><strong>JIRO GOLF</strong><small>ゴルフ最新速報部</small><p>最新のギア情報、ツアーニュース、コース情報までゴルフに関するあらゆる情報をお届けします。</p><div class="desktop-socials"><a href="#" aria-label="X">X</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Mail">✉</a></div></div>
-      <div class="desktop-footer-col"><strong>NEWS / TOPICS</strong><a href="/categories/latest-gear/">最新ニュース</a><a href="/categories/latest-gear/">ツアー速報</a><a href="/categories/latest-gear/">プロの使用クラブ</a><a href="/categories/latest-gear/">イベント情報</a></div>
+      <div class="desktop-footer-brand"><strong>JIRO GOLF</strong><small>ゴルフ最新速報部</small><p>最新のギア情報、ツアーニュース、コース情報までゴルフに関するあらゆる情報をお届けします。</p><div class="desktop-socials"><a href="/categories/latest-gear/" aria-label="ニュース">NEWS</a><a href="/recommended-gear/" aria-label="ギア">GEAR</a><a href="/categories/witb/" aria-label="ツアー">TOUR</a></div></div>
+      <div class="desktop-footer-col"><strong>NEWS / TOPICS</strong><a href="/categories/latest-gear/">最新ニュース</a><a href="/categories/latest-gear/">ツアー速報</a><a href="/categories/witb/">プロの使用クラブ</a><a href="/categories/latest-gear/">イベント情報</a></div>
       <div class="desktop-footer-col"><strong>GEAR REVIEWS</strong><a href="/recommended-gear/">ドライバー</a><a href="/recommended-gear/">フェアウェイウッド</a><a href="/recommended-gear/">ユーティリティ</a><a href="/recommended-gear/">アイアン</a><a href="/recommended-gear/">ウェッジ</a><a href="/recommended-gear/">パター</a></div>
       <div class="desktop-footer-col"><strong>TOURNAMENTS</strong><a href="/categories/witb/">PGAツアー</a><a href="/categories/witb/">国内男子ツアー</a><a href="/categories/witb/">国内女子ツアー</a><a href="/categories/witb/">メジャー大会</a></div>
       <div class="desktop-footer-col"><strong>COURSES</strong><a href="/posts/course-guide/">国内ゴルフ場</a><a href="/posts/course-guide/">海外ゴルフ場</a><a href="/posts/course-guide/">コースランキング</a><a href="/posts/course-guide/">コース特集</a></div>
@@ -101,25 +103,25 @@
     <div class="concept-home-actions"><a href="/categories/" aria-label="検索">⌕</a><button type="button" class="concept-menu" aria-label="メニュー">☰</button></div>
     <nav class="concept-home-nav"><a href="/categories/latest-gear/">NEWS</a><a href="/recommended-gear/">GEAR</a><a href="/categories/witb/">TOUR</a><a href="/beginner/">BEGINNER</a><a href="/used-clubs-2026/">USED 2026</a></nav>
   </header>
-  <div class="concept-ticker"><b>TRENDING NOW</b><a href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/">シェフラーがFedEx St. Judeを制覇。優勝クラブを掲載</a><span>›</span></div>
+  <div class="concept-ticker"><b>TRENDING NOW</b><a href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/">シェフラーがFedEx St. Judeを8打差で制覇。優勝クラブを掲載</a><span>›</span></div>
 
   <section class="concept-hero"><div class="concept-wrap"><p>JIRO GOLF / EQUIPMENT &amp; PLAY</p><h1>enjoy golf.<br><em>play your way.</em></h1><strong>誰にも縛られず、やりたいゴルフを。欲しいギアを選び、自分のスタイルで楽しもう。</strong><small>Play what you love. Choose the gear you want.</small></div></section>
 
   <section class="concept-gear" id="recommended"><div class="concept-wrap"><div class="concept-section-head"><h2>FEATURED GEAR</h2><a href="/recommended-gear/">すべて見る　→</a></div><div class="concept-gear-row">
     {{ range slice (index $drivers 0) (index $woods 0) (index $irons 0) (index $wedges 0) (index $putters 0) }}
-    <button class="concept-gear-card" type="button" data-sheet-open data-name="{{ .name }}" data-category="{{ .category }}" data-spec="{{ .summary }}" data-image="{{ .image }}" data-new-price="{{ .price }}" data-shop-name="Yahoo!ショッピング" data-shop-url="{{ .yahoo }}"><span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }} 実物商品写真" loading="lazy"><b>{{ .name }}</b><small>{{ .price }}</small></button>
+    <button class="concept-gear-card" type="button" data-sheet-open data-name="{{ .name }}" data-category="{{ .category }}" data-spec="{{ .summary }}" data-image="{{ .image }}" data-new-price="{{ .price }}" data-shop-name="Yahoo!ショッピング" data-shop-url="{{ .yahoo }}"><span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }} 商品画像" loading="lazy" decoding="async"><b>{{ .name }}</b><small>{{ .price }}</small></button>
     {{ end }}
   </div><div class="concept-dots"><b></b><i></i><i></i><i></i></div></div></section>
 
-  <section class="concept-news"><div class="concept-wrap"><div class="concept-section-head"><h2>TOP NEWS</h2><a href="/categories/witb/">すべて見る　→</a></div><a class="concept-lead-news" href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/" style="background-image:linear-gradient(180deg,rgba(2,10,4,.04),rgba(2,10,4,.88)),url('https://cdn.mos.cms.futurecdn.net/YjPf8xAd8AYQp2XeB8DjMX.jpg')"><span>PGA WINNER WITB</span><div><small>2026.08 / FedEx St. Jude</small><h2>シェフラーが8打差で優勝。14本のクラブを全部見る</h2><p>Qi4D Core投入、旧型ウェッジ継続。実物写真と価格比較つき。</p></div></a></div></section>
+  <section class="concept-news"><div class="concept-wrap"><div class="concept-section-head"><h2>TOP NEWS</h2><a href="/categories/witb/">すべて見る　→</a></div><a class="concept-lead-news" href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/" style="background-image:linear-gradient(180deg,rgba(2,10,4,.04),rgba(2,10,4,.88)),url('https://cdn.mos.cms.futurecdn.net/YjPf8xAd8AYQp2XeB8DjMX.jpg')"><span>PGA WINNER WITB</span><div><small>2026.08 / FedEx St. Jude</small><h2>シェフラーが8打差で優勝。14本のクラブを全部見る</h2><p>Qi4D Core投入、旧型ウェッジ継続。確認済み商品写真と価格比較を順次掲載。</p></div></a></div></section>
 
-  <section class="concept-witb"><div class="concept-wrap"><div class="concept-section-head"><h2>WINNER'S WITB</h2><a href="/categories/witb/">14本を見る　→</a></div><div class="concept-witb-row">{{ range first 8 $witb.Params.gear_items }}<a class="concept-witb-card" href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/"><span>{{ .category }}</span><img src="{{ .image }}" alt="{{ .name }} 実物商品写真" loading="lazy"><b>{{ .name }}</b><small>{{ .spec }}</small></a>{{ end }}</div></div></section>
+  <section class="concept-witb"><div class="concept-wrap"><div class="concept-section-head"><h2>WINNER'S WITB</h2><a href="/categories/witb/">14本を見る　→</a></div><div class="concept-witb-row">{{ range first 8 $witb.Params.gear_items }}<a class="concept-witb-card" href="/posts/2026-08-23-scottie-scheffler-fedex-st-jude-witb/"><span>{{ .category }}</span>{{ if .image_verified }}<img src="{{ .image }}" alt="{{ .name }} メーカー公式商品画像" loading="lazy" decoding="async">{{ else }}<div class="product-image-pending" role="img" aria-label="{{ .name }} 画像確認中"><b>PHOTO CHECK</b><small>モデル一致画像を確認中</small></div>{{ end }}<b>{{ .name }}</b><small>{{ .spec }}</small></a>{{ end }}</div></div></section>
 
-  <section class="concept-picks"><div class="concept-wrap"><div class="concept-section-head"><h2>TODAY'S PICK</h2><a href="/categories/jiros-pick/">すべて見る　→</a></div><div class="concept-pick-grid">{{ range first 6 $posts }}<a href="{{ .RelPermalink }}" class="concept-pick-card" style="background-image:linear-gradient(180deg,rgba(2,10,4,.06),rgba(2,10,4,.86)),url('{{ .Params.image }}')"><span>{{ with .Params.label }}{{ . }}{{ else }}JIRO'S PICK{{ end }}</span><b>{{ .Title }}</b></a>{{ end }}</div></div></section>
+  <section class="concept-picks"><div class="concept-wrap"><div class="concept-section-head"><h2>TODAY'S PICK</h2><a href="/categories/jiros-pick/">すべて見る　→</a></div><div class="concept-pick-grid">{{ range first 6 $jiroPicks.ByDate.Reverse }}<a href="{{ .RelPermalink }}" class="concept-pick-card" style="background-image:linear-gradient(180deg,rgba(2,10,4,.06),rgba(2,10,4,.86)),url('{{ .Params.image }}')"><span>{{ with .Params.label }}{{ . }}{{ else }}JIRO'S PICK{{ end }}</span><b>{{ .Title }}</b></a>{{ end }}</div></div></section>
 
   <section class="concept-courses" id="courses"><div class="concept-wrap"><div class="concept-section-head"><h2>FEATURED COURSES</h2><a href="/posts/course-guide/">コースを見る　→</a></div><div id="conceptDailyCourses" class="concept-course-grid"><a href="/posts/course-guide/?name=太平洋クラブ御殿場コース" style="background-image:url('https://book.alba.co.jp/image/club/220048/640x480/flexible/0_0002_0.jpg')"><span>静岡 / 富士山麓</span><b>太平洋クラブ御殿場コース</b></a><a href="/posts/course-guide/?name=東京よみうりカントリークラブ" style="background-image:url('https://i.gimg.jp/resource/reserve/gstart/gcimg/363505/18.png')"><span>東京 / 名門丘陵</span><b>東京よみうりカントリークラブ</b></a></div></div></section>
 </div>
 <nav class="concept-bottom-nav" aria-label="メインナビゲーション"><a href="/" class="active"><b>⌂</b><small>ホーム</small></a><a href="/categories/latest-gear/"><b>▤</b><small>ニュース</small></a><a href="/recommended-gear/"><b>♧</b><small>ギア</small></a><a href="/categories/witb/"><b>♜</b><small>ツアー</small></a><a href="/#courses"><b>⚑</b><small>コース</small></a></nav>
 <div class="price-sheet-backdrop" data-sheet-backdrop></div>
-<aside class="price-sheet" data-sheet aria-hidden="true"><div class="sheet-handle"></div><button class="sheet-close" type="button" data-sheet-close aria-label="閉じる">×</button><div class="sheet-product-head"><img class="sheet-product-image" data-sheet-image alt=""><div><span class="sheet-label" data-sheet-category>PRICE CHECK</span><h2 data-sheet-name>商品名</h2><p data-sheet-spec></p></div></div><div class="condition-tabs"><button class="condition-tab active" type="button" data-condition="new">新品</button><button class="condition-tab" type="button" data-condition="used">中古</button></div><div class="price-main"><small>現在の最安値</small><strong data-sheet-price>価格を確認</strong><span data-shop-count>販売先を比較</span></div><div class="shop-list" data-shop-list></div><p class="sheet-note">価格・在庫・仕様は販売先でご確認ください。</p></aside>
+<aside class="price-sheet" data-sheet aria-hidden="true"><div class="sheet-handle"></div><button class="sheet-close" type="button" data-sheet-close aria-label="閉じる">×</button><div class="sheet-product-head"><img class="sheet-product-image" data-sheet-image alt=""><div><span class="sheet-label" data-sheet-category>PRICE CHECK</span><h2 data-sheet-name>商品名</h2><p data-sheet-spec></p></div></div><div class="condition-tabs"><button class="condition-tab active" type="button" data-condition="new">新品</button><button class="condition-tab" type="button" data-condition="used">中古</button></div><div class="price-main"><small>参考価格</small><strong data-sheet-price>価格を確認</strong><span data-shop-count>販売先を比較</span></div><div class="shop-list" data-shop-list></div><p class="sheet-note">掲載価格は目安を含みます。価格・在庫・仕様は購入前に販売先でご確認ください。</p></aside>
 {{ end }}
