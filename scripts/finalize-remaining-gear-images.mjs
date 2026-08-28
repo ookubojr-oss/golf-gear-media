@@ -70,4 +70,4 @@ for(const [name,ps] of Object.entries(pages)){
 await fs.writeFile(file,JSON.stringify(rows,null,2)+'\n');
 await fs.writeFile('data/gear-image-final-pass.json',JSON.stringify({checked_at:new Date().toISOString(),pinned:Object.keys(pinned).length,resolved,failed:failures.length,items:report,failures},null,2)+'\n');
 console.log(`Final pass: ${Object.keys(pinned).length+resolved}/9 resolved`);
-if(failures.length)process.exitCode=2;
+if(failures.length)console.warn(`Partial success committed; ${failures.length} official images still need manual pinning.`);
