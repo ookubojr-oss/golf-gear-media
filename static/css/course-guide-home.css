@@ -144,3 +144,16 @@ body:has(#courseArchive:not([hidden]))>.site-header,body:has(#courseArchive:not(
 #courseArchive .course-editorial-copy>strong i{display:grid!important;place-items:center!important;width:44px!important;height:44px!important;border-radius:50%!important;background:#0c2516!important;color:#fff!important;font-style:normal!important}
 #courseArchive .course-editorial-copy>strong small{display:none!important}
 }
+
+
+/* Reference audit corrections at 1224px: neutralize inherited archive spacing/aspect rules. */
+@media(min-width:761px){
+#courseArchive .course-hero{height:clamp(223px,18.22vw,260px)!important}
+#courseArchive .course-hero-photo,#courseArchive .course-hero-copy{height:clamp(223px,18.22vw,260px)!important}
+#courseArchive .course-hero h1{font-size:53px!important}
+#courseArchive .course-tools{height:42px!important;margin:0!important;padding:6px 0!important}
+#courseArchive .course-filter{height:30px!important;margin:0!important;padding:0!important}
+#courseArchive .course-editorial-item{height:116px!important;padding:0!important;align-items:stretch!important}
+#courseArchive .course-editorial-photo{width:100%!important;height:114px!important;min-width:0!important;max-width:none!important;margin:0!important;aspect-ratio:auto!important;align-self:stretch!important}
+#courseArchive .course-editorial-copy{width:100%!important;height:114px!important;min-width:0!important;margin:0!important;align-self:stretch!important}
+}
