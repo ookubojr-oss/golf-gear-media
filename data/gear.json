@@ -473,7 +473,7 @@
   {
     "category": "ウェッジ",
     "name": "TaylorMade Hi-Toe 4 58°",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw77ef934e/852RSS/852RSS_01.png",
+    "image": "https://assets.taylormadegolf.com/i/88/791215/TME24-HiToe4TME-HiToe4-24-PDP-Hero~W400_H300_Mcrop_P68-34-51-84.jpg",
     "price": "¥33,000前後",
     "summary": "ロフト間隔とバウンスを手持ちアイアンにつなげて選ぶウェッジ。",
     "tags": [
@@ -484,7 +484,9 @@
     "no": "27",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20Hi-Toe%204%2058%C2%B0",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20Hi-Toe%204%2058%C2%B0/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Hi-Toe%204%2058%C2%B0"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Hi-Toe%204%2058%C2%B0",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "パター",
@@ -500,12 +502,14 @@
     "no": "28",
     "amazon": "https://www.amazon.co.jp/s?k=L.A.B.%20Golf%20MEZZ.1%20MAX%20Custom",
     "rakuten": "https://search.rakuten.co.jp/search/mall/L.A.B.%20Golf%20MEZZ.1%20MAX%20Custom/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=L.A.B.%20Golf%20MEZZ.1%20MAX%20Custom"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=L.A.B.%20Golf%20MEZZ.1%20MAX%20Custom",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "パター",
     "name": "L.A.B. Golf DF 2.1 Custom",
-    "image": "https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992&width=832",
+    "image": "https://labgolf.jp/cdn/shop/files/cover-df21-custom.jpg?v=1763456019&width=832",
     "price": "¥33,100前後",
     "summary": "構えやすさ、距離感、フェースの開閉量を試打で比較したいパター。",
     "tags": [
@@ -516,12 +520,14 @@
     "no": "29",
     "amazon": "https://www.amazon.co.jp/s?k=L.A.B.%20Golf%20DF%202.1%20Custom",
     "rakuten": "https://search.rakuten.co.jp/search/mall/L.A.B.%20Golf%20DF%202.1%20Custom/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=L.A.B.%20Golf%20DF%202.1%20Custom"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=L.A.B.%20Golf%20DF%202.1%20Custom",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "パター",
     "name": "TaylorMade Spider Tour X",
-    "image": "https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992&width=832",
+    "image": "https://www.taylormadegolf.com/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/en_US/v1787544747870/zoom/TC928_zoom_D.jpeg?sh=900&sm=fit&sw=900",
     "price": "¥36,400前後",
     "summary": "構えやすさ、距離感、フェースの開閉量を試打で比較したいパター。",
     "tags": [
@@ -532,12 +538,14 @@
     "no": "30",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20Spider%20Tour%20X",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20Spider%20Tour%20X/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Spider%20Tour%20X"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Spider%20Tour%20X",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "パター",
     "name": "PING Scottsdale DS72",
-    "image": "https://api.next.ping.com/media/catalog/product/c/l/clubs.putters.scottsdale.ds72_cavity_view_1600x1600_2f0b.png?auto=webp&fit=bounds&format=pjpg&height=&quality=80&width=3840",
+    "image": "https://api.next.ping.com/media/catalog/product/c/l/clubs.putters.scottsdale.ds72_cavity_view_1600x1600_2f0b.png?auto=webp&fit=bounds&format=pjpg&quality=80&width=3840",
     "price": "¥39,700前後",
     "summary": "構えやすさ、距離感、フェースの開閉量を試打で比較したいパター。",
     "tags": [
@@ -555,7 +563,7 @@
   {
     "category": "パター",
     "name": "Titleist Scotty Cameron Phantom 5",
-    "image": "https://labgolf.jp/cdn/shop/files/cover-df21-custom.jpg?v=1763456019&width=832",
+    "image": "https://www.scottycameron.com/media/bbmd2eap/24phantom_pdp_5_hero.jpg",
     "price": "¥43,000前後",
     "summary": "構えやすさ、距離感、フェースの開閉量を試打で比較したいパター。",
     "tags": [
@@ -566,7 +574,9 @@
     "no": "32",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Scotty%20Cameron%20Phantom%205",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Scotty%20Cameron%20Phantom%205/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Scotty%20Cameron%20Phantom%205"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Scotty%20Cameron%20Phantom%205",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "パター",
@@ -625,7 +635,7 @@
   {
     "category": "ゴルフボール",
     "name": "Srixon Z-STAR 2025 1ダース",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwf626864d/T2029S-H-J/T2029S-H-J_01.png",
+    "image": "https://www.srigroup.co.jp/newsrelease/2024/sp/dvql4p00000piltg-img/a1730849383949.jpg",
     "price": "¥10,580前後",
     "summary": "同じモデルを継続使用し、打感とショートゲームの距離感をそろえるボール。",
     "tags": [
@@ -636,12 +646,14 @@
     "no": "36",
     "amazon": "https://www.amazon.co.jp/s?k=Srixon%20Z-STAR%202025%201%E3%83%80%E3%83%BC%E3%82%B9",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Srixon%20Z-STAR%202025%201%E3%83%80%E3%83%BC%E3%82%B9/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20Z-STAR%202025%201%E3%83%80%E3%83%BC%E3%82%B9"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20Z-STAR%202025%201%E3%83%80%E3%83%BC%E3%82%B9",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ゴルフボール",
     "name": "Bridgestone TOUR B XS 1ダース",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwf626864d/T2029S-H-J/T2029S-H-J_01.png",
+    "image": "https://shop.bridgestonegolf.com/cdn/shop/files/BSGTOURBXSMindset_Lid26_800x600_5b313240-fa97-4547-961f-b54e1c21f257_800x.png?v=1768918438",
     "price": "¥13,880前後",
     "summary": "同じモデルを継続使用し、打感とショートゲームの距離感をそろえるボール。",
     "tags": [
@@ -652,7 +664,9 @@
     "no": "37",
     "amazon": "https://www.amazon.co.jp/s?k=Bridgestone%20TOUR%20B%20XS%201%E3%83%80%E3%83%BC%E3%82%B9",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Bridgestone%20TOUR%20B%20XS%201%E3%83%80%E3%83%BC%E3%82%B9/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Bridgestone%20TOUR%20B%20XS%201%E3%83%80%E3%83%BC%E3%82%B9"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Bridgestone%20TOUR%20B%20XS%201%E3%83%80%E3%83%BC%E3%82%B9",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ゴルフボール",
@@ -687,7 +701,9 @@
     "no": "39",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Players%20Glove",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Players%20Glove/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Players%20Glove"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Players%20Glove",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "グローブ",
@@ -710,7 +726,7 @@
   {
     "category": "グローブ",
     "name": "Bridgestone TOUR GLOVE",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwbd6a53f6/Players-Glove/Players-Glove_01.png",
+    "image": "https://shop.bridgestonegolf.com/cdn/shop/products/tourglove_800x.png?v=1574190319",
     "price": "¥8,200前後",
     "summary": "指先の余りと手のひらのたるみがないサイズを選ぶグローブ。",
     "tags": [
@@ -721,7 +737,9 @@
     "no": "41",
     "amazon": "https://www.amazon.co.jp/s?k=Bridgestone%20TOUR%20GLOVE",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Bridgestone%20TOUR%20GLOVE/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Bridgestone%20TOUR%20GLOVE"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Bridgestone%20TOUR%20GLOVE",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "キャディバッグ",
@@ -737,7 +755,9 @@
     "no": "42",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Players%204%20Stand%20Bag",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Players%204%20Stand%20Bag/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Players%204%20Stand%20Bag"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Players%204%20Stand%20Bag",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "キャディバッグ",
@@ -760,7 +780,7 @@
   {
     "category": "キャディバッグ",
     "name": "TaylorMade FlexTech Stand Bag",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dw129066b8/TB23SX4-006/TB23SX4-006_01.png",
+    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1777781455343/zoom/M23329_zoom_D.jpeg?sh=900&sm=fit&sw=900",
     "price": "¥25,400前後",
     "summary": "重量、自立性、口枠、車への積みやすさを比較した軽量バッグ。",
     "tags": [
@@ -771,7 +791,9 @@
     "no": "44",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20FlexTech%20Stand%20Bag",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20FlexTech%20Stand%20Bag/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20FlexTech%20Stand%20Bag"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20FlexTech%20Stand%20Bag",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "キャディバッグ",
@@ -795,7 +817,7 @@
   {
     "category": "シューズ",
     "name": "FootJoy PRO/SLX BOA",
-    "image": "https://www.footjoy.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-footjoy-master/default/dw13602ec0/56933/56933_01.png",
+    "image": "https://www.footjoy.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-footjoy-master/default/dwdb858836/FJ_56933_01.png?sfrm=png&sh=1200&sm=fit&sw=1200",
     "price": "¥14,800前後",
     "summary": "実寸と幅を試着し、かかとの浮きと歩行時の安定性を見るシューズ。",
     "tags": [
@@ -806,7 +828,9 @@
     "no": "46",
     "amazon": "https://www.amazon.co.jp/s?k=FootJoy%20PRO%2FSLX%20BOA",
     "rakuten": "https://search.rakuten.co.jp/search/mall/FootJoy%20PRO%2FSLX%20BOA/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=FootJoy%20PRO%2FSLX%20BOA"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=FootJoy%20PRO%2FSLX%20BOA",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "シューズ",
@@ -829,7 +853,7 @@
   {
     "category": "シューズ",
     "name": "adidas CODECHAOS 25 BOA",
-    "image": "https://www.footjoy.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-footjoy-master/default/dw13602ec0/56933/56933_01.png",
+    "image": "https://assets.adidas.com/images/w_500%2Cf_auto%2Cq_auto/2c8e509f2fd947ca9c14855bf6338f55_9366/25_-_Codechaos_Boa_25_IH5142_HM1.jpg",
     "price": "¥21,400前後",
     "summary": "実寸と幅を試着し、かかとの浮きと歩行時の安定性を見るシューズ。",
     "tags": [
@@ -840,7 +864,9 @@
     "no": "48",
     "amazon": "https://www.amazon.co.jp/s?k=adidas%20CODECHAOS%2025%20BOA",
     "rakuten": "https://search.rakuten.co.jp/search/mall/adidas%20CODECHAOS%2025%20BOA/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=adidas%20CODECHAOS%2025%20BOA"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=adidas%20CODECHAOS%2025%20BOA",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アクセサリー",
