@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/refresh-official-gear-images.mjs'
       - 'scripts/finalize-remaining-gear-images.mjs'
+      - 'scripts/apply-curated-official-images.mjs'
       - '.github/workflows/refresh-official-gear-images.yml'
 permissions:
   contents: write
@@ -16,6 +17,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Restore audited official manufacturer images
+        run: node scripts/apply-curated-official-images.mjs
       - name: Resolve remaining images from exact official product pages
         run: node scripts/finalize-remaining-gear-images.mjs
       - name: Commit verified image data
@@ -23,6 +26,6 @@ jobs:
           if git diff --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/gear.json data/gear-image-final-pass.json
-          git commit -m 'Resolve remaining gear images from official product pages'
+          git add data/gear.json data/gear-image-curated-audit.json data/gear-image-final-pass.json
+          git commit -m 'Restore audited official gear images'
           git push
