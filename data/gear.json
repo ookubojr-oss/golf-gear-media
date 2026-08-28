@@ -13,7 +13,9 @@
     "no": "01",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20Qi4D%20Driver",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20Qi4D%20Driver/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Qi4D%20Driver"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Qi4D%20Driver",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ドライバー",
@@ -29,12 +31,14 @@
     "no": "02",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20GTS2%20Driver",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20GTS2%20Driver/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20GTS2%20Driver"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20GTS2%20Driver",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ドライバー",
     "name": "COBRA OPTM X Driver",
-    "image": "https://www.cobragolf.com/cdn/shop/files/d0E11_hero_3802b84b-b0a0-4736-b616-1e401f92a76f.jpg?v=1768591373",
+    "image": "https://cdn.shopify.com/s/files/1/0634/7833/3657/files/SS26_Ecom_Cobra_OPTM_PDP_Driver_X_ImgGal-1-min.jpg",
     "price": "¥70,400前後",
     "summary": "寛容性、弾道調整、振り切れる重量を比較したいドライバー。",
     "tags": [
@@ -45,7 +49,9 @@
     "no": "03",
     "amazon": "https://www.amazon.co.jp/s?k=COBRA%20OPTM%20X%20Driver",
     "rakuten": "https://search.rakuten.co.jp/search/mall/COBRA%20OPTM%20X%20Driver/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=COBRA%20OPTM%20X%20Driver"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=COBRA%20OPTM%20X%20Driver",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ドライバー",
@@ -69,7 +75,7 @@
   {
     "category": "ドライバー",
     "name": "PING G440 MAX Driver",
-    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1784693259290/zoom/TC441_zoom_D.jpg?sh=900&sm=fit&sw=900",
+    "image": "https://api.next.ping.com/media/catalog/product/c/l/clubs_drivers_g440_max_sole_1600x1600_8603.png?auto=webp&fit=bounds&format=pjpg&quality=80&width=1600",
     "price": "¥77,000前後",
     "summary": "寛容性、弾道調整、振り切れる重量を比較したいドライバー。",
     "tags": [
@@ -80,12 +86,14 @@
     "no": "05",
     "amazon": "https://www.amazon.co.jp/s?k=PING%20G440%20MAX%20Driver",
     "rakuten": "https://search.rakuten.co.jp/search/mall/PING%20G440%20MAX%20Driver/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20G440%20MAX%20Driver"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20G440%20MAX%20Driver",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ドライバー",
     "name": "Callaway ELYTE X Driver",
-    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1784693259290/zoom/TC441_zoom_D.jpg?sh=900&sm=fit&sw=900",
+    "image": "https://prd-sfcc.callawaygolf.com/dw/image/v2/AADH_PRD/on/demandware.static/-/Sites-CGI-ItemMaster/en_US/v1784528739488/sits/drivers-2025-elyte-x/drivers-2025-elyte-x___1.jpg?bgcolor=F7F7F7&q=90&sfrm=png&sw=3000",
     "price": "¥80,300前後",
     "summary": "寛容性、弾道調整、振り切れる重量を比較したいドライバー。",
     "tags": [
@@ -96,12 +104,14 @@
     "no": "06",
     "amazon": "https://www.amazon.co.jp/s?k=Callaway%20ELYTE%20X%20Driver",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Callaway%20ELYTE%20X%20Driver/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Callaway%20ELYTE%20X%20Driver"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Callaway%20ELYTE%20X%20Driver",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ドライバー",
     "name": "Srixon ZXi MAX Driver",
-    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1784693259290/zoom/TC441_zoom_D.jpg?sh=900&sm=fit&sw=900",
+    "image": "https://au.dunlopsports.com/on/demandware.static/-/Sites-masterCatalog_DunlopSports/default/dw3c859cae/images/zxi-woods/gallery/ZXi_MAX/05.jpg",
     "price": "¥83,600前後",
     "summary": "寛容性、弾道調整、振り切れる重量を比較したいドライバー。",
     "tags": [
@@ -112,12 +122,14 @@
     "no": "07",
     "amazon": "https://www.amazon.co.jp/s?k=Srixon%20ZXi%20MAX%20Driver",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Srixon%20ZXi%20MAX%20Driver/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20ZXi%20MAX%20Driver"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20ZXi%20MAX%20Driver",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ドライバー",
     "name": "TaylorMade R7 Quad Mini Driver",
-    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1784693259290/zoom/TC441_zoom_D.jpg?sh=900&sm=fit&sw=900",
+    "image": "https://assets.taylormadegolf.com/i/30/979061/R7-Quad-Mini-Studio-Hero~W1000_H562_Mcrop_P50-50.png",
     "price": "¥86,900前後",
     "summary": "寛容性、弾道調整、振り切れる重量を比較したいドライバー。",
     "tags": [
@@ -128,7 +140,9 @@
     "no": "08",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20R7%20Quad%20Mini%20Driver",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20R7%20Quad%20Mini%20Driver/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20R7%20Quad%20Mini%20Driver"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20R7%20Quad%20Mini%20Driver",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "フェアウェイウッド／ハイブリッド",
@@ -144,7 +158,9 @@
     "no": "09",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20Qi4D%20Fairway%20%233",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20Qi4D%20Fairway%20%233/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Qi4D%20Fairway%20%233"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Qi4D%20Fairway%20%233",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "フェアウェイウッド／ハイブリッド",
@@ -160,7 +176,9 @@
     "no": "10",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20Qi4D%20Fairway%20%235",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20Qi4D%20Fairway%20%235/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Qi4D%20Fairway%20%235"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20Qi4D%20Fairway%20%235",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "フェアウェイウッド／ハイブリッド",
@@ -184,7 +202,7 @@
   {
     "category": "フェアウェイウッド／ハイブリッド",
     "name": "Srixon Z U85 U4",
-    "image": "https://www.dunlopsports.com/dw/image/v2/AAJP_PRD/on/demandware.static/-/Sites-master-catalog-srixon/default/dw9e92f530/images/large/zu85_iron.jpg",
+    "image": "https://sports.dunlop.co.jp/golf/products/clublibrary/iron/images/srzu855000_main.jpg",
     "price": "¥39,700前後",
     "summary": "地面から高さを出しやすく、長い距離を安全に運ぶための候補。",
     "tags": [
@@ -195,12 +213,14 @@
     "no": "12",
     "amazon": "https://www.amazon.co.jp/s?k=Srixon%20Z%20U85%20U4",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Srixon%20Z%20U85%20U4/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20Z%20U85%20U4"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20Z%20U85%20U4",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "フェアウェイウッド／ハイブリッド",
     "name": "PING G440 Hybrid #4",
-    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1786680948148/zoom/TC448_zoom_D.jpg?sh=900&sm=fit&sw=900",
+    "image": "https://api.next.ping.com/media/catalog/product/c/l/clubs.hybrids.g440.4_hybrid_sole_1600x1600_38ee.png?auto=webp&fit=bounds&format=pjpg&quality=80&width=1600",
     "price": "¥43,000前後",
     "summary": "地面から高さを出しやすく、長い距離を安全に運ぶための候補。",
     "tags": [
@@ -211,12 +231,14 @@
     "no": "13",
     "amazon": "https://www.amazon.co.jp/s?k=PING%20G440%20Hybrid%20%234",
     "rakuten": "https://search.rakuten.co.jp/search/mall/PING%20G440%20Hybrid%20%234/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20G440%20Hybrid%20%234"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20G440%20Hybrid%20%234",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "フェアウェイウッド／ハイブリッド",
     "name": "Titleist GT2 Fairway #5",
-    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1786680948148/zoom/TC448_zoom_D.jpg?sh=900&sm=fit&sw=900",
+    "image": "https://acushnet.scene7.com/is/image/titleist/24-Spec-GT2-FW-Thumb?fmt=png-alpha&qlt=100&resMode=sharp2&wid=1200",
     "price": "¥46,300前後",
     "summary": "地面から高さを出しやすく、長い距離を安全に運ぶための候補。",
     "tags": [
@@ -227,12 +249,14 @@
     "no": "14",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20GT2%20Fairway%20%235",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20GT2%20Fairway%20%235/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20GT2%20Fairway%20%235"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20GT2%20Fairway%20%235",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アイアンセット",
     "name": "TaylorMade P7TW 5-PW",
-    "image": "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1",
+    "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1787240910549/zoom/ST472_zoom_D.jpg?sh=900&sm=fit&sw=900",
     "price": "¥89,800前後",
     "summary": "セット本数、ロフト、ソール幅、シャフト重量を確かめたいアイアン。",
     "tags": [
@@ -243,7 +267,9 @@
     "no": "15",
     "amazon": "https://www.amazon.co.jp/s?k=TaylorMade%20P7TW%205-PW",
     "rakuten": "https://search.rakuten.co.jp/search/mall/TaylorMade%20P7TW%205-PW/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20P7TW%205-PW"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=TaylorMade%20P7TW%205-PW",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アイアンセット",
@@ -267,7 +293,7 @@
   {
     "category": "アイアンセット",
     "name": "PING G440 6-PW",
-    "image": "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1",
+    "image": "https://api.next.ping.com/media/catalog/product/c/l/clubs.irons.g440.7_iron_cavity_alt_1600x1600_58b0.png?auto=webp&fit=bounds&format=pjpg&quality=80&width=1600",
     "price": "¥96,400前後",
     "summary": "セット本数、ロフト、ソール幅、シャフト重量を確かめたいアイアン。",
     "tags": [
@@ -278,12 +304,14 @@
     "no": "17",
     "amazon": "https://www.amazon.co.jp/s?k=PING%20G440%206-PW",
     "rakuten": "https://search.rakuten.co.jp/search/mall/PING%20G440%206-PW/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20G440%206-PW"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20G440%206-PW",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アイアンセット",
     "name": "Titleist T350 6-PW",
-    "image": "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1",
+    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw66fe6b50/563C_01.png?sfrm=png&sh=650&sm=fit&sw=650",
     "price": "¥99,700前後",
     "summary": "セット本数、ロフト、ソール幅、シャフト重量を確かめたいアイアン。",
     "tags": [
@@ -294,12 +322,14 @@
     "no": "18",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20T350%206-PW",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20T350%206-PW/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20T350%206-PW"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20T350%206-PW",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アイアンセット",
     "name": "Srixon ZXi5 5-PW",
-    "image": "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1",
+    "image": "https://au.dunlopsports.com/on/demandware.static/-/Sites-masterCatalog_DunlopSports/default/dwf7abe959/images/zxi-irons/gallery/ZXi5/09.jpg",
     "price": "¥103,000前後",
     "summary": "セット本数、ロフト、ソール幅、シャフト重量を確かめたいアイアン。",
     "tags": [
@@ -310,12 +340,14 @@
     "no": "19",
     "amazon": "https://www.amazon.co.jp/s?k=Srixon%20ZXi5%205-PW",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Srixon%20ZXi5%205-PW/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20ZXi5%205-PW"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Srixon%20ZXi5%205-PW",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アイアンセット",
     "name": "Mizuno JPX 925 HOT METAL 5-PW",
-    "image": "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1",
+    "image": "https://jpn.mizuno.com/sites/default/files/2025-04/gf_gf_250418_jpx_925_HotMetal_Face_img1.jpg",
     "price": "¥106,300前後",
     "summary": "セット本数、ロフト、ソール幅、シャフト重量を確かめたいアイアン。",
     "tags": [
@@ -326,12 +358,14 @@
     "no": "20",
     "amazon": "https://www.amazon.co.jp/s?k=Mizuno%20JPX%20925%20HOT%20METAL%205-PW",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Mizuno%20JPX%20925%20HOT%20METAL%205-PW/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Mizuno%20JPX%20925%20HOT%20METAL%205-PW"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Mizuno%20JPX%20925%20HOT%20METAL%205-PW",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アイアンセット",
     "name": "Callaway Apex Ai300 5-PW",
-    "image": "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1",
+    "image": "https://prd-sfcc.callawaygolf.com/dw/image/v2/AADH_PRD/on/demandware.static/-/Sites-CGI-ItemMaster/en_US/v1784007623121/sits/irons-2024-apex-ai300/irons-2024-apex-ai300___1.jpg?bgcolor=F7F7F7&q=90&sfrm=png&sw=3000",
     "price": "¥109,600前後",
     "summary": "セット本数、ロフト、ソール幅、シャフト重量を確かめたいアイアン。",
     "tags": [
@@ -342,12 +376,14 @@
     "no": "21",
     "amazon": "https://www.amazon.co.jp/s?k=Callaway%20Apex%20Ai300%205-PW",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Callaway%20Apex%20Ai300%205-PW/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Callaway%20Apex%20Ai300%205-PW"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Callaway%20Apex%20Ai300%205-PW",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アイアンセット",
     "name": "COBRA KING TEC X 5-PW",
-    "image": "https://cdn11.bigcommerce.com/s-d6glsqook0/products/3265/images/12792/TAYLO-P7TW-2__83641.1622150473.386.513.jpg?c=1",
+    "image": "https://www.cobragolf.com/cdn/shop/files/R9001_ADDRESS_84bf3a86-e4bf-4c99-b50b-dc501b7714a1.jpg?v=1775233744&width=1600",
     "price": "¥112,900前後",
     "summary": "セット本数、ロフト、ソール幅、シャフト重量を確かめたいアイアン。",
     "tags": [
@@ -358,12 +394,14 @@
     "no": "22",
     "amazon": "https://www.amazon.co.jp/s?k=COBRA%20KING%20TEC%20X%205-PW",
     "rakuten": "https://search.rakuten.co.jp/search/mall/COBRA%20KING%20TEC%20X%205-PW/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=COBRA%20KING%20TEC%20X%205-PW"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=COBRA%20KING%20TEC%20X%205-PW",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ウェッジ",
     "name": "Titleist Vokey SM10 50°",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw77ef934e/852RSS/852RSS_01.png",
+    "image": "https://acushnet.scene7.com/is/image/titleist/24SM10-Finishes-Highlight?fmt=png-alpha&wid=800",
     "price": "¥19,800前後",
     "summary": "ロフト間隔とバウンスを手持ちアイアンにつなげて選ぶウェッジ。",
     "tags": [
@@ -374,12 +412,14 @@
     "no": "23",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Vokey%20SM10%2050%C2%B0",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Vokey%20SM10%2050%C2%B0/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Vokey%20SM10%2050%C2%B0"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Vokey%20SM10%2050%C2%B0",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ウェッジ",
     "name": "Titleist Vokey SM10 54°",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw77ef934e/852RSS/852RSS_01.png",
+    "image": "https://acushnet.scene7.com/is/image/titleist/24SM10-Finishes-Highlight?fmt=png-alpha&wid=800",
     "price": "¥23,100前後",
     "summary": "ロフト間隔とバウンスを手持ちアイアンにつなげて選ぶウェッジ。",
     "tags": [
@@ -390,12 +430,14 @@
     "no": "24",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Vokey%20SM10%2054%C2%B0",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Vokey%20SM10%2054%C2%B0/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Vokey%20SM10%2054%C2%B0"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Vokey%20SM10%2054%C2%B0",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ウェッジ",
     "name": "Titleist Vokey SM10 58°",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw77ef934e/852RSS/852RSS_01.png",
+    "image": "https://acushnet.scene7.com/is/image/titleist/24SM10-Finishes-Highlight?fmt=png-alpha&wid=800",
     "price": "¥26,400前後",
     "summary": "ロフト間隔とバウンスを手持ちアイアンにつなげて選ぶウェッジ。",
     "tags": [
@@ -406,12 +448,14 @@
     "no": "25",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Vokey%20SM10%2058%C2%B0",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Vokey%20SM10%2058%C2%B0/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Vokey%20SM10%2058%C2%B0"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Vokey%20SM10%2058%C2%B0",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ウェッジ",
     "name": "Cleveland RTZ 56°",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master/default/dw77ef934e/852RSS/852RSS_01.png",
+    "image": "https://srixonasia.com/wp-content/uploads/2025/02/CG25-Clubs-Wedges-RTZ-Black-Satin-1.jpg",
     "price": "¥29,700前後",
     "summary": "ロフト間隔とバウンスを手持ちアイアンにつなげて選ぶウェッジ。",
     "tags": [
@@ -422,7 +466,9 @@
     "no": "26",
     "amazon": "https://www.amazon.co.jp/s?k=Cleveland%20RTZ%2056%C2%B0",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Cleveland%20RTZ%2056%C2%B0/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Cleveland%20RTZ%2056%C2%B0"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Cleveland%20RTZ%2056%C2%B0",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ウェッジ",
@@ -491,7 +537,7 @@
   {
     "category": "パター",
     "name": "PING Scottsdale DS72",
-    "image": "https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992&width=832",
+    "image": "https://api.next.ping.com/media/catalog/product/c/l/clubs.putters.scottsdale.ds72_cavity_view_1600x1600_2f0b.png?auto=webp&fit=bounds&format=pjpg&height=&quality=80&width=3840",
     "price": "¥39,700前後",
     "summary": "構えやすさ、距離感、フェースの開閉量を試打で比較したいパター。",
     "tags": [
@@ -502,7 +548,9 @@
     "no": "31",
     "amazon": "https://www.amazon.co.jp/s?k=PING%20Scottsdale%20DS72",
     "rakuten": "https://search.rakuten.co.jp/search/mall/PING%20Scottsdale%20DS72/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20Scottsdale%20DS72"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20Scottsdale%20DS72",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "パター",
@@ -523,7 +571,7 @@
   {
     "category": "パター",
     "name": "Odyssey Ai-ONE Square 2 Square Jailbird",
-    "image": "https://www.golfworx.co.uk/wp-content/uploads/2025/02/tourx3.webp",
+    "image": "https://au.callawaygolf.com/dw/image/v2/AADH_PRD/on/demandware.static/-/Sites-CGI-ItemMaster/en_AU/v1786340387764/sits/putters-2025-square-to-square-jailbird/putters-2025-square-to-square-jailbird___1.png?sfrm=png&sw=800",
     "price": "¥46,300前後",
     "summary": "構えやすさ、距離感、フェースの開閉量を試打で比較したいパター。",
     "tags": [
@@ -534,12 +582,14 @@
     "no": "33",
     "amazon": "https://www.amazon.co.jp/s?k=Odyssey%20Ai-ONE%20Square%202%20Square%20Jailbird",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Odyssey%20Ai-ONE%20Square%202%20Square%20Jailbird/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Odyssey%20Ai-ONE%20Square%202%20Square%20Jailbird"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Odyssey%20Ai-ONE%20Square%202%20Square%20Jailbird",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ゴルフボール",
     "name": "Titleist Pro V1 2025 1ダース",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwf626864d/T2029S-H-J/T2029S-H-J_01.png",
+    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dw5f9812c2/005PV1T/T2029S_01.jpg?sw=300&sh=300&sm=fit&sfrm=png",
     "price": "¥3,980前後",
     "summary": "同じモデルを継続使用し、打感とショートゲームの距離感をそろえるボール。",
     "tags": [
@@ -550,12 +600,14 @@
     "no": "34",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Pro%20V1%202025%201%E3%83%80%E3%83%BC%E3%82%B9",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Pro%20V1%202025%201%E3%83%80%E3%83%BC%E3%82%B9/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Pro%20V1%202025%201%E3%83%80%E3%83%BC%E3%82%B9"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Pro%20V1%202025%201%E3%83%80%E3%83%BC%E3%82%B9",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ゴルフボール",
     "name": "Titleist Pro V1x 2025 1ダース",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwf626864d/T2029S-H-J/T2029S-H-J_01.png",
+    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dw0b11c337/005PVXT/T2049S-72.jpg?sw=300&sh=300&sm=fit&sfrm=png",
     "price": "¥7,280前後",
     "summary": "同じモデルを継続使用し、打感とショートゲームの距離感をそろえるボール。",
     "tags": [
@@ -566,7 +618,9 @@
     "no": "35",
     "amazon": "https://www.amazon.co.jp/s?k=Titleist%20Pro%20V1x%202025%201%E3%83%80%E3%83%BC%E3%82%B9",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Titleist%20Pro%20V1x%202025%201%E3%83%80%E3%83%BC%E3%82%B9/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Pro%20V1x%202025%201%E3%83%80%E3%83%BC%E3%82%B9"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Titleist%20Pro%20V1x%202025%201%E3%83%80%E3%83%BC%E3%82%B9",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "ゴルフボール",
@@ -638,7 +692,7 @@
   {
     "category": "グローブ",
     "name": "FootJoy WeatherSof Glove",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dwbd6a53f6/Players-Glove/Players-Glove_01.png",
+    "image": "https://www.footjoy.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-footjoy-master/default/dwff13cd1d/FJ_66159E_01.jpg?sw=300&sh=300&sm=fit&sfrm=png",
     "price": "¥4,900前後",
     "summary": "指先の余りと手のひらのたるみがないサイズを選ぶグローブ。",
     "tags": [
@@ -649,7 +703,9 @@
     "no": "40",
     "amazon": "https://www.amazon.co.jp/s?k=FootJoy%20WeatherSof%20Glove",
     "rakuten": "https://search.rakuten.co.jp/search/mall/FootJoy%20WeatherSof%20Glove/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=FootJoy%20WeatherSof%20Glove"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=FootJoy%20WeatherSof%20Glove",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "グローブ",
@@ -686,7 +742,7 @@
   {
     "category": "キャディバッグ",
     "name": "PING Hoofer Stand Bag",
-    "image": "https://www.titleist.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dw129066b8/TB23SX4-006/TB23SX4-006_01.png",
+    "image": "https://api.next.ping.com/media/catalog/product/h/o/hoofer_14_heather_grey_black_drop_shadow_1600x1600_6d83.png",
     "price": "¥22,100前後",
     "summary": "重量、自立性、口枠、車への積みやすさを比較した軽量バッグ。",
     "tags": [
@@ -697,7 +753,9 @@
     "no": "43",
     "amazon": "https://www.amazon.co.jp/s?k=PING%20Hoofer%20Stand%20Bag",
     "rakuten": "https://search.rakuten.co.jp/search/mall/PING%20Hoofer%20Stand%20Bag/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20Hoofer%20Stand%20Bag"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=PING%20Hoofer%20Stand%20Bag",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "キャディバッグ",
@@ -753,7 +811,7 @@
   {
     "category": "シューズ",
     "name": "FootJoy HyperFlex BOA",
-    "image": "https://www.footjoy.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-footjoy-master/default/dw13602ec0/56933/56933_01.png",
+    "image": "https://www.footjoy.com/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-footjoy-master/default/dwd65937a5/FJ_55478_01.jpg?sw=300&sh=300&sm=fit&sfrm=png",
     "price": "¥18,100前後",
     "summary": "実寸と幅を試着し、かかとの浮きと歩行時の安定性を見るシューズ。",
     "tags": [
@@ -764,7 +822,9 @@
     "no": "47",
     "amazon": "https://www.amazon.co.jp/s?k=FootJoy%20HyperFlex%20BOA",
     "rakuten": "https://search.rakuten.co.jp/search/mall/FootJoy%20HyperFlex%20BOA/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=FootJoy%20HyperFlex%20BOA"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=FootJoy%20HyperFlex%20BOA",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "シューズ",
@@ -796,12 +856,14 @@
     "no": "49",
     "amazon": "https://www.amazon.co.jp/s?k=Nikon%20COOLSHOT%20PROIII%20STABILIZED",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Nikon%20COOLSHOT%20PROIII%20STABILIZED/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Nikon%20COOLSHOT%20PROIII%20STABILIZED"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Nikon%20COOLSHOT%20PROIII%20STABILIZED",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   },
   {
     "category": "アクセサリー",
     "name": "Pride Professional Tee System 69mm",
-    "image": "https://www.nikon-image.com/products/sportoptics/laser/coolshot_proiii_stabilized/img/product_01.png",
+    "image": "https://cdn.shopify.com/s/files/1/0046/0931/0823/files/PTS-Family-Trio-Hero_480x480.jpg?v=1611008734",
     "price": "¥4,500前後",
     "summary": "距離確認とティーアップを安定させる実用アクセサリー。",
     "tags": [
@@ -812,6 +874,8 @@
     "no": "50",
     "amazon": "https://www.amazon.co.jp/s?k=Pride%20Professional%20Tee%20System%2069mm",
     "rakuten": "https://search.rakuten.co.jp/search/mall/Pride%20Professional%20Tee%20System%2069mm/",
-    "yahoo": "https://shopping.yahoo.co.jp/search?p=Pride%20Professional%20Tee%20System%2069mm"
+    "yahoo": "https://shopping.yahoo.co.jp/search?p=Pride%20Professional%20Tee%20System%2069mm",
+    "image_verified": true,
+    "image_verification": "official-curated-audit"
   }
 ]
