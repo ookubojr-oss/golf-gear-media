@@ -11,24 +11,34 @@
 }}
 
 <section id="courseArchive" class="course-archive">
-  <header class="course-archive-header">
-    <div class="course-archive-nav"><a href="/" class="course-archive-brand"><b>JIRO GOLF</b><small>ゴルフ最新速報部</small></a><a href="/" class="course-archive-home">HOME ↗</a></div>
-    <div class="course-archive-title"><span>COURSE DIRECTORY / JAPAN</span><h1>PLAY<br>THE LAND.</h1><p>景色だけでは選ばない。設計、難易度、名物ホールまで。<br>日本のプレーすべきコースを、JIROの視点で案内します。</p></div>
-    <div class="course-archive-meta"><b>{{ len $courses }}</b><span>SELECTED<br>COURSES</span><i></i><em>SCROLL TO EXPLORE</em></div>
+  <div class="course-trending"><span>TRENDING</span><p>日本の名門コースを、もっと深く。</p><a href="#featuredCourses">DISCOVER COURSES ↘</a></div>
+  <header class="course-masthead">
+    <a href="/" class="course-logo" aria-label="JIRO GOLF ホーム"><b>JIRO</b><span>GOLF</span><small>THE JAPANESE GOLF EDIT</small></a>
+    <nav class="course-main-nav" aria-label="コースページメニュー">
+      <a href="/categories/latest-gear/">NEWS / TOPICS</a><a href="/categories/jiros-pick/">GEAR REVIEWS</a><a href="/categories/witb/">TOURNAMENTS</a><a class="is-current" href="/posts/course-guide/">COURSES</a><button class="course-search" type="button" aria-label="サイト内検索">⌕</button>
+    </nav>
   </header>
 
-  <div class="course-archive-body">
-    <div class="course-archive-intro"><span>01 — THE SELECTION</span><h2>注目コース</h2><p>トーナメントの舞台から、一度は歩きたい名門まで。地域やコースタイプから次のラウンドを探す。</p></div>
-    <nav class="course-filter" aria-label="地域で絞り込む"><button class="is-active" type="button" data-course-filter="all">ALL</button><button type="button" data-course-filter="関東">関東</button><button type="button" data-course-filter="中部">中部</button><button type="button" data-course-filter="関西">関西</button><button type="button" data-course-filter="北海道">北海道</button><button type="button" data-course-filter="九州">九州</button></nav>
+  <section class="course-hero">
+    <div class="course-hero-copy"><span class="course-kicker">COURSE DIRECTORY / JAPAN</span><h1>PLAY THE<br>LAND.</h1><p>景色だけでは選ばない。設計、難易度、名物ホールまで。日本のプレーすべきコースを、JIROの視点で案内します。</p><div class="course-count"><b>{{ len $courses }}</b><span>FEATURED<br>COURSES</span></div></div>
+    <figure class="course-hero-photo"><img src="https://www.jcbtravel.co.jp/concierge/golf/img/08/03.jpg" alt="富士山を望むゴルフコース"><figcaption>FUJI ZAKURA C.C. / YAMANASHI</figcaption></figure>
+  </section>
+
+  <div id="featuredCourses" class="course-archive-body">
+    <div class="course-section-heading"><div><span>01 — THE SELECTION</span><h2>注目コース</h2></div><p>トーナメントの舞台から、一度は歩きたい名門まで。地域やコースタイプから、次のラウンドを探す。</p></div>
+    <div class="course-tools">
+      <nav class="course-filter" aria-label="地域で絞り込む"><button class="is-active" type="button" data-course-filter="all">すべて</button><button type="button" data-course-filter="関東">関東</button><button type="button" data-course-filter="関西">関西</button><button type="button" data-course-filter="中部">中部</button><button type="button" data-course-filter="九州">九州</button><button type="button" data-course-filter="北海道">北海道</button></nav>
+      <label class="course-sort"><span>SORT BY</span><select id="courseSort" aria-label="コースの並び替え"><option value="featured">おすすめ順</option><option value="name">コース名順</option><option value="area">地域順</option></select></label>
+    </div>
     <div class="course-editorial-list">
       {{ range $i, $c := $courses }}{{ $region := "中部" }}{{ if in (slice "東京" "茨城") $c.area }}{{ $region = "関東" }}{{ else if eq $c.area "兵庫" }}{{ $region = "関西" }}{{ else if eq $c.area "北海道" }}{{ $region = "北海道" }}{{ else if eq $c.area "宮崎" }}{{ $region = "九州" }}{{ end }}
-      <a class="course-editorial-item{{ if eq $i 0 }} is-lead{{ end }}" data-course-region="{{ $region }}" href="?name={{ $c.name | urlquery }}">
+      <a class="course-editorial-item" data-course-index="{{ $i }}" data-course-name="{{ $c.name }}" data-course-area="{{ $c.area }}" data-course-region="{{ $region }}" href="?name={{ $c.name | urlquery }}">
         <div class="course-editorial-photo"><img src="{{ $c.img }}" alt="{{ $c.name }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}"><span>{{ printf "%02d" (add $i 1) }}</span></div>
-        <div class="course-editorial-copy"><div><em>{{ $c.area }} / {{ $c.place }}</em><small>{{ $c.style }}</small></div><h3>{{ $c.name }}</h3><p>{{ $c.intro }}</p><strong>EXPLORE COURSE <i>↗</i></strong></div>
+        <div class="course-editorial-copy"><div class="course-row-meta"><em>{{ $region }} / {{ $c.area }}</em><small>{{ $c.style }}</small></div><h3>{{ $c.name }}</h3><p>{{ $c.intro }}</p><div class="course-facts"><span><small>LOCATION</small>{{ $c.area }} {{ $c.place }}</span><span><small>COURSE</small>18H / PAR 72</span><span><small>DIFFICULTY</small>{{ strings.Repeat $c.difficulty "●" }}{{ strings.Repeat (sub 5 $c.difficulty) "○" }}</span></div><strong aria-hidden="true">↗</strong></div>
       </a>{{ end }}
     </div>
   </div>
-  <footer class="course-archive-footer"><b>JIRO GOLF</b><p>GOOD GOLF STARTS<br>WITH A GOOD COURSE.</p><a href="/">BACK TO HOME ↑</a></footer>
+  <footer class="course-archive-footer"><b>JIRO GOLF</b><p>GOOD GOLF STARTS WITH A GOOD COURSE.</p><a href="/">BACK TO HOME ↑</a></footer>
 </section>
 
 <main id="courseArticle" class="course-article-page" hidden>
@@ -43,6 +53,6 @@
     <a id="courseFeeSource" class="course-home-link" target="_blank" rel="noopener">料金の確認元を見る →</a><p class="fine">※料金は季節・曜日・プラン・会員区分などで変動します。予約時に公式サイトで最新料金をご確認ください。</p><a id="courseOfficial" class="course-home-link" target="_blank" rel="noopener">公式ホームページを見る →</a><a class="course-home-link is-secondary" href="/posts/course-guide/">コース一覧へ戻る →</a>
   </section>
 </main>
-<script>(()=>{const courses={{ $courses | jsonify | safeJS }};const params=new URLSearchParams(location.search),name=params.get('name'),course=courses.find(c=>c.name===name);if(course){document.getElementById('courseArchive').hidden=true;const article=document.getElementById('courseArticle');article.hidden=false;const set=(id,v)=>document.getElementById(id).textContent=v;set('courseArticleName',course.name);set('courseArticleTitle',course.name+'の魅力');set('courseArticleArea',course.area+' / '+course.place);set('courseInfoArea',course.area);set('courseInfoStyle',course.style);set('courseDifficulty','★'.repeat(course.difficulty)+'☆'.repeat(5-course.difficulty));set('courseBreak80',course.rank);set('courseBestSeason',course.season);set('courseArticleIntro',course.intro);set('courseArticlePoint',course.point);set('courseArticleDetail',course.detail);set('courseArticleHole',course.hole);set('courseArticleFood',course.food);set('courseArticleFee',course.fee);set('courseArticleCaption',course.name+'のコースイメージ');document.getElementById('courseArticleHero').style.backgroundImage=`url('${course.img}')`;const photo=document.getElementById('courseArticlePhoto');photo.src=course.img;photo.alt=course.name;document.getElementById('courseFeeSource').href=course.feeUrl;document.getElementById('courseOfficial').href=course.url;document.title=course.name+' | Jiro Golf'}else{document.querySelectorAll('[data-course-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-course-filter]').forEach(b=>b.classList.toggle('is-active',b===button));document.querySelectorAll('[data-course-region]').forEach(item=>item.hidden=button.dataset.courseFilter!=='all'&&item.dataset.courseRegion!==button.dataset.courseFilter)}))}})();</script>
+<script>(()=>{const courses={{ $courses | jsonify | safeJS }};const params=new URLSearchParams(location.search),name=params.get('name'),course=courses.find(c=>c.name===name);if(course){document.getElementById('courseArchive').hidden=true;const article=document.getElementById('courseArticle');article.hidden=false;const set=(id,v)=>document.getElementById(id).textContent=v;set('courseArticleName',course.name);set('courseArticleTitle',course.name+'の魅力');set('courseArticleArea',course.area+' / '+course.place);set('courseInfoArea',course.area);set('courseInfoStyle',course.style);set('courseDifficulty','★'.repeat(course.difficulty)+'☆'.repeat(5-course.difficulty));set('courseBreak80',course.rank);set('courseBestSeason',course.season);set('courseArticleIntro',course.intro);set('courseArticlePoint',course.point);set('courseArticleDetail',course.detail);set('courseArticleHole',course.hole);set('courseArticleFood',course.food);set('courseArticleFee',course.fee);set('courseArticleCaption',course.name+'のコースイメージ');document.getElementById('courseArticleHero').style.backgroundImage=`url('${course.img}')`;const photo=document.getElementById('courseArticlePhoto');photo.src=course.img;photo.alt=course.name;document.getElementById('courseFeeSource').href=course.feeUrl;document.getElementById('courseOfficial').href=course.url;document.title=course.name+' | Jiro Golf'}else{const list=document.querySelector('.course-editorial-list');document.querySelectorAll('[data-course-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-course-filter]').forEach(b=>b.classList.toggle('is-active',b===button));document.querySelectorAll('[data-course-region]').forEach(item=>item.hidden=button.dataset.courseFilter!=='all'&&item.dataset.courseRegion!==button.dataset.courseFilter)}));document.getElementById('courseSort')?.addEventListener('change',event=>{const key=event.target.value,items=[...list.children];items.sort((a,b)=>key==='featured'?Number(a.dataset.courseIndex)-Number(b.dataset.courseIndex):(a.dataset[key]||'').localeCompare(b.dataset[key]||'','ja'));items.forEach(item=>list.appendChild(item))})}})();</script>
 {{ end }}
 
