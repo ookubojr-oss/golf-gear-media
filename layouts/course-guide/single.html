@@ -11,21 +11,21 @@
 }}
 
 <section id="courseArchive" class="course-archive">
-  <div class="course-trending"><span>TRENDING</span><p>日本の名門コースを、もっと深く。</p><a href="#featuredCourses">DISCOVER COURSES ↘</a></div>
+  
   <header class="course-masthead">
-    <a href="/" class="course-logo" aria-label="JIRO GOLF ホーム"><b>JIRO</b><span>GOLF</span><small>THE JAPANESE GOLF EDIT</small></a>
+    <a href="/" class="course-logo" aria-label="JIRO GOLF ホーム"><b>JIRO GOLF</b><small>ゴルフ最新速報部</small></a>
     <nav class="course-main-nav" aria-label="コースページメニュー">
       <a href="/categories/latest-gear/">NEWS / TOPICS</a><a href="/categories/jiros-pick/">GEAR REVIEWS</a><a href="/categories/witb/">TOURNAMENTS</a><a class="is-current" href="/posts/course-guide/">COURSES</a><button class="course-search" type="button" aria-label="サイト内検索">⌕</button>
     </nav>
   </header>
 
   <section class="course-hero">
-    <div class="course-hero-copy"><span class="course-kicker">COURSE DIRECTORY / JAPAN</span><h1>PLAY THE<br>LAND.</h1><p>景色だけでは選ばない。設計、難易度、名物ホールまで。日本のプレーすべきコースを、JIROの視点で案内します。</p><div class="course-count"><b>{{ len $courses }}</b><span>FEATURED<br>COURSES</span></div></div>
+    <div class="course-hero-copy"><span class="course-kicker">COURSE DIRECTORY / JAPAN</span><h1>PLAY<br>THE LAND<span>.</span></h1><p>美しい自然と戦略が、最高のゴルフ体験をつくる。<br>全国の名門コースから、注目の最新コースまで。</p><div class="course-count"><b>{{ len $courses }}</b><span>FEATURED<br>COURSES</span></div></div>
     <figure class="course-hero-photo"><img src="https://www.jcbtravel.co.jp/concierge/golf/img/08/03.jpg" alt="富士山を望むゴルフコース"><figcaption>FUJI ZAKURA C.C. / YAMANASHI</figcaption></figure>
   </section>
 
   <div id="featuredCourses" class="course-archive-body">
-    <div class="course-section-heading"><div><span>01 — THE SELECTION</span><h2>注目コース</h2></div><p>トーナメントの舞台から、一度は歩きたい名門まで。地域やコースタイプから、次のラウンドを探す。</p></div>
+    <div class="course-section-heading"><div><h2>注目コース</h2><p>景観・戦略性・アクセスの良さなど、JIRO GOLFが厳選したおすすめコースをご紹介します。</p></div></div>
     <div class="course-tools">
       <nav class="course-filter" aria-label="地域で絞り込む"><button class="is-active" type="button" data-course-filter="all">すべて</button><button type="button" data-course-filter="関東">関東</button><button type="button" data-course-filter="関西">関西</button><button type="button" data-course-filter="中部">中部</button><button type="button" data-course-filter="九州">九州</button><button type="button" data-course-filter="北海道">北海道</button></nav>
       <label class="course-sort"><span>SORT BY</span><select id="courseSort" aria-label="コースの並び替え"><option value="featured">おすすめ順</option><option value="name">コース名順</option><option value="area">地域順</option></select></label>
@@ -34,7 +34,7 @@
       {{ range $i, $c := $courses }}{{ $region := "中部" }}{{ if in (slice "東京" "茨城") $c.area }}{{ $region = "関東" }}{{ else if eq $c.area "兵庫" }}{{ $region = "関西" }}{{ else if eq $c.area "北海道" }}{{ $region = "北海道" }}{{ else if eq $c.area "宮崎" }}{{ $region = "九州" }}{{ end }}
       <a class="course-editorial-item" data-course-index="{{ $i }}" data-course-name="{{ $c.name }}" data-course-area="{{ $c.area }}" data-course-region="{{ $region }}" href="?name={{ $c.name | urlquery }}">
         <div class="course-editorial-photo"><img src="{{ $c.img }}" alt="{{ $c.name }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}"><span>{{ printf "%02d" (add $i 1) }}</span></div>
-        <div class="course-editorial-copy"><div class="course-row-meta"><em>{{ $region }} / {{ $c.area }}</em><small>{{ $c.style }}</small></div><h3>{{ $c.name }}</h3><p>{{ $c.intro }}</p><div class="course-facts"><span><small>LOCATION</small>{{ $c.area }} {{ $c.place }}</span><span><small>COURSE</small>18H / PAR 72</span><span><small>DIFFICULTY</small>{{ strings.Repeat $c.difficulty "●" }}{{ strings.Repeat (sub 5 $c.difficulty) "○" }}</span></div><strong aria-hidden="true">↗</strong></div>
+        <div class="course-editorial-copy"><div class="course-row-meta"><em>{{ $region }} / {{ $c.area }}</em><small>{{ $c.style }}</small></div><h3>{{ $c.name }}</h3><p>{{ $c.intro }}</p><div class="course-facts"><span><small>LOCATION</small>{{ $c.area }} {{ $c.place }}</span><span><small>COURSE</small>18H / PAR 72</span><span><small>DIFFICULTY</small>{{ strings.Repeat $c.difficulty "●" }}{{ strings.Repeat (sub 5 $c.difficulty) "○" }}</span></div><strong aria-hidden="true"><i>→</i><small>VIEW DETAIL</small></strong></div>
       </a>{{ end }}
     </div>
   </div>
