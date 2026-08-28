@@ -1,0 +1,27 @@
+name: Refresh official gear images
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/refresh-official-gear-images.mjs'
+      - '.github/workflows/refresh-official-gear-images.yml'
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Resolve and verify all official gear images
+        run: node scripts/refresh-official-gear-images.mjs
+      - name: Commit verified image data
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/gear.json data/gear-image-audit.json
+          git commit -m 'Verify all 50 gear images from official sources'
+          git push
