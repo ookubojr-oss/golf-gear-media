@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-08-28T06:40:18.619Z",
+  "pinned": 5,
+  "resolved": 0,
+  "failed": 4,
+  "items": [
+    {
+      "name": "TaylorMade Qi10 MAX Driver",
+      "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1786075672959/zoom/KY266_zoom_D.jpg?sh=900&sm=fit&sw=900",
+      "source": "https://www.taylormadegolf.jp/taylormade-drivers/Qi10-Max-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%83%BC/DW-KY266.html",
+      "pinned": true
+    },
+    {
+      "name": "TaylorMade Qi10 Fairway #3",
+      "image": "https://www.taylormadegolf.jp/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/ja_JP/v1776053356368/zoom/KY268_zoom_D.jpg?sh=900&sm=fit&sw=900",
+      "source": "https://www.taylormadegolf.jp/taylormade-fairways/Qi10-%E3%83%95%E3%82%A7%E3%82%A2%E3%82%A6%E3%82%A7%E3%82%A4%E3%82%A6%E3%83%83%E3%83%89/DW-KY268.html",
+      "pinned": true
+    },
+    {
+      "name": "TaylorMade P790 5-PW",
+      "image": "https://www.taylormadegolf.com/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/default/v1785304008150/zoom/TA283_zoom_D.jpg?sh=900&sm=fit&sw=900",
+      "source": "https://www.taylormadegolf.com/P790-Irons/N2780111.html",
+      "pinned": true
+    },
+    {
+      "name": "TaylorMade TP5 2026 1ダース",
+      "image": "https://assets.taylormadegolf.com/i/f7/1260171/2026-TP5-Golf-Ball-Studio_2026-01-28-200904_uyeo~W1000_Mcrop_P50-50.jpeg",
+      "source": "https://www.taylormadegolf.com/clubhouse/1264489-tp5-tp5x-press-release.html",
+      "pinned": true
+    },
+    {
+      "name": "Callaway Chev Stand Bag",
+      "image": "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/AADH_PRD/on/demandware.static/-/Sites-CGI-ItemMaster/en_US/v1742015112529/sits/bags-2018-chev-stand/bags-2018-chev-stand_2266___1.jpg?bgcolor=F7F7F7&q=90&sfrm=png&sw=3000",
+      "source": "https://www.callawaygolf.com/bags-2018-chev-stand.html",
+      "pinned": true
+    }
+  ],
+  "failures": [
+    {
+      "name": "TaylorMade Hi-Toe 4 58°",
+      "error": "too many redirects https://www.taylormadegolf.com/clubhouse/882339-taylormade-introduces-hi-toe-4-wedges.html"
+    },
+    {
+      "name": "TaylorMade FlexTech Stand Bag",
+      "error": "too many redirects https://www.taylormadegolf.com/FlexTech-Stand-Bag/DW-JE942.html"
+    },
+    {
+      "name": "FootJoy PRO/SLX BOA",
+      "error": "410 https://www.footjoy.com/404"
+    },
+    {
+      "name": "adidas CODECHAOS 25 BOA",
+      "error": "No strong image candidate: adidas CODECHAOS 25 BOA @ https://news.adidas.com/golf/codechaos-25-redefines-performance-in-spikeless-footwear/s/480df764-3f20-46c3-86b6-2baffa69f8df"
+    }
+  ]
+}
