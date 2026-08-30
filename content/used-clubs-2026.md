@@ -5,5 +5,5 @@ draft: false
 type: "used-clubs"
 layout: "used-clubs"
 description: "2020〜2023年頃の型落ちドライバー、アイアン、パターから、2026年に狙いやすい12モデルを紹介。"
-image: "https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1600&q=82"
+image: "https://www.taylormadegolf.ca/on/demandware.static/-/Sites-tmag-master-catalog/en_CA/v1772514404440/zoom/N7365209_zoom_D.jpg"
 ---
