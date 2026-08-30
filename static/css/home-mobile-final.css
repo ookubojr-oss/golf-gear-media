@@ -1,0 +1,42 @@
+/* Final mobile homepage overrides. Desktop remains untouched. */
+@media screen and (max-width:768px){
+  body.is-concept-home{padding:0!important;background:#fff!important}
+
+  .concept-home-header{position:sticky!important;top:0!important;height:66px!important;padding:12px 16px!important;border-bottom:1px solid #ecefea!important;background:rgba(255,255,255,.96)!important;color:#132117!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important}
+  .concept-home-brand,.concept-home-brand strong{color:#122619!important}
+  .concept-home-brand strong{font-size:20px!important;letter-spacing:-.045em!important}
+  .concept-home-brand small{margin-top:5px!important;color:#6d776f!important;font-size:7px!important}
+  .concept-home-actions a,.concept-menu{color:#183821!important}
+
+  /* Keep the mobile top intentionally minimal. */
+  .concept-ticker,.concept-news,.concept-witb,.concept-picks,.concept-courses,.mobile-main-categories,.mobile-newsletter,.mobile-follow,.concept-bottom-nav{display:none!important}
+
+  .concept-hero{min-height:345px!important;background:linear-gradient(180deg,rgba(3,18,9,.05) 0%,rgba(4,20,10,.62) 100%),url('/images/jiro-golf-hero-original.jpg') center 48%/cover no-repeat!important}
+  .concept-hero .concept-wrap{min-height:345px!important;padding:118px 18px 28px!important}
+  .concept-hero h1{max-width:340px!important;font-size:43px!important;line-height:.9!important;letter-spacing:-.065em!important}
+  .concept-hero strong{max-width:320px!important;margin-top:15px!important;font-size:12px!important;line-height:1.55!important}
+  .concept-hero small{max-width:320px!important;margin-top:4px!important;font-size:9px!important}
+
+  .concept-gear{padding:26px 16px 36px!important;border-top:0!important;background:#fff!important}
+  .concept-section-head{margin-bottom:14px!important}
+  .concept-section-head h2{font-size:17px!important;letter-spacing:-.025em!important}
+  .concept-section-head a{font-size:9px!important}
+  .concept-gear-row{gap:0!important;margin:0 -16px!important;padding:0 16px 4px!important}
+  .concept-gear-card{flex:0 0 118px!important;min-width:118px!important;min-height:190px!important;padding:10px 9px 11px!important;border-radius:0!important;border-right:1px solid #ecefeb!important;background:#fff!important}
+  .concept-gear-card:first-child{border-left:1px solid #ecefeb!important}
+  .concept-gear-card img{height:104px!important;margin:5px 0 9px!important}
+  .concept-gear-card>span{font-size:6px!important;color:#5b675f!important}
+  .concept-gear-card b{font-size:9px!important;line-height:1.2!important}
+  .concept-gear-card small{margin-top:6px!important;font-size:7px!important;color:#536159!important}
+  .concept-dots{padding-top:12px!important}
+
+  .price-sheet{z-index:260!important}
+  .price-sheet-backdrop{z-index:250!important}
+}
+
+@media screen and (max-width:390px){
+  .concept-hero{min-height:330px!important}
+  .concept-hero .concept-wrap{min-height:330px!important;padding-top:105px!important}
+  .concept-hero h1{font-size:40px!important}
+  .concept-gear-card{flex-basis:110px!important;min-width:110px!important}
+}
