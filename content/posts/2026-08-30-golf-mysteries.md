@@ -5,6 +5,8 @@ draft: false
 categories: ["JIRO'S PICK"]
 tags: ["ゴルフあるある", "ゴルフ雑学", "JIRO'S PICK"]
 description: "池に吸い込まれるボール、木に当たるショット、練習場では完璧なのに本番では別人。ゴルファーが経験しがちな7つの謎現象を楽しく考察。"
+image: "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1200&q=82"
+label: "GOLF LIFE"
 ---
 
 ゴルフを続けていると、理屈では説明できるはずなのに「何で毎回こうなるんだ？」と思う瞬間があります。
