@@ -12,8 +12,11 @@
   .concept-home-brand,.concept-home-brand strong,.concept-home-actions a,.concept-menu{color:#fff!important}
   .concept-home-brand small{color:rgba(255,255,255,.9)!important}
 
+  /* Remove the mobile TRENDING NOW strip. */
+  .concept-ticker{display:none!important}
+
   /* Keep every approved mobile section visible. */
-  .concept-ticker,.concept-news,.concept-picks,.concept-courses,.mobile-main-categories,.mobile-newsletter,.mobile-follow{display:block!important}
+  .concept-news,.concept-picks,.concept-courses,.mobile-main-categories,.mobile-newsletter,.mobile-follow{display:block!important}
   .concept-bottom-nav{display:grid!important}
 
   /* Horizontal latest-gear strip from the approved reference. */
