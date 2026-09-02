@@ -5,13 +5,14 @@
 {{ $isWitb := or (eq $cat "witb") (in $label "WITB") }}
 {{ $isData := or (eq $cat "pga-data") (in $label "PGA DATA") }}
 {{ $isGear := or (eq $cat "latest-gear") (in $label "GEAR") }}
+{{ $articleImage := .Params.image | default "/images/jiro-golf-hero-original.jpg" }}
 {{ $hubURL := "/categories/jiros-pick/" }}{{ $hubName := "JIRO'S PICK" }}{{ if $isBeginner }}{{ $hubURL = "/beginner/" }}{{ $hubName = "初心者ガイド" }}{{ else if $isWitb }}{{ $hubURL = "/categories/witb/" }}{{ $hubName = "優勝クラブ" }}{{ else if $isGear }}{{ $hubURL = "/categories/latest-gear/" }}{{ $hubName = "最新情報・クラブ選び" }}{{ end }}
 {{ $allPosts := where site.RegularPages "Section" "posts" }}
 {{ $sameCat := where $allPosts "Params.category" $cat }}
 {{ $related := where $sameCat "RelPermalink" "ne" .RelPermalink }}
 {{ if lt (len $related) 3 }}{{ $related = where $allPosts "RelPermalink" "ne" .RelPermalink }}{{ end }}
 <article class="cat-article {{ if $isBeginner }}cat-beginner{{ else if $isWitb }}cat-witb{{ else if $isData }}cat-data{{ else if $isGear }}cat-gear{{ else }}cat-jiro{{ end }}">
-<header class="cat-hero"{{ with .Params.image }} style="background-image:linear-gradient(180deg,rgba(5,10,6,.08),rgba(5,10,6,.86)),url('{{ . }}')"{{ end }}><a class="cat-back" href="{{ $hubURL }}" aria-label="{{ $hubName }}へ戻る">‹</a><div class="cat-hero-copy"><span class="cat-kicker">{{ if $isBeginner }}はじめてのゴルフ{{ else if $isWitb }}優勝クラブセッティング{{ else if $isData }}PGA DATA{{ else if $isGear }}最新情報・クラブ選び{{ else }}JIRO'S PICK{{ end }}</span><h1>{{ .Title }}</h1><p>{{ .Description }}</p><small>{{ .Date.Format "2006.01.02" }} / JIRO GOLF</small></div></header>
+<header class="cat-hero" style="background-image:linear-gradient(180deg,rgba(5,10,6,.08),rgba(5,10,6,.86)),url('{{ $articleImage }}')"><a class="cat-back" href="{{ $hubURL }}" aria-label="{{ $hubName }}へ戻る">‹</a><div class="cat-hero-copy"><span class="cat-kicker">{{ if $isBeginner }}はじめてのゴルフ{{ else if $isWitb }}優勝クラブセッティング{{ else if $isData }}PGA DATA{{ else if $isGear }}最新情報・クラブ選び{{ else }}JIRO'S PICK{{ end }}</span><h1>{{ .Title }}</h1><p>{{ .Description }}</p><small>{{ .Date.Format "2006.01.02" }} / JIRO GOLF</small></div></header>
 {{ if $isBeginner }}<section class="cat-intro"><span>BEGINNER GUIDE</span><strong>むずかしい言葉は少なめに。最初に知りたいことだけ。</strong></section>{{ else if $isWitb }}<section class="cat-intro"><span>WHAT'S IN THE BAG</span><strong>プロのバッグを、クラブごとに見る。</strong></section>{{ else if $isData }}<section class="cat-intro"><span>BY THE NUMBERS</span><strong>数字から見る、いまのPGA TOUR。</strong></section>{{ else if $isGear }}<section class="cat-intro"><span>GEAR LAB</span><strong>新しいクラブを、選びやすく。</strong></section>{{ else }}{{ with .Params.verdict_note }}<section class="cat-intro"><span>JIRO'S CHECK</span><strong>{{ . }}</strong></section>{{ end }}{{ end }}
 {{ if and $isWitb .Params.gear_items }}
 <section class="witb-shop-section"><div class="witb-shop-head"><small>TAP TO COMPARE</small><h2>クラブをタップして価格比較</h2><p>アイアンはセットとしてまとめて表示。商品写真はメーカー公式でモデル一致を確認できたものだけ表示します。</p></div><div class="witb-shop-grid">
