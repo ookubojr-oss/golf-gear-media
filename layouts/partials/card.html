@@ -1,6 +1,7 @@
 {{ $image := .Params.image }}
-{{ if not $image }}{{ $image = "/images/jiro-golf-hero-original.jpg" }}{{ end }}
-<article class="archive-card">
+{{ $hasImage := true }}
+{{ if not $image }}{{ $image = "/images/jiro-golf-hero-original.jpg" }}{{ $hasImage = false }}{{ end }}
+<article class="archive-card" data-has-image="{{ $hasImage }}">
   <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}を読む">
     <div class="archive-thumb" style="background-image:linear-gradient(180deg,rgba(4,10,5,.04),rgba(4,10,5,.34)),url('{{ $image }}')">
       <span class="archive-label">{{ with .Params.label }}{{ . }}{{ else }}記事{{ end }}</span>
