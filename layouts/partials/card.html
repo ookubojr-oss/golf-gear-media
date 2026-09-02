@@ -1,15 +1,15 @@
 {{ $image := .Params.image }}
 {{ if not $image }}{{ $image = "/images/jiro-golf-hero-original.jpg" }}{{ end }}
 <article class="archive-card">
-  <a href="{{ .RelPermalink }}">
+  <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}を読む">
     <div class="archive-thumb" style="background-image:linear-gradient(180deg,rgba(4,10,5,.04),rgba(4,10,5,.34)),url('{{ $image }}')">
       <span class="archive-label">{{ with .Params.label }}{{ . }}{{ else }}記事{{ end }}</span>
-      <span class="archive-arrow">↗</span>
+      <span class="archive-arrow" aria-hidden="true">↗</span>
     </div>
     <div class="archive-card-body">
-      <div class="archive-meta"><span>{{ .Date.Format "2006.01.02" }}</span><i>READ</i></div>
+      <div class="archive-meta"><span>{{ .Date.Format "2006.01.02" }}</span><i>READ</i><span class="read-time">約{{ .ReadingTime }}分</span></div>
       <h2>{{ .Title }}</h2>
-      {{ with .Description }}<p>{{ . }}</p>{{ else }}<p>Jiro Golf編集部の記事を読む。</p>{{ end }}
+      {{ with .Description }}<p>{{ . }}</p>{{ else }}<p>{{ .Summary | plainify | truncate 90 }}</p>{{ end }}
     </div>
   </a>
 </article>
