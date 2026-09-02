@@ -19,25 +19,14 @@
     fallback:'/images/jiro-golf-hero-original.jpg'
   };
   function exactImage(path){const p=String(path||'').toLowerCase();const hit=exactRules.find(([re])=>re.test(p));return hit?hit[1]:''}
-  function topicImage(text,path){
-    const s=(String(text||'')+' '+String(path||'')).toLowerCase();
-    if(/リシャフト|シャフト|shaft/.test(s))return topicImages.reshaft;
-    if(/保証|ショップ|購入|買い方|中古販売|メルカリ|bookoff|セカスト/.test(s))return topicImages.shop;
-    if(/ドライバー|driver/.test(s))return topicImages.driver;
-    if(/アイアン|iron/.test(s))return topicImages.iron;
-    if(/パター|putter/.test(s))return topicImages.putter;
-    if(/キャディ|バッグ|bag/.test(s))return topicImages.bag;
-    if(/コース|ラウンド|大会|カップ|tour|course/.test(s))return topicImages.course;
-    if(/スイング|練習|アプローチ|バンカー|swing/.test(s))return topicImages.swing;
-    if(/初心者|ウェア|服装|beginner/.test(s))return topicImages.beginner;
-    return topicImages.fallback;
-  }
+  function topicImage(text,path){const s=(String(text||'')+' '+String(path||'')).toLowerCase();if(/リシャフト|シャフト|shaft/.test(s))return topicImages.reshaft;if(/保証|ショップ|購入|買い方|中古販売|メルカリ|bookoff|セカスト/.test(s))return topicImages.shop;if(/ドライバー|driver/.test(s))return topicImages.driver;if(/アイアン|iron/.test(s))return topicImages.iron;if(/パター|putter/.test(s))return topicImages.putter;if(/キャディ|バッグ|bag/.test(s))return topicImages.bag;if(/コース|ラウンド|大会|カップ|tour|course/.test(s))return topicImages.course;if(/スイング|練習|アプローチ|バンカー|swing/.test(s))return topicImages.swing;if(/初心者|ウェア|服装|beginner/.test(s))return topicImages.beginner;return topicImages.fallback}
   document.querySelectorAll('.archive-card').forEach((card,index)=>{
-    const link=card.querySelector('a[href]'); const thumb=card.querySelector('.archive-thumb'); if(!thumb)return;
-    const path=link?.getAttribute('href')||''; const title=card.querySelector('h2')?.textContent||'';
-    let src=exactImage(path)||topicImage(title,path); if(!src)return;
+    if(card.dataset.hasImage==='true')return;
+    const link=card.querySelector('a[href]'),thumb=card.querySelector('.archive-thumb');if(!thumb)return;
+    const path=link?.getAttribute('href')||'',title=card.querySelector('h2')?.textContent||'';
+    let src=exactImage(path)||topicImage(title,path);if(!src)return;
     if(/^https?:/.test(src))src+=(src.includes('?')?'&':'?')+'jirothumb='+(index+1);
     thumb.style.backgroundImage=`linear-gradient(180deg,rgba(4,10,5,.06),rgba(4,10,5,.42)),url('${src}')`;
-    thumb.dataset.articleImageFixed='1'; thumb.dataset.imageSource=exactImage(path)?'manufacturer-official':'topic-related';
+    thumb.dataset.articleImageFixed='1';thumb.dataset.imageSource=exactImage(path)?'manufacturer-official':'topic-related-fallback';
   });
 })();
