@@ -2,6 +2,8 @@
 title: "プレジデンツカップ2026代表はどう決まる？松山英樹ら自動選出12人とキャプテン選考を整理"
 date: 2026-09-02
 description: "2026年プレジデンツカップは9月22〜27日にメダイナCCで開催。松山英樹ら自動選出選手、6人のキャプテンピック、チーム構成を初心者にも分かりやすく整理します。"
+image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1200&q=82"
+label: "PRESIDENTS CUP"
 tags: ["PGA TOUR", "プレジデンツカップ", "松山英樹", "ゴルフニュース"]
 ---
 
