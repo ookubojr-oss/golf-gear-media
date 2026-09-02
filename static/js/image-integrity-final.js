@@ -1,5 +1,5 @@
 (()=>{
-  const selector='.concept-gear-card img,.desktop-gear-card img,.witb-shop-card img,.used-photo img,.gear-photo';
+  const selector='.concept-gear-card img,.desktop-gear-card img,.witb-shop-card img,.used-photo img,.gear-photo,.used-rank-photo img,.used-category-card img,.club-bag-scene img';
   const replaceFailed=(img)=>{
     if(!img||img.dataset.integrityHandled==='1')return;
     img.dataset.integrityHandled='1';
@@ -12,7 +12,10 @@
     img.insertAdjacentElement('afterend',box);
   };
   const bind=()=>document.querySelectorAll(selector).forEach(img=>{
+    if(img.dataset.integrityBound==='1')return;
+    img.dataset.integrityBound='1';
     img.addEventListener('error',()=>replaceFailed(img));
+    if(img.complete&&img.naturalWidth===0)replaceFailed(img);
     if(img.dataset.fallbackApplied==='1'||/gear-fallback-transparent\.png/.test(img.currentSrc||img.src))replaceFailed(img);
   });
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind,{once:true});else bind();
