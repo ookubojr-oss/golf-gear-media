@@ -2,6 +2,8 @@
 title: "9月のゴルフは何を着る？残暑・朝夕の気温差に対応する服装と持ち物ガイド"
 date: 2026-09-02
 description: "9月のゴルフで迷いやすい服装を初心者向けに解説。残暑対策、朝夕の気温差、雨、クラブハウスでの服装まで、秋口ラウンドの持ち物を整理します。"
+image: "https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1200&q=82"
+label: "GOLF WEAR"
 tags: ["初心者", "ゴルフウェア", "9月ゴルフ", "ゴルフ初心者"]
 ---
 
