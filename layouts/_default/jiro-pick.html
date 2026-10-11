@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="jp-all">
-  <section class="jp-hero"{{ with .Params.image }} style="background-image:url('{{ . }}')"{{ end }}>
+  <section class="jp-hero" style="background-image:url('{{ .Params.image | default "/images/jiro-golf-hero-original.jpg" }}')">
     <a class="jp-back" href="/">‹</a>
     <div class="jp-hero-shade"></div>
     <div class="jp-hero-copy">
