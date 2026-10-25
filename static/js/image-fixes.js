@@ -16,7 +16,7 @@
     {match:/mezz\.1\s*max/i,alt:'L.A.B. Golf MEZZ.1 MAX 正規販売元商品写真',srcs:['https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992&width=832']},
     {match:/df\s*2\.1/i,alt:'L.A.B. Golf DF 2.1 正規販売元商品写真',srcs:['https://labgolf.jp/cdn/shop/files/cover-df21-custom.jpg?v=1763456019&width=832']},
     {match:/cobra\s*optm\s*x|optm\s*x\s*driver/i,alt:'COBRA OPTM X Driver メーカー公式商品写真',srcs:['https://cdn.shopify.com/s/files/1/0634/7833/3657/files/SS26_Ecom_Cobra_OPTM_PDP_Driver_X_ImgGal-1-min.jpg']},
-    {match:/titleist\s*gts2|gts2\s*driver/i,alt:'Titleist GTS2 Driver メーカー公式商品写真',srcs:['https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dwa8a59a0d/560BC/560BC_01.png?sfrm=png&sh=650&sm=fit&sw=650']},
+    {match:/titleist\s*gts2|gts2\s*driver/i,alt:'Titleist GTS2 Driver メーカー公式商品写真',srcs:['https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dw71b0260c/678C/678C_01.png?sw=650&sh=650&sm=fit&sfrm=png']},
     {match:/callaway\s*elyte\s*x|elyte\s*x\s*driver/i,alt:'Callaway ELYTE X Driver メーカー公式商品写真',srcs:['https://cdn2.webdamdb.com/1280_YjeDKtjEyD518FnA.png?1753642061']}
   ];
   const BRAND_RULES = [

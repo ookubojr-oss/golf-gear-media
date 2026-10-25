@@ -34,7 +34,7 @@ PGA TOUR公式の初日リキャップによると、日本人ペアは9番を�
 ## 関連記事
 
 - [プレジデンツカップ2026初日組み合わせ｜松山英樹＆久常涼に注目](/posts/2026-09-24-presidents-cup-day1-matsuyama-hisatsune/)
-- [フォアボールとフォアサムの違いを解説](/posts/2026-09-23-fourball-vs-foursomes-guide/)
-- [ゴルフのコンシードとは？](/posts/2026-09-23-golf-concession-ok-putt-rule/)
+- [フォアボールとフォアサムの違いを解説](/posts/2026-09-23-fourball-foursomes-difference/)
+- [ゴルフのコンシードとは？](/posts/2026-09-23-golf-match-play-concession-rule/)
 
 ※初日の試合結果・スコアはPGA TOURが2026年9月24日に公開した公式リキャップを確認して構成しています。専用画像を継続利用できる形で安全に固定できなかったため、Jiro Golf既存ローカル実写フォールバック画像を設定しています。

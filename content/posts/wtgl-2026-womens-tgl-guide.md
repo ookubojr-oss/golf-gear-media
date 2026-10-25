@@ -1,6 +1,7 @@
 ---
 title: "女子版TGL『WTGL』とは？2026-27冬開幕、LPGAスターが戦う新リーグを解説"
 date: 2026-09-02
+image: "/images/jiro-golf-hero-original.jpg"
 description: "LPGAとTMRW Sportsが立ち上げる女子チームゴルフリーグWTGLを解説。2026-27年冬の開幕時期、SoFi Center、出場選手、新しい観戦スタイルを整理します。"
 tags: ["LPGA", "WTGL", "女子ゴルフ", "ゴルフニュース"]
 ---
