@@ -13,7 +13,7 @@
     {match:/titleist\s*pro\s*v1|pro\s*v1/i,alt:'Titleist Pro V1 High Number メーカー公式商品写真',srcs:['https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-master/default/dw5f9812c2/005PV1T/T2029S_01.png?sfrm=png&sh=650&sm=fit&sw=650']},
     {match:/26\s*ventus\s*tr|ventus\s*tr\s*26/i,alt:'Fujikura 26 VENTUS TR メーカー公式商品写真',srcs:['https://www.fujikurashaft.jp/wp-content/uploads/2026/04/ventus_tr_2604.png']},
     {match:/r7\s*quad\s*mini/i,alt:'TaylorMade R7 Quad Mini Driver メーカー公式商品写真',srcs:['https://assets.taylormadegolf.com/i/30/979061/R7-Quad-Mini-Studio-Hero~W1000_H562_Mcrop_P50-50.png']},
-    {match:/mezz\.1\s*max/i,alt:'L.A.B. Golf MEZZ.1 MAX 正規販売元商品写真',srcs:['https://labgolf.jp/cdn/shop/files/cover-max-custom.jpg?v=1763455992&width=832']},
+    {match:/mezz\.1\s*max/i,alt:'L.A.B. Golf MEZZ.1 MAX 正規販売元商品写真',srcs:['https://labgolf.com/cdn/shop/files/MEZZ_MAX8_ECOM_BLACK.jpg?v=1759854151&width=1100']},
     {match:/df\s*2\.1/i,alt:'L.A.B. Golf DF 2.1 正規販売元商品写真',srcs:['https://labgolf.jp/cdn/shop/files/cover-df21-custom.jpg?v=1763456019&width=832']},
     {match:/cobra\s*optm\s*x|optm\s*x\s*driver/i,alt:'COBRA OPTM X Driver メーカー公式商品写真',srcs:['https://cdn.shopify.com/s/files/1/0634/7833/3657/files/SS26_Ecom_Cobra_OPTM_PDP_Driver_X_ImgGal-1-min.jpg']},
     {match:/titleist\s*gts2|gts2\s*driver/i,alt:'Titleist GTS2 Driver メーカー公式商品写真',srcs:['https://www.titleist.co.jp/dw/image/v2/AAZW_PRD/on/demandware.static/-/Sites-titleist-clubs-master-JP/default/dw71b0260c/678C/678C_01.png?sw=650&sh=650&sm=fit&sfrm=png']},
