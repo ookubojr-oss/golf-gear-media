@@ -3,7 +3,6 @@ languageCode = "ja-jp"
 title = "Jiro Golf｜ゴルフ最新速報部"
 enableRobotsTXT = true
 buildFuture = true
-# deploy-refresh: 2026-08-30T20:00+09:00
 
 [pagination]
   pagerSize = 12
